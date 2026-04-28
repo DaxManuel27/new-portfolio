@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dax Manuel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #fafafa;
+    --ink: #0a0a0a;
+    --muted: #8a8a8a;
+    --line: #ececec;
+    --tile: #ffffff;
+    --tile-soft: #f3f3f3;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Fredoka", system-ui, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; border: none; background: none; cursor: pointer; }
+
+  /* clock */
+  .clock {
+    position: fixed;
+    top: 28px; right: 36px;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+    z-index: 60;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* shell */
+  .layout {
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 88px 24px 200px;
+    gap: 96px;
+    align-items: start;
+  }
+  main {
+    min-width: 0;
+  }
+
+  /* tabs - vertical */
+  .tabs {
+    position: sticky;
+    top: 88px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .tab {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--tile);
+    display: grid;
+    place-items: center;
+    color: var(--muted);
+    transition: background .2s ease, color .2s ease, transform .2s ease, box-shadow .2s ease;
+    position: relative;
+    box-shadow: 0 1px 0 rgba(0,0,0,.02);
+  }
+  .tab:hover { color: var(--ink); transform: translateX(2px); }
+  .tab.active {
+    background: var(--ink);
+    color: #fff;
+    box-shadow: 0 8px 24px -10px rgba(0,0,0,.4);
+  }
+  .tab svg { width: 20px; height: 20px; }
+  .tab .lbl {
+    position: absolute;
+    left: 68px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity .2s ease;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  .tab.active .lbl { opacity: 1; color: var(--ink); }
+
+  /* panel */
+  .panel { display: none; animation: fadeUp .45s cubic-bezier(.2,.7,.2,1); }
+  .panel.active { display: block; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: none; }
+  }
+
+  /* projects focus mode */
+  #panel-projects .row {
+    transition: padding .25s ease, filter .35s ease, opacity .35s ease, transform .35s ease;
+  }
+  #panel-projects.focusing .row {
+    filter: blur(1.2px);
+    opacity: .65;
+  }
+  #panel-projects.focusing .row.focused {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.015);
+  }
+
+  /* row */
+  .row {
+    display: grid;
+    grid-template-columns: 44px 1fr 18px;
+    gap: 18px;
+    align-items: center;
+    padding: 18px 6px;
+    border-bottom: 1px solid var(--line);
+    transition: padding .25s ease;
+  }
+  .row.click { cursor: pointer; }
+  .row.click:hover { padding-left: 16px; }
+  .row .ico {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    background: var(--tile);
+    display: grid; place-items: center;
+    color: var(--muted);
+  }
+  .row .ico svg { width: 16px; height: 16px; }
+  .row .body .t {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+  .row .body .s {
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-top: 3px;
+    line-height: 1.4;
+  }
+  .row .chev {
+    color: var(--muted);
+    transition: transform .25s ease, color .25s ease;
+  }
+  .row.click:hover .chev { color: var(--ink); transform: translateX(3px); }
+  .row .chev svg { width: 14px; height: 14px; }
+
+  /* about hero row */
+  .me {
+    display: grid;
+    grid-template-columns: 44px 1fr 18px;
+    gap: 18px;
+    align-items: center;
+    padding: 18px 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  .me .av {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .me .av img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+  }
+  .me .t { font-size: 15px; font-weight: 500; }
+  .me .s { font-size: 12.5px; color: var(--muted); margin-top: 3px; }
+
+  /* about overview */
+  .overview {
+    padding: 22px 6px 8px;
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: #2a2a2a;
+    max-width: 56ch;
+  }
+
+  /* footer hint */
+  .hint {
+    position: fixed;
+    bottom: 28px; left: 0; right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    text-transform: uppercase;
+    pointer-events: none;
+  }
+  .hint .grp { display: inline-flex; align-items: center; gap: 8px; }
+  .hint .key {
+    border: 1px solid var(--line);
+    padding: 3px 7px;
+    border-radius: 5px;
+    background: #fff;
+    color: var(--ink);
+    font-size: 10px;
+  }
+
+  /* modal */
+  .scrim {
+    position: fixed; inset: 0;
+    background: rgba(10,10,10,0);
+    backdrop-filter: blur(0px);
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: background .3s ease, backdrop-filter .3s ease;
+  }
+  .scrim.open {
+    display: flex;
+    background: rgba(10,10,10,0.45);
+    backdrop-filter: blur(6px);
+  }
+  .modal {
+    width: min(640px, calc(100vw - 48px));
+    max-height: calc(100vh - 64px);
+    background: #fff;
+    border-radius: 16px;
+    overflow: auto;
+    transform: translateY(16px) scale(.985);
+    opacity: 0;
+    transition: transform .35s cubic-bezier(.2,.7,.2,1), opacity .25s ease;
+    padding: 32px 36px 36px;
+  }
+  .scrim.open .modal { transform: none; opacity: 1; }
+  .modal .head {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+  .modal h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  .modal .meta {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+  .modal .x {
+    width: 30px; height: 30px;
+    border-radius: 8px;
+    background: var(--tile-soft);
+    display: grid; place-items: center;
+    color: var(--muted);
+    transition: background .2s ease, color .2s ease;
+  }
+  .modal .x:hover { background: var(--ink); color: #fff; }
+  .modal .x svg { width: 12px; height: 12px; }
+  .modal p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #2a2a2a;
+    margin: 0 0 12px;
+  }
+  .modal .kv {
+    margin-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+  .modal .kv .r {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 13.5px;
+  }
+  .modal .kv .k {
+    color: var(--muted);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding-top: 2px;
+  }
+
+  @media (max-width: 600px) {
+    .clock { top: 16px; right: 18px; font-size: 14px; }
+    .layout {
+      grid-template-columns: 1fr;
+      padding: 64px 18px 160px;
+      gap: 28px;
+    }
+    .tabs {
+      position: static;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .tab .lbl { display: none; }
+    .hint { gap: 14px; font-size: 9.5px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-panel="profile" aria-label="Profile">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 2c-3.3 0-8 1.7-8 5v1h16v-1c0-3.3-4.7-5-8-5Z"/></svg>
+      <span class="lbl">Profile</span>
+    </button>
+    <button class="tab" data-panel="experience" aria-label="Experience">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>
+      <span class="lbl">Experience</span>
+    </button>
+    <button class="tab" data-panel="projects" aria-label="Projects">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/><path d="m15 18-6-6 6-6" opacity=".25"/></svg>
+      <span class="lbl">Projects</span>
+    </button>
+    <button class="tab" data-panel="contact" aria-label="Contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      <span class="lbl">Contact</span>
+    </button>
+  </nav>
+
+  <main>
+
+  <!-- PROFILE -->
+  <section class="panel active" id="panel-profile">
+    <div class="me">
+      <div class="av"><img src="headshot.png" alt="Dax Manuel"></div>
+      <div>
+        <div class="t">Dax Manuel</div>
+        <div class="s">Software Engineering + Math · UNB</div>
+      </div>
+      <span></span>
+    </div>
+    <div class="overview">
+      Interested in all kinds of software and AI applications in hardware systems — currently at Ultra Maritime and UNB Formula Racing.
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="panel" id="panel-projects">
+    <div id="projlist"></div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="panel" id="panel-experience">
+    <div id="explist"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="panel" id="panel-contact">
+    <a class="row click" href="mailto:dax.manuel@unb.ca">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+      <div class="body"><div class="t">Email</div><div class="s">dax.manuel@unb.ca</div></div>
+      <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></span>
+    </a>
+    <a class="row click" href="https://linkedin.com/in/nikolasdaxmanuel" target="_blank" rel="noopener">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-.95 1.85-1.95 3.8-1.95C21.6 8.75 22 11 22 13.5V21h-4v-6.5c0-1.55-.03-3.55-2.16-3.55-2.17 0-2.5 1.7-2.5 3.45V21h-3.9z"/></svg></div>
+      <div class="body"><div class="t">LinkedIn</div><div class="s">in/nikolasdaxmanuel</div></div>
+      <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></span>
+    </a>
+    <a class="row click" href="https://github.com/DaxManuel27" target="_blank" rel="noopener">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></div>
+      <div class="body"><div class="t">GitHub</div><div class="s">github.com/DaxManuel27</div></div>
+      <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></span>
+    </a>
+  </section>
+
+  </main>
+</div>
+
+
+<!-- modal -->
+<div class="scrim" id="scrim" role="dialog" aria-modal="true">
+  <div class="modal" id="modal">
+    <div class="head">
+      <div>
+        <h3 id="m-title">—</h3>
+        <div class="meta" id="m-meta">—</div>
+      </div>
+      <button class="x" id="m-close" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <img id="m-img" src="" alt="" style="display:none;width:100%;max-height:220px;object-fit:cover;border-radius:10px;margin-bottom:16px;">
+    <p id="m-summary"></p>
+    <div class="kv" id="m-kv"></div>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  const PROJECTS = [
+    {
+      id: "pytorch-meta",
+      title: "PyTorch — Meta Open Source",
+      meta: "· Open Source",
+      image: "",
+      summary: ""
+    },
+    {
+      id: "semantic",
+      title: "Semantic",
+      meta: "· AI System Design",
+      image: "",
+      summary: ""
+    },
+    {
+      id: "ml-framework-c",
+      title: "Machine Learning Framework in C",
+      meta: "· Systems / ML",
+      image: "",
+      summary: ""
+    },
+    {
+      id: "vehicle-perception",
+      title: "Vehicle Perception Model",
+      meta: "· Computer Vision",
+      image: "",
+      summary: ""
+    },
+    {
+      id: "hr-system",
+      title: "HR System",
+      meta: "· Software",
+      image: "",
+      summary: ""
+    },
+    {
+      id: "cursor-cad",
+      title: "Cursor for CAD",
+      meta: "· AI / Hardware",
+      image: "",
+      summary: ""
+    },
+    {
+      id: "cover-letter-gen",
+      title: "AI Cover Letter Generator",
+      meta: "· AI / Productivity",
+      image: "",
+      summary: ""
+    },
+    {
+      id: "codesimplify",
+      title: "CodeSimplify",
+      meta: "· Developer Tools",
+      image: "",
+      summary: ""
+    },
+    {
+      id: "soccer-predictor",
+      title: "Soccer Match Predictor",
+      meta: "· ML / Sports",
+      image: "",
+      summary: ""
+    }
+  ];
+
+  const EXPERIENCES = [
+    {
+      id: "ultra-maritime",
+      title: "Software Engineer Intern",
+      org: "Ultra Maritime",
+      meta: "Summer 2026",
+      summary: "",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>`
+    },
+    {
+      id: "unb-formula",
+      title: "Electrical Project Lead",
+      org: "UNB Formula Racing",
+      meta: "Sep 2025 — Present",
+      summary: "",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11h14l-2 7H7z"/><circle cx="8" cy="20" r="1.5"/><circle cx="16" cy="20" r="1.5"/><path d="M5 11 7 5h10l2 6"/></svg>`
+    },
+    {
+      id: "hack-atlantic",
+      title: "Founder",
+      org: "Hack Atlantic",
+      meta: "Apr 2026 — Present",
+      summary: "",
+      icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>`
+    }
+  ];
+
+  // render experiences
+  const explist = document.getElementById('explist');
+  EXPERIENCES.forEach(e => {
+    const row = document.createElement('div');
+    row.className = 'row click';
+    row.dataset.id = e.id;
+    row.innerHTML = `
+      <div class="ico">${e.icon}</div>
+      <div class="body"><div class="t">${e.title} · ${e.org}</div><div class="s">${e.meta}</div></div>
+      <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></span>
+    `;
+    row.addEventListener('click', () => openModal(e.id));
+    explist.appendChild(row);
+  });
+
+  // render projects
+  const list = document.getElementById('projlist');
+  const projPanel = document.getElementById('panel-projects');
+  PROJECTS.forEach(p => {
+    const row = document.createElement('div');
+    row.className = 'row click';
+    row.dataset.id = p.id;
+    row.innerHTML = `
+      <div class="ico">${p.image ? `<img src="${p.image}" alt="${p.title}" style="width:28px;height:28px;object-fit:cover;border-radius:6px;">` : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>`}</div>
+      <div class="body"><div class="t">${p.title}</div><div class="s">${p.meta}${p.summary ? ' · ' + p.summary : ' · No description yet'}</div></div>
+      <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></span>
+    `;
+    row.addEventListener('click', () => openModal(p.id));
+    list.appendChild(row);
+  });
+
+  // wheel-driven project focus: each notch advances one row
+  const projRows = () => [...list.querySelectorAll('.row')];
+  let focusedIdx = 0;
+  function applyFocus() {
+    const rows = projRows();
+    rows.forEach((r, i) => r.classList.toggle('focused', i === focusedIdx));
+    projPanel.classList.add('focusing');
+    const target = rows[focusedIdx];
+    if (target) {
+      const rect = target.getBoundingClientRect();
+      const mid = rect.top + rect.height / 2;
+      const delta = mid - window.innerHeight / 2;
+      if (Math.abs(delta) > 4) {
+        window.scrollBy({ top: delta, behavior: 'smooth' });
+      }
+    }
+  }
+  let wheelLock = false;
+  function onWheel(e) {
+    if (!projPanel.classList.contains('active')) return;
+    e.preventDefault();
+    if (wheelLock) return;
+    if (Math.abs(e.deltaY) < 4) return;
+    const rows = projRows();
+    const dir = e.deltaY > 0 ? 1 : -1;
+    focusedIdx = Math.max(0, Math.min(rows.length - 1, focusedIdx + dir));
+    applyFocus();
+    wheelLock = true;
+    setTimeout(() => { wheelLock = false; }, 380);
+  }
+  window.addEventListener('wheel', onWheel, { passive: false });
+  // touch / keyboard fallback
+  document.addEventListener('keydown', (e) => {
+    if (!projPanel.classList.contains('active')) return;
+    if (scrim.classList.contains('open')) return;
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      const rows = projRows();
+      const dir = e.key === 'ArrowDown' ? 1 : -1;
+      const next = focusedIdx + dir;
+      if (next < 0 || next >= rows.length) return; // let tab nav handle edges
+      e.preventDefault();
+      focusedIdx = next;
+      applyFocus();
+    } else if (e.key === 'Enter') {
+      const rows = projRows();
+      if (rows[focusedIdx]) rows[focusedIdx].click();
+    }
+  }, true);
+  // hover overrides focus
+  list.addEventListener('mouseover', (e) => {
+    const r = e.target.closest('.row');
+    if (!r) return;
+    const rows = projRows();
+    focusedIdx = rows.indexOf(r);
+    rows.forEach((x, i) => x.classList.toggle('focused', i === focusedIdx));
+    projPanel.classList.add('focusing');
+  });
+
+  // tabs
+  const tabs = [...document.querySelectorAll('.tab')];
+  const panels = [...document.querySelectorAll('.panel')];
+  function activate(name) {
+    tabs.forEach(t => t.classList.toggle('active', t.dataset.panel === name));
+    panels.forEach(p => p.classList.toggle('active', p.id === 'panel-' + name));
+    if (name === 'projects') {
+      focusedIdx = 0;
+      requestAnimationFrame(applyFocus);
+    } else projPanel.classList.remove('focusing');
+  }
+  tabs.forEach(t => t.addEventListener('click', () => activate(t.dataset.panel)));
+
+  // arrow-key tabs
+  document.addEventListener('keydown', (e) => {
+    if (scrim.classList.contains('open')) return;
+    if (['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)) {
+      const fwd = e.key === 'ArrowRight' || e.key === 'ArrowDown';
+      const idx = tabs.findIndex(t => t.classList.contains('active'));
+      const next = (idx + (fwd ? 1 : -1) + tabs.length) % tabs.length;
+      activate(tabs[next].dataset.panel);
+    }
+  });
+
+  // modal
+  const scrim = document.getElementById('scrim');
+  function openModal(id) {
+    const p = PROJECTS.find(x => x.id === id) || EXPERIENCES.find(x => x.id === id);
+    document.getElementById('m-title').textContent = p.org ? `${p.title} · ${p.org}` : p.title;
+    document.getElementById('m-meta').textContent = p.meta;
+    const imgEl = document.getElementById('m-img');
+    if (p.image) {
+      imgEl.src = p.image;
+      imgEl.style.display = 'block';
+    } else {
+      imgEl.style.display = 'none';
+    }
+    document.getElementById('m-summary').textContent = p.summary || 'No description yet.';
+    document.getElementById('m-kv').innerHTML = '';
+    scrim.classList.add('open');
+  }
+  function closeModal() { scrim.classList.remove('open'); }
+  document.getElementById('m-close').addEventListener('click', closeModal);
+  scrim.addEventListener('click', (e) => { if (e.target === scrim) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+
+</script>
+
+</body>
+</html>
