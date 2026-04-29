@@ -194,6 +194,22 @@
     max-width: 56ch;
   }
 
+
+  /* github heatmap */
+  .heatmap-wrap {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  .heatmap-label {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  #heatmap { display: flex; gap: 2px; }
+
   /* footer hint */
   .hint {
     position: fixed;
@@ -357,6 +373,10 @@
     <div class="overview">
       Interested in all kinds of software and AI applications in hardware systems — currently at Ultra Maritime and UNB Formula Racing.
     </div>
+    <div class="heatmap-wrap">
+      <div class="heatmap-label">GitHub contributions</div>
+      <div id="heatmap"></div>
+    </div>
   </section>
 
   <!-- PROJECTS -->
@@ -417,63 +437,72 @@
       title: "PyTorch — Meta Open Source",
       meta: "· Open Source",
       image: "",
-      summary: ""
+      summary: "Contributed to writing test functions with C++ and Python, with over 4 PRs triaged by Meta maintainers.",
+      github: "https://github.com/DaxManuel27/pytorch"
     },
     {
       id: "semantic",
       title: "Semantic",
       meta: "· AI System Design",
       image: "",
-      summary: ""
+      summary: "AI system design engineer, working directly with Claude Code in the terminal to design better systems.",
+      github: "https://github.com/DaxManuel27/semantic"
     },
     {
       id: "ml-framework-c",
       title: "Machine Learning Framework in C",
       meta: "· Systems / ML",
       image: "",
-      summary: ""
+      summary: "Designed a machine learning framework from scratch in C, implementing forward/back-propagation, gradient descent, and activation/loss functions.",
+      github: "https://github.com/DaxManuel27/ml-framework-c"
     },
     {
       id: "vehicle-perception",
       title: "Vehicle Perception Model",
       meta: "· Computer Vision",
       image: "",
-      summary: ""
+      summary: "Trained a model on LiDAR data from the Waymo Open Dataset to predict 3D bounding boxes over vehicles.",
+      github: "https://github.com/DaxManuel27/vehicle-perception"
     },
     {
       id: "hr-system",
       title: "HR System",
       meta: "· Software",
       image: "",
-      summary: ""
+      summary: "Led a team of four developing a full-stack web-based Employee Management System with Spring Boot.",
+      github: "https://github.com/DaxManuel27/hr-system"
     },
     {
       id: "cursor-cad",
       title: "Cursor for CAD",
       meta: "· AI / Hardware",
       image: "",
-      summary: ""
+      summary: "Turning prompts into exportable 3D CAD models in under 24 hours at McHacks 2026.",
+      github: "https://github.com/DaxManuel27/cursor-cad"
     },
     {
       id: "cover-letter-gen",
       title: "AI Cover Letter Generator",
       meta: "· AI / Productivity",
       image: "",
-      summary: ""
+      summary: "Generating cover letters with AI, based on your resume and job description.",
+      github: "https://github.com/DaxManuel27/cover-letter-gen"
     },
     {
       id: "codesimplify",
       title: "CodeSimplify",
       meta: "· Developer Tools",
       image: "",
-      summary: ""
+      summary: "Created a Chrome extension that explains any requested snippets of code on GitHub.",
+      github: "https://github.com/DaxManuel27/codesimplify"
     },
     {
       id: "soccer-predictor",
       title: "Soccer Match Predictor",
       meta: "· ML / Sports",
       image: "",
-      summary: ""
+      summary: "Trained a model with Scikit-learn to predict Premier League soccer matches.",
+      github: "https://github.com/DaxManuel27/soccer-predictor"
     }
   ];
 
@@ -631,7 +660,11 @@
       imgEl.style.display = 'none';
     }
     document.getElementById('m-summary').textContent = p.summary || 'No description yet.';
-    document.getElementById('m-kv').innerHTML = '';
+    const kv = document.getElementById('m-kv');
+    kv.innerHTML = '';
+    if (p.github) {
+      kv.innerHTML = `<div class="r"><div class="k">GitHub</div><div><a href="${p.github}" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline;text-underline-offset:3px;">${p.github.replace('https://', '')}</a></div></div>`;
+    }
     scrim.classList.add('open');
   }
   function closeModal() { scrim.classList.remove('open'); }
@@ -639,6 +672,44 @@
   scrim.addEventListener('click', (e) => { if (e.target === scrim) closeModal(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 
+  // github heatmap
+  (async () => {
+    const el = document.getElementById('heatmap');
+    try {
+      const res = await fetch('https://github-contributions-api.jogruber.de/v4/DaxManuel27?y=last');
+      let { contributions } = await res.json();
+
+      // keep only last 4 months
+      const cutoff = new Date();
+      cutoff.setMonth(cutoff.getMonth() - 4);
+      contributions = contributions.filter(d => new Date(d.date) >= cutoff);
+
+      // pad start so grid begins on Sunday
+      const firstDow = new Date(contributions[0].date).getDay();
+      const cells = [...Array(firstDow).fill(null), ...contributions];
+
+      // build week columns
+      const weeks = [];
+      for (let i = 0; i < cells.length; i += 7) weeks.push(cells.slice(i, i + 7));
+
+      const colors = ['#e8e8e8', '#c0c0c0', '#888888', '#484848', '#0f0f0f'];
+
+      weeks.forEach(week => {
+        const col = document.createElement('div');
+        col.style.cssText = 'display:flex;flex-direction:column;gap:2px;';
+        while (week.length < 7) week.push(null);
+        week.forEach(day => {
+          const cell = document.createElement('div');
+          cell.style.cssText = `width:10px;height:10px;border-radius:2px;background:${colors[day ? day.level : 0]};flex-shrink:0;`;
+          if (day && day.count > 0) cell.title = `${day.date}: ${day.count} contribution${day.count !== 1 ? 's' : ''}`;
+          col.appendChild(cell);
+        });
+        el.appendChild(col);
+      });
+    } catch(e) {
+      document.querySelector('.heatmap-wrap').style.display = 'none';
+    }
+  })();
 
 </script>
 
