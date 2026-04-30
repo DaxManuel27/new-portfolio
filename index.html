@@ -528,7 +528,8 @@
       title: "Founder",
       org: "Hack Atlantic",
       meta: "Apr 2026 — Present",
-      summary: "",
+      summary: "hackatlantic.ca",
+      url: "https://hackatlantic.ca",
       icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>`
     }
   ];
@@ -659,7 +660,12 @@
     } else {
       imgEl.style.display = 'none';
     }
-    document.getElementById('m-summary').textContent = p.summary || 'No description yet.';
+    const summaryEl = document.getElementById('m-summary');
+    if (p.url) {
+      summaryEl.innerHTML = `<a href="${p.url}" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline;text-underline-offset:3px;">${p.summary}</a>`;
+    } else {
+      summaryEl.textContent = p.summary || 'No description yet.';
+    }
     const kv = document.getElementById('m-kv');
     kv.innerHTML = '';
     if (p.github) {
