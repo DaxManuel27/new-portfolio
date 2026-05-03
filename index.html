@@ -15,6 +15,7 @@
     --line: #ececec;
     --tile: #ffffff;
     --tile-soft: #f3f3f3;
+    --nav-h: 60px;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
@@ -28,101 +29,179 @@
     -webkit-font-smoothing: antialiased;
   }
   a { color: inherit; text-decoration: none; }
-  button { font-family: inherit; border: none; background: none; cursor: pointer; }
+  button { font-family: inherit; border: none; background: none; cursor: pointer; padding: 0; }
 
-  /* clock */
-  .clock {
+  /* ── Navbar ── */
+  .navbar {
     position: fixed;
-    top: 28px; right: 36px;
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-    font-size: 18px;
-    letter-spacing: 0.08em;
-    color: var(--ink);
-    z-index: 60;
-    font-variant-numeric: tabular-nums;
+    top: 0; left: 0; right: 0;
+    z-index: 50;
+    height: var(--nav-h);
+    background: rgba(250, 250, 250, 0.82);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid var(--line);
   }
-
-  /* shell */
-  .layout {
-    display: grid;
-    grid-template-columns: 88px 1fr;
-    max-width: 920px;
+  .nav-inner {
+    width: 50%;
     margin: 0 auto;
-    padding: 88px 24px 200px;
-    gap: 96px;
-    align-items: start;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
   }
-  main {
-    min-width: 0;
+  .nav-tab {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 15.5px;
+    font-weight: 400;
+    color: var(--muted);
+    padding: 0 8px;
+    transition: color .18s ease;
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+  }
+  .nav-tab::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0; right: 0;
+    height: 1.5px;
+    background: var(--ink);
+    opacity: 0;
+    transition: opacity .18s ease;
+  }
+  .nav-tab:hover { color: var(--ink); }
+  .nav-tab.active { color: var(--ink); font-weight: 500; }
+  .nav-tab.active::after { opacity: 1; }
+
+  /* ── Content ── */
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: calc(var(--nav-h) + 52px) 32px 120px;
   }
 
-  /* tabs - vertical */
-  .tabs {
-    position: sticky;
-    top: 88px;
+  /* ── Panel ── */
+  .panel { display: none; animation: fadeUp .4s cubic-bezier(.2,.7,.2,1); }
+  .panel.active { display: block; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: none; }
+  }
+
+  /* ── Profile / About ── */
+  .hero {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 28px;
   }
-  .tab {
-    width: 56px;
-    height: 56px;
+  .hero .av {
+    width: 56px; height: 56px;
     border-radius: 14px;
-    background: var(--tile);
-    display: grid;
-    place-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .hero .av img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+  }
+  .hero .name { font-size: 20px; font-weight: 500; line-height: 1.2; }
+  .hero .sub {
+    font-size: 13.5px;
     color: var(--muted);
-    transition: background .2s ease, color .2s ease, transform .2s ease, box-shadow .2s ease;
-    position: relative;
-    box-shadow: 0 1px 0 rgba(0,0,0,.02);
+    margin-top: 3px;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    letter-spacing: 0.04em;
   }
-  .tab:hover { color: var(--ink); transform: translateX(2px); }
-  .tab.active {
-    background: var(--ink);
-    color: #fff;
-    box-shadow: 0 8px 24px -10px rgba(0,0,0,.4);
+  .overview {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #2a2a2a;
+    max-width: 60ch;
+    margin-bottom: 36px;
   }
-  .tab svg { width: 20px; height: 20px; }
-  .tab .lbl {
-    position: absolute;
-    left: 68px;
-    top: 50%;
-    transform: translateY(-50%);
+
+  /* ── GitHub heatmap ── */
+  .heatmap-label {
     font-family: "JetBrains Mono", ui-monospace, monospace;
     font-size: 9.5px;
     letter-spacing: 0.18em;
     color: var(--muted);
     text-transform: uppercase;
-    opacity: 0;
-    transition: opacity .2s ease;
-    white-space: nowrap;
-    pointer-events: none;
+    margin-bottom: 10px;
   }
-  .tab.active .lbl { opacity: 1; color: var(--ink); }
+  .heatmap-wrap { overflow-x: auto; }
+  #heatmap { display: flex; gap: 2px; }
 
-  /* panel */
-  .panel { display: none; animation: fadeUp .45s cubic-bezier(.2,.7,.2,1); }
-  .panel.active { display: block; }
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(12px); }
-    to   { opacity: 1; transform: none; }
+  /* ── Project grid ── */
+  .proj-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  .proj-card {
+    aspect-ratio: 1 / 1;
+    background: var(--tile);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: transform .22s cubic-bezier(.2,.7,.2,1), box-shadow .22s ease;
+    position: relative;
+  }
+  .proj-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px -10px rgba(0,0,0,0.18);
+  }
+  .proj-card .card-img {
+    flex: 1;
+    background: var(--tile-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .proj-card .card-img img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .proj-card .card-img .placeholder-icon {
+    color: #d8d8d8;
+  }
+  .proj-card .card-img .placeholder-icon svg {
+    width: 36px; height: 36px;
+  }
+  .proj-card .card-body {
+    flex-shrink: 0;
+    padding: 13px 15px 14px;
+    border-top: 1px solid var(--line);
+  }
+  .proj-card .card-title {
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+  .proj-card .card-meta {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    margin-top: 3px;
   }
 
-  /* projects focus mode */
-  #panel-projects .row {
-    transition: padding .25s ease, filter .35s ease, opacity .35s ease, transform .35s ease;
-  }
-  #panel-projects.focusing .row {
-    filter: blur(1.2px);
-    opacity: .65;
-  }
-  #panel-projects.focusing .row.focused {
-    filter: none;
-    opacity: 1;
-    transform: scale(1.015);
-  }
-
-  /* row */
+  /* ── Experience & Contact rows ── */
   .row {
     display: grid;
     grid-template-columns: 44px 1fr 18px;
@@ -130,7 +209,7 @@
     align-items: center;
     padding: 18px 6px;
     border-bottom: 1px solid var(--line);
-    transition: padding .25s ease;
+    transition: padding .22s ease;
   }
   .row.click { cursor: pointer; }
   .row.click:hover { padding-left: 16px; }
@@ -138,103 +217,19 @@
     width: 36px; height: 36px;
     border-radius: 10px;
     background: var(--tile);
+    border: 1px solid var(--line);
     display: grid; place-items: center;
     color: var(--muted);
+    flex-shrink: 0;
   }
   .row .ico svg { width: 16px; height: 16px; }
-  .row .body .t {
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--ink);
-    line-height: 1.2;
-  }
-  .row .body .s {
-    font-size: 12.5px;
-    color: var(--muted);
-    margin-top: 3px;
-    line-height: 1.4;
-  }
-  .row .chev {
-    color: var(--muted);
-    transition: transform .25s ease, color .25s ease;
-  }
+  .row .body .t { font-size: 15px; font-weight: 500; line-height: 1.2; }
+  .row .body .s { font-size: 12.5px; color: var(--muted); margin-top: 3px; line-height: 1.4; }
+  .row .chev { color: var(--muted); transition: transform .22s ease, color .22s ease; }
   .row.click:hover .chev { color: var(--ink); transform: translateX(3px); }
   .row .chev svg { width: 14px; height: 14px; }
 
-  /* about hero row */
-  .me {
-    display: grid;
-    grid-template-columns: 44px 1fr 18px;
-    gap: 18px;
-    align-items: center;
-    padding: 18px 6px;
-    border-bottom: 1px solid var(--line);
-  }
-  .me .av {
-    width: 36px; height: 36px;
-    border-radius: 10px;
-    overflow: hidden;
-    flex-shrink: 0;
-  }
-  .me .av img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    object-position: center 20%;
-    display: block;
-  }
-  .me .t { font-size: 15px; font-weight: 500; }
-  .me .s { font-size: 12.5px; color: var(--muted); margin-top: 3px; }
-
-  /* about overview */
-  .overview {
-    padding: 22px 6px 8px;
-    font-size: 14.5px;
-    line-height: 1.55;
-    color: #2a2a2a;
-    max-width: 56ch;
-  }
-
-
-  /* github heatmap */
-  .heatmap-wrap {
-    margin-top: 20px;
-    overflow-x: auto;
-  }
-  .heatmap-label {
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-    font-size: 9.5px;
-    letter-spacing: 0.18em;
-    color: var(--muted);
-    text-transform: uppercase;
-    margin-bottom: 8px;
-  }
-  #heatmap { display: flex; gap: 2px; }
-
-  /* footer hint */
-  .hint {
-    position: fixed;
-    bottom: 28px; left: 0; right: 0;
-    display: flex;
-    justify-content: center;
-    gap: 28px;
-    font-family: "JetBrains Mono", ui-monospace, monospace;
-    font-size: 10.5px;
-    letter-spacing: 0.18em;
-    color: var(--muted);
-    text-transform: uppercase;
-    pointer-events: none;
-  }
-  .hint .grp { display: inline-flex; align-items: center; gap: 8px; }
-  .hint .key {
-    border: 1px solid var(--line);
-    padding: 3px 7px;
-    border-radius: 5px;
-    background: #fff;
-    color: var(--ink);
-    font-size: 10px;
-  }
-
-  /* modal */
+  /* ── Modal ── */
   .scrim {
     position: fixed; inset: 0;
     background: rgba(10,10,10,0);
@@ -254,125 +249,84 @@
     width: min(640px, calc(100vw - 48px));
     max-height: calc(100vh - 64px);
     background: #fff;
-    border-radius: 16px;
+    border-radius: 18px;
     overflow: auto;
-    transform: translateY(16px) scale(.985);
+    transform: translateY(14px) scale(.987);
     opacity: 0;
-    transition: transform .35s cubic-bezier(.2,.7,.2,1), opacity .25s ease;
+    transition: transform .32s cubic-bezier(.2,.7,.2,1), opacity .22s ease;
     padding: 32px 36px 36px;
   }
   .scrim.open .modal { transform: none; opacity: 1; }
   .modal .head {
     display: flex; justify-content: space-between; align-items: flex-start;
-    gap: 16px;
-    margin-bottom: 18px;
+    gap: 16px; margin-bottom: 18px;
   }
-  .modal h3 {
-    font-size: 22px;
-    font-weight: 500;
-    margin: 0;
-    letter-spacing: -0.01em;
-  }
+  .modal h3 { font-size: 22px; font-weight: 500; margin: 0; letter-spacing: -0.01em; }
   .modal .meta {
     font-family: "JetBrains Mono", ui-monospace, monospace;
-    font-size: 10.5px;
-    letter-spacing: 0.16em;
-    color: var(--muted);
-    text-transform: uppercase;
-    margin-top: 6px;
+    font-size: 10.5px; letter-spacing: 0.16em;
+    color: var(--muted); text-transform: uppercase; margin-top: 6px;
   }
   .modal .x {
     width: 30px; height: 30px;
-    border-radius: 8px;
-    background: var(--tile-soft);
+    border-radius: 8px; background: var(--tile-soft);
     display: grid; place-items: center;
     color: var(--muted);
     transition: background .2s ease, color .2s ease;
+    flex-shrink: 0;
   }
   .modal .x:hover { background: var(--ink); color: #fff; }
   .modal .x svg { width: 12px; height: 12px; }
-  .modal p {
-    font-size: 14.5px;
-    line-height: 1.6;
-    color: #2a2a2a;
-    margin: 0 0 12px;
-  }
-  .modal .kv {
-    margin-top: 18px;
-    border-top: 1px solid var(--line);
-  }
+  .modal p { font-size: 14.5px; line-height: 1.6; color: #2a2a2a; margin: 0 0 12px; }
+  .modal .kv { margin-top: 18px; border-top: 1px solid var(--line); }
   .modal .kv .r {
-    display: grid;
-    grid-template-columns: 90px 1fr;
-    gap: 16px;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--line);
-    font-size: 13.5px;
+    display: grid; grid-template-columns: 90px 1fr;
+    gap: 16px; padding: 10px 0;
+    border-bottom: 1px solid var(--line); font-size: 13.5px;
   }
   .modal .kv .k {
     color: var(--muted);
     font-family: "JetBrains Mono", ui-monospace, monospace;
-    font-size: 10.5px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    padding-top: 2px;
+    font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; padding-top: 2px;
   }
 
-  @media (max-width: 600px) {
-    .clock { top: 16px; right: 18px; font-size: 14px; }
-    .layout {
-      grid-template-columns: 1fr;
-      padding: 64px 18px 160px;
-      gap: 28px;
-    }
-    .tabs {
-      position: static;
-      flex-direction: row;
-      justify-content: center;
-    }
-    .tab .lbl { display: none; }
-    .hint { gap: 14px; font-size: 9.5px; }
+  /* ── Responsive ── */
+  @media (max-width: 700px) {
+    .nav-inner { width: 100%; padding: 0 16px; }
+    .content { padding: calc(var(--nav-h) + 36px) 20px 100px; }
+    .proj-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .proj-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
   }
 </style>
 </head>
 <body>
 
-<div class="layout">
+<!-- Navbar -->
+<nav class="navbar" role="navigation">
+  <div class="nav-inner">
+    <button class="nav-tab active" data-panel="profile">About</button>
+    <button class="nav-tab" data-panel="projects">Projects</button>
+    <button class="nav-tab" data-panel="experience">Experience</button>
+    <button class="nav-tab" data-panel="contact">Contact</button>
+  </div>
+</nav>
 
-  <nav class="tabs" role="tablist">
-    <button class="tab active" data-panel="profile" aria-label="Profile">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 2c-3.3 0-8 1.7-8 5v1h16v-1c0-3.3-4.7-5-8-5Z"/></svg>
-      <span class="lbl">Profile</span>
-    </button>
-    <button class="tab" data-panel="experience" aria-label="Experience">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>
-      <span class="lbl">Experience</span>
-    </button>
-    <button class="tab" data-panel="projects" aria-label="Projects">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/><path d="m15 18-6-6 6-6" opacity=".25"/></svg>
-      <span class="lbl">Projects</span>
-    </button>
-    <button class="tab" data-panel="contact" aria-label="Contact">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-      <span class="lbl">Contact</span>
-    </button>
-  </nav>
+<main class="content">
 
-  <main>
-
-  <!-- PROFILE -->
+  <!-- ABOUT / PROFILE -->
   <section class="panel active" id="panel-profile">
-    <div class="me">
+    <div class="hero">
       <div class="av"><img src="headshot.png" alt="Dax Manuel"></div>
       <div>
-        <div class="t">Dax Manuel</div>
-        <div class="s">Software Engineering + Math · UNB</div>
+        <div class="name">Dax Manuel</div>
+        <div class="sub">Software Engineering + Math · UNB</div>
       </div>
-      <span></span>
     </div>
-    <div class="overview">
+    <p class="overview">
       Interested in all kinds of software and AI applications in hardware systems — currently at Ultra Maritime and UNB Formula Racing.
-    </div>
+    </p>
     <div class="heatmap-wrap">
       <div class="heatmap-label">GitHub contributions</div>
       <div id="heatmap"></div>
@@ -381,7 +335,7 @@
 
   <!-- PROJECTS -->
   <section class="panel" id="panel-projects">
-    <div id="projlist"></div>
+    <div class="proj-grid" id="projlist"></div>
   </section>
 
   <!-- EXPERIENCE -->
@@ -408,11 +362,9 @@
     </a>
   </section>
 
-  </main>
-</div>
+</main>
 
-
-<!-- modal -->
+<!-- Modal -->
 <div class="scrim" id="scrim" role="dialog" aria-modal="true">
   <div class="modal" id="modal">
     <div class="head">
@@ -424,7 +376,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
     </div>
-    <img id="m-img" src="" alt="" style="display:none;width:100%;max-height:220px;object-fit:cover;border-radius:10px;margin-bottom:16px;">
+    <img id="m-img" src="" alt="" style="display:none;width:100%;max-height:240px;object-fit:cover;border-radius:12px;margin-bottom:18px;">
     <p id="m-summary"></p>
     <div class="kv" id="m-kv"></div>
   </div>
@@ -435,7 +387,7 @@
     {
       id: "pytorch-meta",
       title: "PyTorch — Meta Open Source",
-      meta: "· Open Source",
+      meta: "Open Source",
       image: "",
       summary: "Contributed to writing test functions with C++ and Python, with over 4 PRs triaged by Meta maintainers.",
       github: "https://github.com/DaxManuel27/pytorch"
@@ -443,15 +395,15 @@
     {
       id: "semantic",
       title: "Semantic",
-      meta: "· AI System Design",
+      meta: "AI System Design",
       image: "",
       summary: "AI system design engineer, working directly with Claude Code in the terminal to design better systems.",
       github: "https://github.com/DaxManuel27/semantic"
     },
     {
       id: "ml-framework-c",
-      title: "Machine Learning Framework in C",
-      meta: "· Systems / ML",
+      title: "ML Framework in C",
+      meta: "Systems / ML",
       image: "",
       summary: "Designed a machine learning framework from scratch in C, implementing forward/back-propagation, gradient descent, and activation/loss functions.",
       github: "https://github.com/DaxManuel27/ml-framework-c"
@@ -459,7 +411,7 @@
     {
       id: "vehicle-perception",
       title: "Vehicle Perception Model",
-      meta: "· Computer Vision",
+      meta: "Computer Vision",
       image: "",
       summary: "Trained a model on LiDAR data from the Waymo Open Dataset to predict 3D bounding boxes over vehicles.",
       github: "https://github.com/DaxManuel27/vehicle-perception"
@@ -467,7 +419,7 @@
     {
       id: "hr-system",
       title: "HR System",
-      meta: "· Software",
+      meta: "Software",
       image: "",
       summary: "Led a team of four developing a full-stack web-based Employee Management System with Spring Boot.",
       github: "https://github.com/DaxManuel27/hr-system"
@@ -475,7 +427,7 @@
     {
       id: "cursor-cad",
       title: "Cursor for CAD",
-      meta: "· AI / Hardware",
+      meta: "AI / Hardware",
       image: "",
       summary: "Turning prompts into exportable 3D CAD models in under 24 hours at McHacks 2026.",
       github: "https://github.com/DaxManuel27/cursor-cad"
@@ -483,7 +435,7 @@
     {
       id: "cover-letter-gen",
       title: "AI Cover Letter Generator",
-      meta: "· AI / Productivity",
+      meta: "AI / Productivity",
       image: "",
       summary: "Generating cover letters with AI, based on your resume and job description.",
       github: "https://github.com/DaxManuel27/cover-letter-gen"
@@ -491,7 +443,7 @@
     {
       id: "codesimplify",
       title: "CodeSimplify",
-      meta: "· Developer Tools",
+      meta: "Developer Tools",
       image: "",
       summary: "Created a Chrome extension that explains any requested snippets of code on GitHub.",
       github: "https://github.com/DaxManuel27/codesimplify"
@@ -499,7 +451,7 @@
     {
       id: "soccer-predictor",
       title: "Soccer Match Predictor",
-      meta: "· ML / Sports",
+      meta: "ML / Sports",
       image: "",
       summary: "Trained a model with Scikit-learn to predict Premier League soccer matches.",
       github: "https://github.com/DaxManuel27/soccer-predictor"
@@ -549,103 +501,36 @@
     explist.appendChild(row);
   });
 
-  // render projects
-  const list = document.getElementById('projlist');
-  const projPanel = document.getElementById('panel-projects');
+  // render project cards
+  const grid = document.getElementById('projlist');
+  const placeholderSVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>`;
   PROJECTS.forEach(p => {
-    const row = document.createElement('div');
-    row.className = 'row click';
-    row.dataset.id = p.id;
-    row.innerHTML = `
-      <div class="ico">${p.image ? `<img src="${p.image}" alt="${p.title}" style="width:28px;height:28px;object-fit:cover;border-radius:6px;">` : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>`}</div>
-      <div class="body"><div class="t">${p.title}</div><div class="s">${p.meta}${p.summary ? ' · ' + p.summary : ' · No description yet'}</div></div>
-      <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></span>
+    const card = document.createElement('div');
+    card.className = 'proj-card';
+    card.dataset.id = p.id;
+    card.innerHTML = `
+      <div class="card-img">
+        ${p.image
+          ? `<img src="${p.image}" alt="${p.title}">`
+          : `<div class="placeholder-icon">${placeholderSVG}</div>`}
+      </div>
+      <div class="card-body">
+        <div class="card-title">${p.title}</div>
+        <div class="card-meta">${p.meta}</div>
+      </div>
     `;
-    row.addEventListener('click', () => openModal(p.id));
-    list.appendChild(row);
+    card.addEventListener('click', () => openModal(p.id));
+    grid.appendChild(card);
   });
 
-  // wheel-driven project focus: each notch advances one row
-  const projRows = () => [...list.querySelectorAll('.row')];
-  let focusedIdx = 0;
-  function applyFocus() {
-    const rows = projRows();
-    rows.forEach((r, i) => r.classList.toggle('focused', i === focusedIdx));
-    projPanel.classList.add('focusing');
-    const target = rows[focusedIdx];
-    if (target) {
-      const rect = target.getBoundingClientRect();
-      const mid = rect.top + rect.height / 2;
-      const delta = mid - window.innerHeight / 2;
-      if (Math.abs(delta) > 4) {
-        window.scrollBy({ top: delta, behavior: 'smooth' });
-      }
-    }
-  }
-  let wheelLock = false;
-  function onWheel(e) {
-    if (!projPanel.classList.contains('active')) return;
-    e.preventDefault();
-    if (wheelLock) return;
-    if (Math.abs(e.deltaY) < 4) return;
-    const rows = projRows();
-    const dir = e.deltaY > 0 ? 1 : -1;
-    focusedIdx = Math.max(0, Math.min(rows.length - 1, focusedIdx + dir));
-    applyFocus();
-    wheelLock = true;
-    setTimeout(() => { wheelLock = false; }, 380);
-  }
-  window.addEventListener('wheel', onWheel, { passive: false });
-  // touch / keyboard fallback
-  document.addEventListener('keydown', (e) => {
-    if (!projPanel.classList.contains('active')) return;
-    if (scrim.classList.contains('open')) return;
-    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-      const rows = projRows();
-      const dir = e.key === 'ArrowDown' ? 1 : -1;
-      const next = focusedIdx + dir;
-      if (next < 0 || next >= rows.length) return; // let tab nav handle edges
-      e.preventDefault();
-      focusedIdx = next;
-      applyFocus();
-    } else if (e.key === 'Enter') {
-      const rows = projRows();
-      if (rows[focusedIdx]) rows[focusedIdx].click();
-    }
-  }, true);
-  // hover overrides focus
-  list.addEventListener('mouseover', (e) => {
-    const r = e.target.closest('.row');
-    if (!r) return;
-    const rows = projRows();
-    focusedIdx = rows.indexOf(r);
-    rows.forEach((x, i) => x.classList.toggle('focused', i === focusedIdx));
-    projPanel.classList.add('focusing');
-  });
-
-  // tabs
-  const tabs = [...document.querySelectorAll('.tab')];
+  // tab navigation
+  const tabs = [...document.querySelectorAll('.nav-tab')];
   const panels = [...document.querySelectorAll('.panel')];
   function activate(name) {
     tabs.forEach(t => t.classList.toggle('active', t.dataset.panel === name));
     panels.forEach(p => p.classList.toggle('active', p.id === 'panel-' + name));
-    if (name === 'projects') {
-      focusedIdx = 0;
-      requestAnimationFrame(applyFocus);
-    } else projPanel.classList.remove('focusing');
   }
   tabs.forEach(t => t.addEventListener('click', () => activate(t.dataset.panel)));
-
-  // arrow-key tabs
-  document.addEventListener('keydown', (e) => {
-    if (scrim.classList.contains('open')) return;
-    if (['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)) {
-      const fwd = e.key === 'ArrowRight' || e.key === 'ArrowDown';
-      const idx = tabs.findIndex(t => t.classList.contains('active'));
-      const next = (idx + (fwd ? 1 : -1) + tabs.length) % tabs.length;
-      activate(tabs[next].dataset.panel);
-    }
-  });
 
   // modal
   const scrim = document.getElementById('scrim');
@@ -654,12 +539,8 @@
     document.getElementById('m-title').textContent = p.org ? `${p.title} · ${p.org}` : p.title;
     document.getElementById('m-meta').textContent = p.meta;
     const imgEl = document.getElementById('m-img');
-    if (p.image) {
-      imgEl.src = p.image;
-      imgEl.style.display = 'block';
-    } else {
-      imgEl.style.display = 'none';
-    }
+    if (p.image) { imgEl.src = p.image; imgEl.style.display = 'block'; }
+    else { imgEl.style.display = 'none'; }
     const summaryEl = document.getElementById('m-summary');
     if (p.url) {
       summaryEl.innerHTML = `<a href="${p.url}" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline;text-underline-offset:3px;">${p.summary}</a>`;
@@ -675,31 +556,23 @@
   }
   function closeModal() { scrim.classList.remove('open'); }
   document.getElementById('m-close').addEventListener('click', closeModal);
-  scrim.addEventListener('click', (e) => { if (e.target === scrim) closeModal(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+  scrim.addEventListener('click', e => { if (e.target === scrim) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-  // github heatmap
+  // GitHub heatmap
   (async () => {
     const el = document.getElementById('heatmap');
     try {
       const res = await fetch('https://github-contributions-api.jogruber.de/v4/DaxManuel27?y=last');
       let { contributions } = await res.json();
-
-      // keep only last 4 months
       const cutoff = new Date();
       cutoff.setMonth(cutoff.getMonth() - 4);
       contributions = contributions.filter(d => new Date(d.date) >= cutoff);
-
-      // pad start so grid begins on Sunday
       const firstDow = new Date(contributions[0].date).getDay();
       const cells = [...Array(firstDow).fill(null), ...contributions];
-
-      // build week columns
       const weeks = [];
       for (let i = 0; i < cells.length; i += 7) weeks.push(cells.slice(i, i + 7));
-
       const colors = ['#e8e8e8', '#c0c0c0', '#888888', '#484848', '#0f0f0f'];
-
       weeks.forEach(week => {
         const col = document.createElement('div');
         col.style.cssText = 'display:flex;flex-direction:column;gap:2px;';
@@ -716,7 +589,6 @@
       document.querySelector('.heatmap-wrap').style.display = 'none';
     }
   })();
-
 </script>
 
 </body>
