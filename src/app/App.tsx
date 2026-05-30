@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, type ReactNode } from 'react';
-import { Home, Briefcase, FolderGit2, Mail, Linkedin, Github, X, ExternalLink, Instagram } from 'lucide-react';
+import { Home, Briefcase, FolderGit2, Mail, Linkedin, Github, X, ExternalLink, Instagram, Menu } from 'lucide-react';
 
 type Panel = 'about' | 'projects' | 'experience';
 
@@ -191,6 +191,7 @@ function PlaceholderIcon() {
 export default function App() {
   const [panel, setPanel] = useState<Panel>('about');
   const [modal, setModal] = useState<Project | Experience | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
   const scrimRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -207,10 +208,69 @@ export default function App() {
 
   const isProject = (item: Project | Experience): item is Project => 'summary' in item && !('org' in item);
 
+  const connectLinks = (
+    <>
+      <a href="mailto:dax.manuel@unb.ca" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-200 text-gray-600 text-sm transition-colors">
+        <Mail size={15} />
+        dax.manuel@unb.ca
+      </a>
+      <a href="https://linkedin.com/in/nikolasdaxmanuel" target="_blank" rel="noopener" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-200 text-gray-600 text-sm transition-colors">
+        <Linkedin size={15} />
+        LinkedIn
+      </a>
+      <a href="https://github.com/DaxManuel27" target="_blank" rel="noopener" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-200 text-gray-600 text-sm transition-colors">
+        <Github size={15} />
+        GitHub
+      </a>
+      <a href="https://instagram.com/bydaxmanuel" target="_blank" rel="noopener" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-200 text-gray-600 text-sm transition-colors">
+        <Instagram size={15} />
+        Instagram
+      </a>
+      <a href="https://discord.com" target="_blank" rel="noopener" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-200 text-gray-600 text-sm transition-colors">
+        <svg viewBox="0 0 24 24" fill="currentColor" className="w-[15px] h-[15px]"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.03.055a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03Z"/></svg>
+        Discord
+      </a>
+    </>
+  );
+
   return (
-    <div className="min-h-screen flex bg-gray-50 font-sans">
-      {/* Sidebar */}
-      <aside className="w-64 bg-gray-100 border-r border-gray-200 flex flex-col sticky top-0 h-screen">
+    <div className="min-h-screen flex flex-col md:flex-row bg-gray-50 font-sans">
+
+      {/* Mobile top navbar */}
+      <header className="md:hidden fixed top-0 left-0 right-0 z-40 bg-gray-100 border-b border-gray-200">
+        <div className="flex items-center justify-end px-4 h-14">
+          <button
+            onClick={() => setMenuOpen(v => !v)}
+            className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-gray-200 text-gray-600 transition-colors"
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
+        {menuOpen && (
+          <div className="border-t border-gray-200 bg-gray-100 px-4 py-3 flex flex-col gap-1">
+            {navItems.map(({ id, label, icon }) => (
+              <button
+                key={id}
+                onClick={() => { setPanel(id); setMenuOpen(false); }}
+                className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${
+                  panel === id ? 'bg-white text-gray-900 font-medium shadow-sm' : 'hover:bg-gray-200 text-gray-600'
+                }`}
+              >
+                {icon}
+                {label}
+              </button>
+            ))}
+            <div className="border-t border-gray-200 mt-2 pt-2 flex flex-col gap-1">
+              <div className="text-xs text-gray-400 uppercase tracking-widest mb-1 px-3 font-mono">Connect</div>
+              {connectLinks}
+            </div>
+          </div>
+        )}
+      </header>
+
+      {/* Sidebar — desktop only */}
+      <aside className="hidden md:flex w-64 bg-gray-100 border-r border-gray-200 flex-col sticky top-0 h-screen">
         <div className="p-6 border-b border-gray-200">
           <div className="flex flex-col items-center text-center">
             <img
@@ -273,22 +333,21 @@ export default function App() {
       </aside>
 
       {/* Main content */}
-      <main className="flex-1 overflow-auto">
-        <div className="p-10">
+      <main className="flex-1 overflow-auto pt-14 md:pt-0">
+        <div className="p-6 md:p-10">
 
           {/* About */}
           {panel === 'about' && (
             <div>
               {/* Hero: text left, tall photo right */}
-              <div className="flex items-start gap-10 mb-10">
+              <div className="flex flex-col-reverse md:flex-row items-start gap-6 md:gap-10 mb-10">
                 <div className="flex-1 min-w-0">
-                  <h1 className="text-9xl font-bold text-gray-900 leading-tight mb-4">Dax Manuel</h1>
+                  <h1 className="text-5xl sm:text-7xl md:text-9xl font-bold text-gray-900 leading-tight mb-4">Dax Manuel</h1>
                   <p className="text-xl text-gray-700 leading-snug mb-5">
-                    {/* Software Engineer, Founder, and Content Creator. */}
                     Software Engineer and Founder.
                   </p>
                   <p className="text-gray-500 leading-relaxed mb-6 max-w-lg">
-                    Software Engineering Student at UNB with a Minor in Math. My interests are in all disciplines of software, hardware, and AI. Feel free to reach out to me about anything. 
+                    Software Engineering Student at UNB with a Minor in Math. My interests are in all disciplines of software, hardware, and AI. Feel free to reach out to me about anything.
 
                   </p>
                   <p className="text-gray-500 leading-relaxed mb-6 max-w-lg">
@@ -298,15 +357,14 @@ export default function App() {
                 <img
                   src="images/headshot.png"
                   alt="Dax Manuel"
-                  className="w-72 rounded-2xl object-cover object-top flex-shrink-0"
-                  style={{ height: '360px' }}
+                  className="w-48 h-56 mx-auto sm:mx-0 sm:w-48 sm:h-64 md:w-72 md:h-[360px] rounded-2xl object-cover object-center md:object-top flex-shrink-0"
                 />
               </div>
 
               {/* What I'm Doing */}
               <div className="mt-10">
                 <h2 className="text-3xl font-bold text-gray-900 mb-5">What I'm Doing</h2>
-                <div className="flex gap-4">
+                <div className="flex flex-col sm:flex-row gap-4">
                   {/* Column 1 */}
                   <div className="flex-1 flex flex-col gap-4">
                     <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
@@ -352,7 +410,7 @@ export default function App() {
           {panel === 'projects' && (
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-8">Projects</h1>
-              <div className="flex gap-6">
+              <div className="flex flex-col sm:flex-row gap-6">
                 {[PROJECTS.filter((_, i) => i % 2 === 0), PROJECTS.filter((_, i) => i % 2 !== 0)].map((col, ci) => (
                   <div key={ci} className="flex-1 flex flex-col gap-6">
                     {col.map(p => (
