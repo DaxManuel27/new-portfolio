@@ -391,7 +391,6 @@ export default function App() {
                         <div className="text-xs text-gray-400 font-mono mt-1">Hack Atlantic · Apr 2026–</div>
                       </div>
                     </div>
-                    {/* Content Creator card — re-enable in ~1 week
                     <a href="https://instagram.com/bydaxmanuel" target="_blank" rel="noopener" className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
                       <img src="images/Instagram_logo_2016.svg.png" alt="Instagram" className="w-full h-auto object-cover" />
                       <div className="p-4">
@@ -399,7 +398,6 @@ export default function App() {
                         <div className="text-xs text-gray-400 font-mono mt-1">@bydaxmanuel · Instagram</div>
                       </div>
                     </a>
-                    */}
                   </div>
                 </div>
               </div>
