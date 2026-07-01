@@ -1,8 +1,11 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
   --font-size: 16px;
-  --background: #ffffff;
+  --background: #f5efe1;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;
   --card-foreground: oklch(0.145 0 0);

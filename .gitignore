@@ -3,3 +3,9 @@ dist/
 .DS_Store
 *.local
 .gstack/
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
