@@ -172,13 +172,10 @@ export default function Home() {
         {/* Contact */}
         <section id="contact" className="scroll-mt-24 max-w-5xl mx-auto px-6 pb-20 md:px-10 md:pb-24">
           <FadeIn>
-            <div className="mb-8 grid gap-4 border-b border-slate-200 pb-5 md:grid-cols-[1fr_1.4fr] md:items-end">
+            <div className="mb-8 flex items-end justify-between gap-4 border-b border-slate-200 pb-5">
               <div>
                 <h2 className="text-3xl font-bold text-slate-950">Contact</h2>
               </div>
-              <p className="max-w-xl text-base leading-relaxed text-slate-600 md:justify-self-end">
-                Open to software engineering internships, hackathon collaborations, and student team projects.
-              </p>
             </div>
           </FadeIn>
           <FadeIn>
