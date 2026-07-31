@@ -80,11 +80,11 @@ export default function Home() {
             Dax Manuel
           </a>
           <div className="flex items-center gap-1 rounded-full border border-slate-200 bg-white/85 p-1 shadow-sm">
-            {['Home', 'Projects', 'Experience'].map(item => (
+            {['Home', 'Projects', 'Experience', 'Contact'].map(item => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="rounded-full px-3.5 py-1.5 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-950 hover:text-white"
+                className="rounded-full px-2.5 py-1.5 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-950 hover:text-white sm:px-3.5"
               >
                 {item}
               </a>
@@ -94,30 +94,9 @@ export default function Home() {
       </header>
       <main>
 
-        {/* Hero — About + Contact */}
-        <section id="home" className="scroll-mt-24 max-w-5xl mx-auto px-6 py-12 md:px-10 md:py-20 flex flex-col-reverse md:flex-row items-start gap-8 md:gap-12">
-          <div className="flex-1 min-w-0">
-            <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold leading-none text-slate-950 mb-5">Dax Manuel</h1>
-            <p className="text-2xl text-slate-700 leading-snug mb-5">
-              Software Engineer and Founder.
-            </p>
-            <p className="text-slate-600 leading-relaxed mb-4 max-w-xl">
-              Software Engineering Student at UNB with a Minor in Math. I'm interested in software and AI within the robotics and automotive industry. 
-            </p>
-            <p className="text-slate-600 leading-relaxed mb-8 max-w-xl">
-              Outside of that, I am into health, lifting, running, travelling, and sports.
-            </p>
-            <ConnectLinks />
-          </div>
-          <Image
-            src="/images/headshot.png"
-            alt="Dax Manuel"
-            width={288}
-            height={360}
-            priority
-            sizes="(min-width: 768px) 288px, 192px"
-            className="w-48 h-56 mx-auto sm:mx-0 sm:w-48 sm:h-64 md:w-72 md:h-[360px] rounded-2xl object-cover object-center md:object-top shadow-xl shadow-slate-200/80 flex-shrink-0"
-          />
+        {/* Hero */}
+        <section id="home" className="scroll-mt-24 max-w-5xl mx-auto px-6 pt-16 pb-10 text-center md:px-10 md:pt-24 md:pb-14">
+          <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold leading-none text-slate-950">Dax Manuel</h1>
         </section>
 
         <Gallery />
@@ -162,6 +141,20 @@ export default function Home() {
               </FadeIn>
             ))}
           </div>
+        </section>
+
+        {/* Contact */}
+        <section id="contact" className="scroll-mt-24 max-w-5xl mx-auto px-6 pb-20 md:px-10 md:pb-24">
+          <FadeIn>
+            <div className="mb-8 flex items-end justify-between gap-4 border-b border-slate-200 pb-4">
+              <div>
+                <h2 className="text-3xl font-bold text-slate-950">Contact</h2>
+              </div>
+            </div>
+          </FadeIn>
+          <FadeIn>
+            <ConnectLinks />
+          </FadeIn>
         </section>
 
       </main>
