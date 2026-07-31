@@ -53,61 +53,63 @@ function PlaceholderIcon() {
 
 export default function Projects() {
   return (
-    <section className="mb-24">
+    <section id="projects" className="scroll-mt-24 mb-24">
       <h2 className="text-3xl font-bold text-gray-900 bg-[#cbb489] rounded-xl px-6 py-4 mb-8 text-center">Projects</h2>
 
-      <div className="flex flex-col gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {PROJECTS.map(p => (
           <FadeIn key={p.id}>
-            {/* Title banner */}
-            <div className="bg-[#e8dcc4] text-gray-900 rounded-xl px-6 py-4">
-              <h3 className="text-xl sm:text-2xl font-bold leading-tight">{p.title}</h3>
-            </div>
+            <article className="h-full flex flex-col">
+              {/* Title banner */}
+              <div className="bg-[#e8dcc4] text-gray-900 rounded-xl px-5 py-4">
+                <h3 className="text-xl font-bold leading-tight">{p.title}</h3>
+              </div>
 
-            {/* Photos */}
-            <div className="flex flex-col sm:flex-row gap-4 mt-5">
-              {p.images.length === 0 && (
-                <div className="flex-1 w-full h-64 sm:h-72 rounded-lg bg-[#f5efe1] flex items-center justify-center">
-                  <PlaceholderIcon />
-                </div>
-              )}
-              {p.square
-                ? p.images.map((src, i) => (
-                    <div key={i} className="relative w-full sm:w-96 aspect-square rounded-lg overflow-hidden bg-[#f5efe1]">
-                      <Image
+              {/* Photos */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
+                {p.images.length === 0 && (
+                  <div className="w-full h-56 rounded-lg bg-[#f5efe1] flex items-center justify-center">
+                    <PlaceholderIcon />
+                  </div>
+                )}
+                {p.square
+                  ? p.images.map((src, i) => (
+                      <div key={i} className="relative w-full aspect-square rounded-lg overflow-hidden bg-[#f5efe1]">
+                        <Image
+                          src={src}
+                          alt={p.title}
+                          fill
+                          sizes="(min-width: 1024px) 224px, (min-width: 768px) 448px, (min-width: 640px) 50vw, 100vw"
+                          className="object-contain"
+                        />
+                      </div>
+                    ))
+                  : p.images.map((src, i) => (
+                      <img
+                        key={i}
                         src={src}
                         alt={p.title}
-                        fill
-                        sizes="(min-width: 640px) 384px, 100vw"
-                        className="object-contain"
+                        className="w-full h-56 object-contain rounded-lg bg-[#f5efe1]"
                       />
-                    </div>
-                  ))
-                : p.images.map((src, i) => (
-                    <img
-                      key={i}
-                      src={src}
-                      alt={p.title}
-                      className="flex-1 min-w-0 w-full h-64 sm:h-72 object-contain rounded-lg bg-[#f5efe1]"
-                    />
-                  ))
-              }
-            </div>
+                    ))
+                }
+              </div>
 
-            {/* Text under */}
-            <p className="text-base sm:text-lg text-gray-600 leading-relaxed mt-6 max-w-2xl">{p.description}</p>
+              {/* Text under */}
+              <p className="text-base text-gray-600 leading-relaxed mt-5">{p.description}</p>
 
-            {p.github && (
-              <a
-                href={p.github}
-                target="_blank"
-                rel="noopener"
-                className="inline-flex items-center gap-1 text-sm text-gray-900 underline underline-offset-2 mt-5"
-              >
-                {p.github.replace('https://', '')}
-                <ExternalLink size={12} />
-              </a>
-            )}
+              {p.github && (
+                <a
+                  href={p.github}
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-flex items-center gap-1 text-sm text-gray-900 underline underline-offset-2 mt-5"
+                >
+                  {p.github.replace('https://', '')}
+                  <ExternalLink size={12} />
+                </a>
+              )}
+            </article>
           </FadeIn>
         ))}
       </div>

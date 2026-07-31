@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { Briefcase, Mail, Linkedin, Github, Instagram, ExternalLink } from 'lucide-react';
 import Projects from './Projects';
-import FadeIn from './FadeIn';
 
 interface Experience {
   id: string;
@@ -18,7 +17,7 @@ const EXPERIENCES: Experience[] = [
     title: 'Software Engineer Intern',
     org: 'Ultra Maritime',
     meta: 'Summer 2026',
-    summary: '',
+    summary: 'C',
   },
   {
     id: 'unb-formula',
@@ -66,18 +65,36 @@ function ConnectLinks() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#f5efe1] font-sans">
+    <div className="min-h-screen bg-gray-50 font-sans">
+      <header className="sticky top-0 z-50 border-b border-gray-200 bg-gray-50/95 backdrop-blur">
+        <nav className="max-w-5xl mx-auto px-4 sm:px-6 md:px-10 h-16 flex items-center justify-center sm:justify-between">
+          <a href="#home" className="hidden sm:inline text-sm font-semibold text-gray-900">
+            Dax Manuel
+          </a>
+          <div className="flex items-center gap-1 rounded-full bg-white border border-gray-200 p-1">
+            {['Home', 'Projects', 'Experience'].map(item => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                className="px-3 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors"
+              >
+                {item}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </header>
       <main className="max-w-5xl mx-auto px-6 py-12 md:px-10 md:py-20">
 
         {/* Hero — About + Contact */}
-        <section className="flex flex-col-reverse md:flex-row items-start gap-6 md:gap-10 mb-20">
+        <section id="home" className="scroll-mt-24 flex flex-col-reverse md:flex-row items-start gap-6 md:gap-10 mb-20">
           <div className="flex-1 min-w-0">
             <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold text-gray-900 leading-tight mb-4">Dax Manuel</h1>
             <p className="text-xl text-gray-700 leading-snug mb-5">
-              Software Engineering + Math @ UNB
+              Software Engineer and Founder.
             </p>
             <p className="text-gray-500 leading-relaxed mb-4 max-w-lg">
-              Software Engineering Student at UNB with a Minor in Math. I'm interested in software within the robotics, automotive, and defense industry. Feel free to reach out to me about anything.
+              Software Engineering Student at UNB with a Minor in Math. I'm interested in software and AI within the robotics and automotive industry. 
             </p>
             <p className="text-gray-500 leading-relaxed mb-8 max-w-lg">
               Outside of that, I am into health, lifting, running, travelling, and sports.
@@ -99,33 +116,31 @@ export default function Home() {
         <Projects />
 
         {/* Experience */}
-        <FadeIn>
-          <section className="mb-20">
-            <h2 className="text-3xl font-bold text-gray-900 bg-[#cbb489] rounded-xl px-6 py-4 mb-8 text-center">Experience</h2>
-            <div className="flex flex-col gap-8">
-              {EXPERIENCES.map(e => (
-                <div key={e.id} className="flex gap-4">
-                  <div className="w-9 h-9 rounded-xl bg-white border border-gray-200 flex items-center justify-center text-gray-400 flex-shrink-0 mt-1">
-                    <Briefcase size={16} />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="text-[15px] font-medium text-gray-900">{e.title} · {e.org}</div>
-                    <div className="text-[12px] text-gray-400 mt-0.5 font-mono">{e.meta}</div>
-                    {e.summary && (
-                      <p className="text-[14.5px] text-gray-500 leading-relaxed mt-2 max-w-2xl">{e.summary}</p>
-                    )}
-                    {e.url && (
-                      <a href={e.url} target="_blank" rel="noopener" className="inline-flex items-center gap-1 text-[13.5px] text-gray-900 underline underline-offset-2 mt-2">
-                        {e.url.replace('https://', '')}
-                        <ExternalLink size={11} />
-                      </a>
-                    )}
-                  </div>
+        <section id="experience" className="scroll-mt-24 mb-20">
+          <h2 className="text-3xl font-bold text-white bg-gray-900 rounded-xl px-6 py-4 mb-8">Experience</h2>
+          <div className="flex flex-col gap-8">
+            {EXPERIENCES.map(e => (
+              <div key={e.id} className="flex gap-4">
+                <div className="w-9 h-9 rounded-xl bg-white border border-gray-200 flex items-center justify-center text-gray-400 flex-shrink-0 mt-1">
+                  <Briefcase size={16} />
                 </div>
-              ))}
-            </div>
-          </section>
-        </FadeIn>
+                <div className="flex-1 min-w-0">
+                  <div className="text-[15px] font-medium text-gray-900">{e.title} · {e.org}</div>
+                  <div className="text-[12px] text-gray-400 mt-0.5 font-mono">{e.meta}</div>
+                  {e.summary && (
+                    <p className="text-[14.5px] text-gray-500 leading-relaxed mt-2 max-w-2xl">{e.summary}</p>
+                  )}
+                  {e.url && (
+                    <a href={e.url} target="_blank" rel="noopener" className="inline-flex items-center gap-1 text-[13.5px] text-gray-900 underline underline-offset-2 mt-2">
+                      {e.url.replace('https://', '')}
+                      <ExternalLink size={11} />
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
       </main>
     </div>
