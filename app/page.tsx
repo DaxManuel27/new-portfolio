@@ -37,7 +37,7 @@ const EXPERIENCES: Experience[] = [
   },
   {
     id: 'unb-formula',
-    title: 'Electrical Project Lead',
+    title: 'Firmware',
     org: 'UNB Formula Racing',
     meta: 'Sep 2025 — Present',
     logo: '/images/unb-formula-racing-logo.png',
