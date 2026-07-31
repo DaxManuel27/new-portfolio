@@ -24,8 +24,8 @@ const GALLERY_ITEMS = [
   },
   {
     type: 'image',
-    src: '/images/gallery-golf.jpg',
-    alt: 'Dax Manuel golfing',
+    src: '/images/gallery-collab.jpg',
+    alt: 'Dax Manuel working with a teammate',
   },
   {
     type: 'image',
