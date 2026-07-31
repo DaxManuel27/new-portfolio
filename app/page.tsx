@@ -97,7 +97,6 @@ export default function Home() {
         {/* Hero — About + Contact */}
         <section id="home" className="scroll-mt-24 max-w-5xl mx-auto px-6 py-12 md:px-10 md:py-20 flex flex-col-reverse md:flex-row items-start gap-8 md:gap-12">
           <div className="flex-1 min-w-0">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">Portfolio</p>
             <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold leading-none text-slate-950 mb-5">Dax Manuel</h1>
             <p className="text-2xl text-slate-700 leading-snug mb-5">
               Software Engineer and Founder.
