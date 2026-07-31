@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Mail, Linkedin, Github, ExternalLink } from 'lucide-react';
+import { Mail, Linkedin, Github, Instagram, ExternalLink } from 'lucide-react';
 import Projects from './Projects';
 import FadeIn from './FadeIn';
 import Gallery from './Gallery';
@@ -45,28 +45,57 @@ const EXPERIENCES: Experience[] = [
   },
 ];
 
-function ConnectLinks() {
-  const linkClass =
-    'inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-3.5 py-2 text-sm font-medium text-slate-600 shadow-sm transition-colors hover:border-slate-300 hover:bg-white hover:text-slate-950';
+const CONTACT_LINKS = [
+  {
+    label: 'Email',
+    value: 'dax.manuel@unb.ca',
+    href: 'mailto:dax.manuel@unb.ca',
+    Icon: Mail,
+  },
+  {
+    label: 'LinkedIn',
+    value: 'nikolasdaxmanuel',
+    href: 'https://linkedin.com/in/nikolasdaxmanuel',
+    Icon: Linkedin,
+  },
+  {
+    label: 'GitHub',
+    value: 'DaxManuel27',
+    href: 'https://github.com/DaxManuel27',
+    Icon: Github,
+  },
+  {
+    label: 'Instagram',
+    value: 'daxmanuel',
+    href: 'https://instagram.com/daxmanuel',
+    Icon: Instagram,
+  },
+];
 
+function ConnectLinks() {
   return (
-    <div className="flex flex-wrap gap-2">
-      <a href="mailto:dax.manuel@unb.ca" className={linkClass}>
-        <Mail size={15} />
-        dax.manuel@unb.ca
-      </a>
-      <a href="https://linkedin.com/in/nikolasdaxmanuel" target="_blank" rel="noopener" className={linkClass}>
-        <Linkedin size={15} />
-        LinkedIn
-      </a>
-      <a href="https://github.com/DaxManuel27" target="_blank" rel="noopener" className={linkClass}>
-        <Github size={15} />
-        GitHub
-      </a>
-      <a href="https://discord.com" target="_blank" rel="noopener" className={linkClass}>
-        <svg viewBox="0 0 24 24" fill="currentColor" className="w-[15px] h-[15px]"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.03.055a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03Z"/></svg>
-        Discord
-      </a>
+    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+      {CONTACT_LINKS.map(({ label, value, href, Icon }) => (
+        <a
+          key={label}
+          href={href}
+          target={href.startsWith('http') ? '_blank' : undefined}
+          rel={href.startsWith('http') ? 'noopener' : undefined}
+          className="group flex min-h-20 items-center justify-between gap-4 border-t border-slate-200 py-4 transition-colors hover:border-slate-400"
+          aria-label={`${label}: ${value}`}
+        >
+          <span className="flex items-center gap-3">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-700 transition-colors group-hover:bg-slate-950 group-hover:text-white">
+              <Icon size={18} />
+            </span>
+            <span>
+              <span className="block text-sm font-semibold text-slate-950">{label}</span>
+              <span className="block break-all text-sm text-slate-500">{value}</span>
+            </span>
+          </span>
+          <ExternalLink size={15} className="shrink-0 text-slate-400 transition-colors group-hover:text-slate-950" />
+        </a>
+      ))}
     </div>
   );
 }
@@ -143,10 +172,13 @@ export default function Home() {
         {/* Contact */}
         <section id="contact" className="scroll-mt-24 max-w-5xl mx-auto px-6 pb-20 md:px-10 md:pb-24">
           <FadeIn>
-            <div className="mb-8 flex items-end justify-between gap-4 border-b border-slate-200 pb-4">
+            <div className="mb-8 grid gap-4 border-b border-slate-200 pb-5 md:grid-cols-[1fr_1.4fr] md:items-end">
               <div>
                 <h2 className="text-3xl font-bold text-slate-950">Contact</h2>
               </div>
+              <p className="max-w-xl text-base leading-relaxed text-slate-600 md:justify-self-end">
+                Open to software engineering internships, hackathon collaborations, and student team projects.
+              </p>
             </div>
           </FadeIn>
           <FadeIn>
