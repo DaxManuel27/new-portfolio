@@ -24,6 +24,11 @@ const GALLERY_ITEMS = [
   },
   {
     type: 'image',
+    src: '/images/gallery-golf.jpg',
+    alt: 'Dax Manuel golfing',
+  },
+  {
+    type: 'image',
     src: '/images/gallery-coast-code.jpg',
     alt: 'Dax Manuel coding by the coast',
   },
