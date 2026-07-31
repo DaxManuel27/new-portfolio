@@ -75,16 +75,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-950">
       <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur-xl">
-        <nav className="max-w-5xl mx-auto px-4 sm:px-6 md:px-10 h-16 flex items-center justify-center sm:justify-between">
-          <a href="#home" className="hidden sm:inline text-sm font-semibold text-slate-950">
-            Dax Manuel
-          </a>
-          <div className="flex items-center gap-1 rounded-full border border-slate-200 bg-white/85 p-1 shadow-sm">
+        <nav className="max-w-5xl mx-auto px-4 sm:px-6 md:px-10 h-16 flex items-center justify-center">
+          <div className="flex items-center justify-center gap-6">
             {['Home', 'Projects', 'Experience', 'Contact'].map(item => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="rounded-full px-2.5 py-1.5 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-950 hover:text-white sm:px-3.5"
+                className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-950"
               >
                 {item}
               </a>
