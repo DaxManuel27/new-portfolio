@@ -17,9 +17,9 @@ export default function FadeIn({ children, className }: FadeInProps) {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) setVisible(true);
+        setVisible(entry.isIntersecting);
       },
-      { threshold: 0.15 }
+      { rootMargin: '0px 0px -12% 0px', threshold: 0.2 }
     );
 
     observer.observe(el);
@@ -29,8 +29,8 @@ export default function FadeIn({ children, className }: FadeInProps) {
   return (
     <div
       ref={ref}
-      className={`transition-all duration-700 ease-out ${
-        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+      className={`transition-all duration-1000 ease-out will-change-transform ${
+        visible ? 'opacity-100 translate-y-0 scale-100 blur-0' : 'opacity-0 translate-y-14 scale-[0.96] blur-sm'
       } ${className ?? ''}`}
     >
       {children}

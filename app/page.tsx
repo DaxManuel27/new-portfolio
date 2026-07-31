@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Briefcase, Mail, Linkedin, Github, Instagram, ExternalLink } from 'lucide-react';
 import Projects from './Projects';
+import FadeIn from './FadeIn';
 
 interface Experience {
   id: string;
@@ -121,32 +122,36 @@ export default function Home() {
 
         {/* Experience */}
         <section id="experience" className="scroll-mt-24 mb-20">
-          <div className="mb-8 flex items-end justify-between gap-4 border-b border-slate-200 pb-4">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">Background</p>
-              <h2 className="mt-2 text-3xl font-bold text-slate-950">Experience</h2>
+          <FadeIn>
+            <div className="mb-8 flex items-end justify-between gap-4 border-b border-slate-200 pb-4">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">Background</p>
+                <h2 className="mt-2 text-3xl font-bold text-slate-950">Experience</h2>
+              </div>
             </div>
-          </div>
+          </FadeIn>
           <div className="flex flex-col divide-y divide-slate-200 rounded-lg border border-slate-200 bg-white/75 shadow-sm">
             {EXPERIENCES.map(e => (
-              <div key={e.id} className="flex gap-4 p-5 sm:p-6">
-                <div className="w-10 h-10 rounded-lg bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 flex-shrink-0 mt-1">
-                  <Briefcase size={16} />
+              <FadeIn key={e.id}>
+                <div className="flex gap-4 p-5 sm:p-6">
+                  <div className="w-10 h-10 rounded-lg bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 flex-shrink-0 mt-1">
+                    <Briefcase size={16} />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="text-base font-semibold text-slate-950">{e.title} · {e.org}</div>
+                    <div className="text-xs text-slate-400 mt-1 font-mono">{e.meta}</div>
+                    {e.summary && (
+                      <p className="text-sm text-slate-600 leading-relaxed mt-2 max-w-2xl">{e.summary}</p>
+                    )}
+                    {e.url && (
+                      <a href={e.url} target="_blank" rel="noopener" className="inline-flex items-center gap-1 text-sm font-medium text-teal-700 mt-3 hover:text-teal-900">
+                        {e.url.replace('https://', '')}
+                        <ExternalLink size={11} />
+                      </a>
+                    )}
+                  </div>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <div className="text-base font-semibold text-slate-950">{e.title} · {e.org}</div>
-                  <div className="text-xs text-slate-400 mt-1 font-mono">{e.meta}</div>
-                  {e.summary && (
-                    <p className="text-sm text-slate-600 leading-relaxed mt-2 max-w-2xl">{e.summary}</p>
-                  )}
-                  {e.url && (
-                    <a href={e.url} target="_blank" rel="noopener" className="inline-flex items-center gap-1 text-sm font-medium text-teal-700 mt-3 hover:text-teal-900">
-                      {e.url.replace('https://', '')}
-                      <ExternalLink size={11} />
-                    </a>
-                  )}
-                </div>
-              </div>
+              </FadeIn>
             ))}
           </div>
         </section>

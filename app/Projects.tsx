@@ -54,12 +54,14 @@ function PlaceholderIcon() {
 export default function Projects() {
   return (
     <section id="projects" className="scroll-mt-24 mb-24">
-      <div className="mb-8 flex items-end justify-between gap-4 border-b border-slate-200 pb-4">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">Selected work</p>
-          <h2 className="mt-2 text-3xl font-bold text-slate-950">Projects</h2>
+      <FadeIn>
+        <div className="mb-8 flex items-end justify-between gap-4 border-b border-slate-200 pb-4">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">Selected work</p>
+            <h2 className="mt-2 text-3xl font-bold text-slate-950">Projects</h2>
+          </div>
         </div>
-      </div>
+      </FadeIn>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {PROJECTS.map(p => (
