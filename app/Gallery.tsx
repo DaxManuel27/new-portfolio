@@ -1,8 +1,4 @@
-'use client';
-
 import Image from 'next/image';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { useRef } from 'react';
 import FadeIn from './FadeIn';
 
 const GALLERY_ITEMS = [
@@ -29,76 +25,42 @@ const GALLERY_ITEMS = [
 ];
 
 export default function Gallery() {
-  const viewportRef = useRef<HTMLDivElement>(null);
-
-  const slide = (direction: -1 | 1) => {
-    const viewport = viewportRef.current;
-    if (!viewport) return;
-
-    const visibleItems = window.matchMedia('(min-width: 640px)').matches ? 3 : 1;
-    const gap = 16;
-    const itemWidth = (viewport.clientWidth - gap * (visibleItems - 1)) / visibleItems;
-
-    viewport.scrollBy({
-      left: direction * (itemWidth + gap),
-      behavior: 'smooth',
-    });
-  };
+  const marqueeItems = [...GALLERY_ITEMS, ...GALLERY_ITEMS];
 
   return (
     <section className="max-w-5xl mx-auto px-6 pb-20 md:px-10 md:pb-24">
       <FadeIn>
-        <div className="relative">
-          <div
-            ref={viewportRef}
-            className="overflow-x-auto scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-          >
-            <div className="flex snap-x snap-mandatory gap-4">
-              {GALLERY_ITEMS.map(item => (
-                <div key={item.src} className="min-w-full snap-start sm:min-w-[calc((100%_-_2rem)/3)]">
-                  <div className="relative h-80 overflow-hidden rounded-xl sm:h-72 md:h-80">
-                    {item.type === 'image' ? (
-                      <Image
-                        src={item.src}
-                        alt={item.alt}
-                        fill
-                        sizes="(min-width: 768px) 30vw, (min-width: 640px) 33vw, 100vw"
-                        className="object-cover"
-                      />
-                    ) : (
-                      <video
-                        src={item.src}
-                        aria-label={item.alt}
-                        className="h-full w-full object-cover"
-                        controls
-                        muted
-                        playsInline
-                        preload="metadata"
-                      />
-                    )}
-                  </div>
+        <div className="overflow-hidden">
+          <div className="gallery-marquee flex w-max gap-4 hover:[animation-play-state:paused] focus-within:[animation-play-state:paused]">
+            {marqueeItems.map((item, index) => (
+              <div
+                key={`${item.src}-${index}`}
+                className="gallery-marquee-item shrink-0"
+                aria-hidden={index >= GALLERY_ITEMS.length}
+              >
+                <div className="relative h-80 overflow-hidden rounded-xl sm:h-72 md:h-80">
+                  {item.type === 'image' ? (
+                    <Image
+                      src={item.src}
+                      alt={index >= GALLERY_ITEMS.length ? '' : item.alt}
+                      fill
+                      sizes="(min-width: 768px) 30vw, (min-width: 640px) 33vw, 100vw"
+                      className="object-cover"
+                    />
+                  ) : (
+                    <video
+                      src={item.src}
+                      aria-label={index >= GALLERY_ITEMS.length ? undefined : item.alt}
+                      className="h-full w-full object-cover"
+                      controls={index < GALLERY_ITEMS.length}
+                      muted
+                      playsInline
+                      preload="metadata"
+                    />
+                  )}
                 </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-4 flex items-center justify-end gap-2">
-            <button
-              type="button"
-              onClick={() => slide(-1)}
-              aria-label="Previous gallery item"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-colors hover:bg-slate-950 hover:text-white"
-            >
-              <ChevronLeft size={18} />
-            </button>
-            <button
-              type="button"
-              onClick={() => slide(1)}
-              aria-label="Next gallery item"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-colors hover:bg-slate-950 hover:text-white"
-            >
-              <ChevronRight size={18} />
-            </button>
+              </div>
+            ))}
           </div>
         </div>
       </FadeIn>

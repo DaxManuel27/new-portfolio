@@ -183,3 +183,33 @@
     line-height: 1.5;
   }
 }
+
+@keyframes gallery-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+
+.gallery-marquee {
+  animation: gallery-marquee 42s linear infinite;
+}
+
+.gallery-marquee-item {
+  width: calc(100vw - 3rem);
+}
+
+@media (min-width: 640px) {
+  .gallery-marquee-item {
+    width: calc((100vw - 5rem) / 3);
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery-marquee-item {
+    width: calc((min(100vw, 64rem) - 7rem) / 3);
+  }
+}
