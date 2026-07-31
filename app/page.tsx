@@ -22,19 +22,19 @@ const EXPERIENCES: Experience[] = [
     summary: 'C',
   },
   {
-    id: 'unb-formula',
-    title: 'Electrical Project Lead',
-    org: 'UNB Formula Racing',
-    meta: 'Sep 2025 — Present',
-    summary: '',
-  },
-  {
     id: 'hack-atlantic',
     title: 'Founder',
     org: 'Hack Atlantic',
     meta: 'Apr 2026 — Present',
     summary: '',
     url: 'https://hackatlantic.ca',
+  },
+  {
+    id: 'unb-formula',
+    title: 'Electrical Project Lead',
+    org: 'UNB Formula Racing',
+    meta: 'Sep 2025 — Present',
+    summary: '',
   },
 ];
 
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="flex flex-col divide-y divide-slate-200">
             {EXPERIENCES.map(e => (
               <FadeIn key={e.id}>
-                <div className="flex gap-4 py-7">
+                <div className="flex gap-4 py-5">
                   <div className="w-10 h-10 flex items-center justify-center text-teal-700 flex-shrink-0 mt-1">
                     <Briefcase size={16} />
                   </div>
