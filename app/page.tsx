@@ -69,8 +69,8 @@ function ConnectLinks() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#f7f8f6] font-sans text-slate-950">
-      <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-[#f7f8f6]/90 backdrop-blur-xl">
+    <div className="min-h-screen bg-white font-sans text-slate-950">
+      <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur-xl">
         <nav className="max-w-5xl mx-auto px-4 sm:px-6 md:px-10 h-16 flex items-center justify-center sm:justify-between">
           <a href="#home" className="hidden sm:inline text-sm font-semibold text-slate-950">
             Dax Manuel
@@ -88,10 +88,10 @@ export default function Home() {
           </div>
         </nav>
       </header>
-      <main className="max-w-5xl mx-auto px-6 py-12 md:px-10 md:py-20">
+      <main>
 
         {/* Hero — About + Contact */}
-        <section id="home" className="scroll-mt-24 flex flex-col-reverse md:flex-row items-start gap-8 md:gap-12 mb-24">
+        <section id="home" className="scroll-mt-24 max-w-5xl mx-auto px-6 py-12 md:px-10 md:py-20 flex flex-col-reverse md:flex-row items-start gap-8 md:gap-12">
           <div className="flex-1 min-w-0">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">Portfolio</p>
             <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold leading-none text-slate-950 mb-5">Dax Manuel</h1>
@@ -113,7 +113,7 @@ export default function Home() {
             height={360}
             priority
             sizes="(min-width: 768px) 288px, 192px"
-            className="w-48 h-56 mx-auto sm:mx-0 sm:w-48 sm:h-64 md:w-72 md:h-[360px] rounded-2xl border border-white/80 object-cover object-center md:object-top shadow-xl shadow-slate-200/80 flex-shrink-0"
+            className="w-48 h-56 mx-auto sm:mx-0 sm:w-48 sm:h-64 md:w-72 md:h-[360px] rounded-2xl object-cover object-center md:object-top shadow-xl shadow-slate-200/80 flex-shrink-0"
           />
         </section>
 
@@ -121,7 +121,7 @@ export default function Home() {
         <Projects />
 
         {/* Experience */}
-        <section id="experience" className="scroll-mt-24 mb-20">
+        <section id="experience" className="scroll-mt-24 max-w-5xl mx-auto px-6 py-20 md:px-10 md:py-24">
           <FadeIn>
             <div className="mb-8 flex items-end justify-between gap-4 border-b border-slate-200 pb-4">
               <div>
@@ -130,11 +130,11 @@ export default function Home() {
               </div>
             </div>
           </FadeIn>
-          <div className="flex flex-col divide-y divide-slate-200 rounded-lg border border-slate-200 bg-white/75 shadow-sm">
+          <div className="flex flex-col divide-y divide-slate-200">
             {EXPERIENCES.map(e => (
               <FadeIn key={e.id}>
-                <div className="flex gap-4 p-5 sm:p-6">
-                  <div className="w-10 h-10 rounded-lg bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 flex-shrink-0 mt-1">
+                <div className="flex gap-4 py-7">
+                  <div className="w-10 h-10 flex items-center justify-center text-teal-700 flex-shrink-0 mt-1">
                     <Briefcase size={16} />
                   </div>
                   <div className="flex-1 min-w-0">

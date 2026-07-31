@@ -53,69 +53,71 @@ function PlaceholderIcon() {
 
 export default function Projects() {
   return (
-    <section id="projects" className="scroll-mt-24 mb-24">
-      <FadeIn>
-        <div className="mb-8 flex items-end justify-between gap-4 border-b border-slate-200 pb-4">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">Selected work</p>
-            <h2 className="mt-2 text-3xl font-bold text-slate-950">Projects</h2>
+    <section id="projects" className="scroll-mt-24 bg-[#f5f4ef]">
+      <div className="max-w-5xl mx-auto px-6 py-20 md:px-10 md:py-24">
+        <FadeIn>
+          <div className="mb-10 flex items-end justify-between gap-4 border-b border-slate-300/70 pb-4">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">Selected work</p>
+              <h2 className="mt-2 text-3xl font-bold text-slate-950">Projects</h2>
+            </div>
           </div>
-        </div>
-      </FadeIn>
+        </FadeIn>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {PROJECTS.map(p => (
-          <FadeIn key={p.id}>
-            <article className="h-full flex flex-col rounded-lg border border-slate-200 bg-white/80 p-5 shadow-sm transition-colors hover:border-slate-300">
-              {/* Photos */}
-              <div className={`grid gap-3 ${p.images.length > 1 ? 'grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2' : 'grid-cols-1'}`}>
-                {p.images.length === 0 && (
-                  <div className="w-full h-56 rounded-md bg-slate-100 flex items-center justify-center">
-                    <PlaceholderIcon />
-                  </div>
-                )}
-                {p.square
-                  ? p.images.map((src, i) => (
-                      <div key={i} className="relative w-full aspect-square rounded-md overflow-hidden bg-slate-100">
-                        <Image
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14">
+          {PROJECTS.map(p => (
+            <FadeIn key={p.id}>
+              <article className="h-full flex flex-col">
+                {/* Photos */}
+                <div className={`grid gap-3 ${p.images.length > 1 ? 'grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2' : 'grid-cols-1'}`}>
+                  {p.images.length === 0 && (
+                    <div className="w-full h-56 rounded-md bg-white/45 flex items-center justify-center">
+                      <PlaceholderIcon />
+                    </div>
+                  )}
+                  {p.square
+                    ? p.images.map((src, i) => (
+                        <div key={i} className="relative w-full aspect-square overflow-hidden rounded-md bg-white/45">
+                          <Image
+                            src={src}
+                            alt={p.title}
+                            fill
+                            sizes="(min-width: 1024px) 224px, (min-width: 768px) 448px, (min-width: 640px) 50vw, 100vw"
+                            className="object-contain"
+                          />
+                        </div>
+                      ))
+                    : p.images.map((src, i) => (
+                        <img
+                          key={i}
                           src={src}
                           alt={p.title}
-                          fill
-                          sizes="(min-width: 1024px) 224px, (min-width: 768px) 448px, (min-width: 640px) 50vw, 100vw"
-                          className="object-contain"
+                          className="w-full h-56 object-contain rounded-md bg-white/45"
                         />
-                      </div>
-                    ))
-                  : p.images.map((src, i) => (
-                      <img
-                        key={i}
-                        src={src}
-                        alt={p.title}
-                        className="w-full h-56 object-contain rounded-md bg-slate-100"
-                      />
-                    ))
-                }
-              </div>
+                      ))
+                  }
+                </div>
 
-              <div className="mt-5 flex flex-1 flex-col">
-                <h3 className="text-xl font-bold leading-tight text-slate-950">{p.title}</h3>
-                <p className="text-base text-slate-600 leading-relaxed mt-3">{p.description}</p>
-              </div>
+                <div className="mt-5 flex flex-1 flex-col">
+                  <h3 className="text-xl font-bold leading-tight text-slate-950">{p.title}</h3>
+                  <p className="text-base text-slate-600 leading-relaxed mt-3">{p.description}</p>
+                </div>
 
-              {p.github && (
-                <a
-                  href={p.github}
-                  target="_blank"
-                  rel="noopener"
-                  className="mt-5 inline-flex items-center gap-1.5 break-all text-sm font-medium text-teal-700 hover:text-teal-900"
-                >
-                  {p.github.replace('https://', '')}
-                  <ExternalLink size={12} />
-                </a>
-              )}
-            </article>
-          </FadeIn>
-        ))}
+                {p.github && (
+                  <a
+                    href={p.github}
+                    target="_blank"
+                    rel="noopener"
+                    className="mt-5 inline-flex items-center gap-1.5 break-all text-sm font-medium text-teal-700 hover:text-teal-900"
+                  >
+                    {p.github.replace('https://', '')}
+                    <ExternalLink size={12} />
+                  </a>
+                )}
+              </article>
+            </FadeIn>
+          ))}
+        </div>
       </div>
     </section>
   );
