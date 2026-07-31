@@ -40,6 +40,13 @@ const PROJECTS: Project[] = [
     images: ['/images/ALU.png'],
     description: 'Designed and built a 4-bit CPU from scratch, including an Arithmetic Logic Unit (ALU) capable of performing basic arithmetic and logic operations.',
   },
+  {
+    id: 'spotify-cli',
+    title: 'spotify-cli',
+    images: ['/images/spotify-cli.png'],
+    github: 'https://github.com/DaxManuel27/spotify-cli',
+    description: 'Built a terminal-based Spotify client for browsing music and controlling playback from the command line.',
+  },
 ];
 
 function PlaceholderIcon() {
