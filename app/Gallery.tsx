@@ -52,7 +52,9 @@ export default function Gallery() {
                       src={item.src}
                       aria-label={index >= GALLERY_ITEMS.length ? undefined : item.alt}
                       className="h-full w-full object-cover"
+                      autoPlay
                       controls={index < GALLERY_ITEMS.length}
+                      loop
                       muted
                       playsInline
                       preload="metadata"
