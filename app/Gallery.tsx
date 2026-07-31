@@ -8,14 +8,14 @@ const GALLERY_ITEMS = [
     alt: 'Dax Manuel in Toronto',
   },
   {
-    type: 'video',
-    src: '/videos/gallery-screen-recording.mov',
-    alt: 'Dax Manuel gallery video',
-  },
-  {
     type: 'image',
     src: '/images/gallery-0825.jpg',
     alt: 'Dax Manuel gallery photo',
+  },
+  {
+    type: 'video',
+    src: '/videos/gallery-screen-recording.mov',
+    alt: 'Dax Manuel gallery video',
   },
   {
     type: 'image',
