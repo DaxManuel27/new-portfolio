@@ -138,7 +138,7 @@ export default function Home() {
                     <Briefcase size={16} />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="text-base font-semibold text-slate-950">{e.title} · {e.org}</div>
+                    <div className="text-base font-semibold text-slate-950">{e.title} @ {e.org}</div>
                     <div className="text-xs text-slate-400 mt-1 font-mono">{e.meta}</div>
                     {e.summary && (
                       <p className="text-sm text-slate-600 leading-relaxed mt-2 max-w-2xl">{e.summary}</p>
