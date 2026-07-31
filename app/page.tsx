@@ -23,7 +23,6 @@ const EXPERIENCES: Experience[] = [
     meta: 'Summer 2026',
     logo: '/images/ultra-maritime-logo.jpeg',
     logoAlt: 'Ultra Maritime logo',
-    summary: 'C',
   },
   {
     id: 'hack-atlantic',
