@@ -19,6 +19,11 @@ const GALLERY_ITEMS = [
   },
   {
     type: 'image',
+    src: '/images/gallery-1394.jpg',
+    alt: 'Dax Manuel gallery photo',
+  },
+  {
+    type: 'image',
     src: '/images/gallery-coast-code.jpg',
     alt: 'Dax Manuel coding by the coast',
   },
