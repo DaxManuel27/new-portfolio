@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Briefcase, Mail, Linkedin, Github, ExternalLink } from 'lucide-react';
+import { Mail, Linkedin, Github, ExternalLink } from 'lucide-react';
 import Projects from './Projects';
 import FadeIn from './FadeIn';
 import Gallery from './Gallery';
@@ -9,6 +9,8 @@ interface Experience {
   title: string;
   org: string;
   meta: string;
+  logo: string;
+  logoAlt: string;
   summary?: string;
   url?: string;
 }
@@ -19,6 +21,8 @@ const EXPERIENCES: Experience[] = [
     title: 'Software Engineer Intern',
     org: 'Ultra Maritime',
     meta: 'Summer 2026',
+    logo: '/images/ultra-maritime-logo.jpeg',
+    logoAlt: 'Ultra Maritime logo',
     summary: 'C',
   },
   {
@@ -26,6 +30,8 @@ const EXPERIENCES: Experience[] = [
     title: 'Founder',
     org: 'Hack Atlantic',
     meta: 'Apr 2026 — Present',
+    logo: '/images/hack-atlantic-logo.jpg',
+    logoAlt: 'Hack Atlantic logo',
     summary: '',
     url: 'https://hackatlantic.ca',
   },
@@ -34,6 +40,8 @@ const EXPERIENCES: Experience[] = [
     title: 'Electrical Project Lead',
     org: 'UNB Formula Racing',
     meta: 'Sep 2025 — Present',
+    logo: '/images/unb-formula-racing-logo.png',
+    logoAlt: 'UNB Formula Racing logo',
     summary: '',
   },
 ];
@@ -129,26 +137,30 @@ export default function Home() {
               </div>
             </div>
           </FadeIn>
-          <div className="flex flex-col divide-y divide-slate-200">
+          <div className="grid grid-cols-1 gap-x-10 gap-y-8 md:grid-cols-3">
             {EXPERIENCES.map(e => (
               <FadeIn key={e.id}>
-                <div className="flex gap-4 py-5">
-                  <div className="w-10 h-10 flex items-center justify-center text-teal-700 flex-shrink-0 mt-1">
-                    <Briefcase size={16} />
+                <div className="border-t border-slate-200 pt-5">
+                  <div className="relative mb-4 h-12 w-20">
+                    <Image
+                      src={e.logo}
+                      alt={e.logoAlt}
+                      fill
+                      sizes="80px"
+                      className="object-contain object-left"
+                    />
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="text-base font-semibold text-slate-950">{e.title} @ {e.org}</div>
-                    <div className="text-xs text-slate-400 mt-1 font-mono">{e.meta}</div>
-                    {e.summary && (
-                      <p className="text-sm text-slate-600 leading-relaxed mt-2 max-w-2xl">{e.summary}</p>
-                    )}
-                    {e.url && (
-                      <a href={e.url} target="_blank" rel="noopener" className="inline-flex items-center gap-1 text-sm font-medium text-teal-700 mt-3 hover:text-teal-900">
-                        {e.url.replace('https://', '')}
-                        <ExternalLink size={11} />
-                      </a>
-                    )}
-                  </div>
+                  <div className="text-base font-semibold text-slate-950">{e.title} @ {e.org}</div>
+                  <div className="text-xs text-slate-400 mt-1 font-mono">{e.meta}</div>
+                  {e.summary && (
+                    <p className="text-sm text-slate-600 leading-relaxed mt-2">{e.summary}</p>
+                  )}
+                  {e.url && (
+                    <a href={e.url} target="_blank" rel="noopener" className="inline-flex items-center gap-1 text-sm font-medium text-teal-700 mt-3 hover:text-teal-900">
+                      {e.url.replace('https://', '')}
+                      <ExternalLink size={11} />
+                    </a>
+                  )}
                 </div>
               </FadeIn>
             ))}
