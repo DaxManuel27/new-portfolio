@@ -65,8 +65,7 @@ export default function Projects() {
         <FadeIn>
           <div className="mb-10 flex items-end justify-between gap-4 border-b border-slate-300/70 pb-4">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">Selected work</p>
-              <h2 className="mt-2 text-3xl font-bold text-slate-950">Projects</h2>
+              <h2 className="text-3xl font-bold text-slate-950">Projects</h2>
             </div>
           </div>
         </FadeIn>

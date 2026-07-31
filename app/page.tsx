@@ -131,8 +131,7 @@ export default function Home() {
           <FadeIn>
             <div className="mb-8 flex items-end justify-between gap-4 border-b border-slate-200 pb-4">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">Background</p>
-                <h2 className="mt-2 text-3xl font-bold text-slate-950">Experience</h2>
+                <h2 className="text-3xl font-bold text-slate-950">Experience</h2>
               </div>
             </div>
           </FadeIn>
