@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Briefcase, Mail, Linkedin, Github, Instagram, ExternalLink } from 'lucide-react';
 import Projects from './Projects';
 import FadeIn from './FadeIn';
+import Gallery from './Gallery';
 
 interface Experience {
   id: string;
@@ -116,6 +117,8 @@ export default function Home() {
             className="w-48 h-56 mx-auto sm:mx-0 sm:w-48 sm:h-64 md:w-72 md:h-[360px] rounded-2xl object-cover object-center md:object-top shadow-xl shadow-slate-200/80 flex-shrink-0"
           />
         </section>
+
+        <Gallery />
 
         {/* Projects (interactive island) */}
         <Projects />
