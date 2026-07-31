@@ -44,7 +44,7 @@ const PROJECTS: Project[] = [
 
 function PlaceholderIcon() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 text-gray-300">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 text-slate-300">
       <rect x="3" y="3" width="18" height="18" rx="3" />
       <path d="M3 9h18M9 21V9" />
     </svg>
@@ -54,27 +54,27 @@ function PlaceholderIcon() {
 export default function Projects() {
   return (
     <section id="projects" className="scroll-mt-24 mb-24">
-      <h2 className="text-3xl font-bold text-gray-900 bg-[#cbb489] rounded-xl px-6 py-4 mb-8 text-center">Projects</h2>
+      <div className="mb-8 flex items-end justify-between gap-4 border-b border-slate-200 pb-4">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">Selected work</p>
+          <h2 className="mt-2 text-3xl font-bold text-slate-950">Projects</h2>
+        </div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {PROJECTS.map(p => (
           <FadeIn key={p.id}>
-            <article className="h-full flex flex-col">
-              {/* Title banner */}
-              <div className="bg-[#e8dcc4] text-gray-900 rounded-xl px-5 py-4">
-                <h3 className="text-xl font-bold leading-tight">{p.title}</h3>
-              </div>
-
+            <article className="h-full flex flex-col rounded-lg border border-slate-200 bg-white/80 p-5 shadow-sm transition-colors hover:border-slate-300">
               {/* Photos */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
+              <div className={`grid gap-3 ${p.images.length > 1 ? 'grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2' : 'grid-cols-1'}`}>
                 {p.images.length === 0 && (
-                  <div className="w-full h-56 rounded-lg bg-[#f5efe1] flex items-center justify-center">
+                  <div className="w-full h-56 rounded-md bg-slate-100 flex items-center justify-center">
                     <PlaceholderIcon />
                   </div>
                 )}
                 {p.square
                   ? p.images.map((src, i) => (
-                      <div key={i} className="relative w-full aspect-square rounded-lg overflow-hidden bg-[#f5efe1]">
+                      <div key={i} className="relative w-full aspect-square rounded-md overflow-hidden bg-slate-100">
                         <Image
                           src={src}
                           alt={p.title}
@@ -89,21 +89,23 @@ export default function Projects() {
                         key={i}
                         src={src}
                         alt={p.title}
-                        className="w-full h-56 object-contain rounded-lg bg-[#f5efe1]"
+                        className="w-full h-56 object-contain rounded-md bg-slate-100"
                       />
                     ))
                 }
               </div>
 
-              {/* Text under */}
-              <p className="text-base text-gray-600 leading-relaxed mt-5">{p.description}</p>
+              <div className="mt-5 flex flex-1 flex-col">
+                <h3 className="text-xl font-bold leading-tight text-slate-950">{p.title}</h3>
+                <p className="text-base text-slate-600 leading-relaxed mt-3">{p.description}</p>
+              </div>
 
               {p.github && (
                 <a
                   href={p.github}
                   target="_blank"
                   rel="noopener"
-                  className="inline-flex items-center gap-1 text-sm text-gray-900 underline underline-offset-2 mt-5"
+                  className="mt-5 inline-flex items-center gap-1.5 break-all text-sm font-medium text-teal-700 hover:text-teal-900"
                 >
                   {p.github.replace('https://', '')}
                   <ExternalLink size={12} />
