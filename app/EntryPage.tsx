@@ -30,7 +30,7 @@ export default function EntryPage({ section, title, description, meta, url, imag
                 key={src}
                 src={src}
                 alt={`${title} — project image ${index + 1}`}
-                className="mx-auto h-auto max-h-[720px] w-full rounded-lg object-contain"
+                className="mx-auto h-auto max-h-[420px] w-full max-w-2xl rounded-lg object-contain"
                 loading={index === 0 ? 'eager' : 'lazy'}
               />
             ))}

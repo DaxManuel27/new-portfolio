@@ -54,13 +54,6 @@ export default function Home() {
               description: p.summary,
             }))}
           />
-          <PortfolioList
-            id="life"
-            entries={[
-              { id: 'soccer', title: 'Soccer' },
-              { id: 'travel', title: 'Travel' },
-            ]}
-          />
           {/* Contact */}
           <section id="contact" aria-label="Contact" className="scroll-mt-24 mt-8 md:mt-10">
             <ConnectLinks />
