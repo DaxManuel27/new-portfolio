@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export default function EntryPage({ section, title, description, meta, url, images = [] }: {
-  section: 'experience' | 'projects';
+  section: 'experience' | 'projects' | 'life';
   title: string;
   description: string;
   meta?: string;

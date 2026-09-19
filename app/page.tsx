@@ -1,6 +1,5 @@
 import PortfolioList from './PortfolioList';
 import { EXPERIENCES, PROJECTS } from './portfolio-data';
-import Gallery from './Gallery';
 
 const CONTACT_LINKS = [
   { label: 'email', href: 'mailto:dax.manuel@unb.ca' },
@@ -29,31 +28,16 @@ function ConnectLinks() {
 export default function Home() {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-950">
-      <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur-xl">
-        <nav className="max-w-5xl mx-auto px-4 sm:px-6 md:px-10 h-16 flex items-center justify-center">
-          <div className="flex items-center justify-center gap-6">
-            {['Home', 'Experience', 'Projects', 'Contact'].map(item => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-950"
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-        </nav>
-      </header>
-      <main>
-
-        {/* Hero */}
-        <section id="home" className="scroll-mt-24 max-w-5xl mx-auto px-6 pt-16 pb-10 text-center md:px-10 md:pt-24 md:pb-14">
-          <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold leading-none text-slate-950">Dax Manuel</h1>
+      <main className="max-w-3xl mx-auto px-6 pt-20 pb-16 md:px-8 md:pt-28 md:pb-20">
+        <section id="home" className="mb-10 md:mb-12">
+          <h1 className="text-4xl font-semibold tracking-tight text-black sm:text-5xl">Dax Manuel</h1>
+          {/* Replace this paragraph with your bio. */}
+          <p className="mt-6 text-base leading-relaxed text-slate-500 md:mt-7">
+             I’m Dax, a third year software engineering student at unb, the founder of hack atlantic, and a project lead at unb formula racing. I previously worked as a swe intern at ultra maritime, a defense company.
+          </p>
         </section>
 
-        <Gallery />
-
-        <div className="w-fit max-w-full mx-auto px-6 pt-12 pb-20 md:px-8 md:pt-14 md:pb-24">
+        <div>
           <PortfolioList
             id="experience"
             entries={EXPERIENCES.map(e => ({
@@ -70,8 +54,15 @@ export default function Home() {
               description: p.summary,
             }))}
           />
+          <PortfolioList
+            id="life"
+            entries={[
+              { id: 'soccer', title: 'Soccer' },
+              { id: 'travel', title: 'Travel' },
+            ]}
+          />
           {/* Contact */}
-          <section id="contact" aria-label="Contact" className="scroll-mt-24 mt-12 md:mt-14">
+          <section id="contact" aria-label="Contact" className="scroll-mt-24 mt-8 md:mt-10">
             <ConnectLinks />
           </section>
         </div>
