@@ -93,3 +93,9 @@ The updated full-journey and shared-desk browser suites also pass for this revis
 The 2026-10-02 visual revision adds studio HDR reflections, broad area lighting, metric surface detail for aluminum, walnut, plastic and paper, a separate trackpad finish, and cleaner monitor surfaces. The source remains `blender/portfolio-shared-desk.blend`; photographic and neutral review scenes are included. See `photorealism-validation.md` for before/after captures, reproduction, backup paths, size measurements and browser limitations. All 47 unit tests, the production build, full browser journey, printing, Projects, shared desk and landing checks pass.
 
 `web/scripts/prepare-realism-textures.mjs` creates the export-compatible maps. Run `blender/apply_photorealism.py` through Blender MCP, then `npm run prepare:assets` from `web/`. Surface maps use lossless WebP inside GLB; `node scripts/verify-realism-textures.mjs` checks decoded normal and roughness pixels against source exports. Poly Haven CC0 texture/environment provenance is in `assets/textures/photoreal/sources.json`. The runtime environment file is `web/public/assets/studio-small-09.hdr`, with a generated-room fallback on download failure.
+
+## Vercel deployment
+
+This project uses **Vite**, not Next.js. Keep the Vercel Root Directory at the repository root (`.`); the root `vercel.json` installs dependencies in `web`, runs its production build, and serves `web/dist`. The root package selects Node.js 24 and includes a compatibility `vercel-build` script.
+
+If the Vercel project already uses `web` as its Root Directory, `web/vercel.json` supplies the equivalent configuration relative to that folder. Use Node.js 24 in the project's settings. The checked-in configurations override stale Next.js framework/build/output settings. Deploy the latest `main` commit rather than rerunning an older deployment.

@@ -1,0 +1,12 @@
+{
+  "name": "new-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "dev": "npm run dev --prefix web",
+    "build": "npm run build --prefix web",
+    "vercel-build": "npm run build --prefix web",
+    "test": "npm test --prefix web"
+  }
+}
