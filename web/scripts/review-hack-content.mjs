@@ -1,0 +1,7 @@
+import sharp from 'sharp';import assert from 'node:assert/strict';import os from 'node:os';import {mkdir} from 'node:fs/promises';
+const {chromium}=await import(`${os.homedir()}/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs`);
+const browser=await chromium.launch({channel:'chrome',headless:true});const out=new URL('../../exports/hack-content/',import.meta.url);await mkdir(out,{recursive:true});
+try{const page=await browser.newPage({viewport:{width:1512,height:771}});await page.goto('http://127.0.0.1:5173');await page.waitForFunction(()=>window.__portfolio?.snapshot().ready&&window.__portfolio.settled()&&document.getElementById('boot').hidden);
+for(const t of [.5]){await page.evaluate(t=>{const a=window.__portfolio,p=a.phases.find(p=>p.kind==='hold'&&p.station===1);a.seek((p.start+t*(p.end-p.start))/a.totalUnits)},t);await page.waitForFunction(()=>window.__portfolio.settled());await page.waitForTimeout(650);await page.screenshot({path:new URL('desktop.png',out).pathname});const style=await page.addStyleTag({content:'#motion-toggle,#loading,#boot,#skip{visibility:hidden!important}'});const png=await page.locator('#stage').screenshot();await sharp(png).webp({quality:94}).toFile(new URL('../public/assets/hack-atlantic.webp',import.meta.url).pathname);await style.evaluate(n=>n.remove());
+assert.equal(await page.locator('#hack-read,#hack-experience,#accessible-hack-atlantic').count(),0);console.log('Hack Atlantic content removed; blank-screen poster refreshed.');}
+}finally{await browser.close();}

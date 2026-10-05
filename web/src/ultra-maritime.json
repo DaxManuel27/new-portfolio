@@ -1,0 +1,12 @@
+{
+  "company": "Ultra Maritime",
+  "role": "Software Engineer Intern",
+  "dates": "May 2026 – Aug 2026",
+  "location": "Dartmouth, NS",
+  "contributions": [
+    "Engineered an internal tool exporting test suites from DOORS into Excel files with Python via REST API, reducing export times by over 50%.",
+    "Authored test suites covering 30+ functions and implemented tests to validate Automated Test Environment behaviors.",
+    "Developed a message emitter in Python using ZMQ sockets for TCP/IP, enabling an Automated Test Environment to validate data transmission via PUB/SUB and REQ/REP.",
+    "Restored legacy software on a Linux test rack, configuring network IPs and creating virtual machines to test software."
+  ]
+}

@@ -1,0 +1,665 @@
+{
+  "status": "PASS",
+  "objects_with_metric_uv": 218,
+  "surface_bindings": {
+    "Clearance_Journey_SM_M5_Base_AQdtiiJfiakvCKx": [
+      "aluminum"
+    ],
+    "Clearance_Journey_SM_M5_Base_cdsXAgNBwwCPrIE": [
+      "aluminum"
+    ],
+    "Clearance_Journey_SM_M5_Base_lzNeOaWQWAReGok": [
+      "aluminum"
+    ],
+    "Clearance_Journey_SM_M5_Base_mTDvrHXNRqkIrBd": [
+      "aluminum"
+    ],
+    "Clearance_Journey_SM_M5_Base_qbFEMXRbwPWbFTN": [
+      "aluminum"
+    ],
+    "Clearance_Journey_SM_M5_Base_UcEDhfwzyyGMEfj": [
+      "aluminum"
+    ],
+    "Clearance_Journey_SM_M5_Base_WzbwnVztmigkRgn": [
+      "trackpad"
+    ],
+    "Clearance_Journey_SM_M5_Base_WZqbfOdYdlPMpRs": [
+      "aluminum"
+    ],
+    "Clearance_Journey_SM_M5_Lid_KjpcUkkMjGYeXkV": [
+      "aluminum"
+    ],
+    "Clearance_Projects_Personal_Desktop": [
+      "walnut"
+    ],
+    "Clearance_Projects_Personal_Ultrawide_Housing": [
+      "plastic"
+    ],
+    "Clearance_Projects_Personal_Ultrawide_StandBase": [
+      "plastic"
+    ],
+    "Clearance_Projects_Personal_Ultrawide_StandStem": [
+      "plastic"
+    ],
+    "Clearance_Shared_Contact_Notebook_Open.Cover": [
+      "plastic"
+    ],
+    "Clearance_Shared_Contact_Notebook_Open.PageBlock_Left": [
+      "paper"
+    ],
+    "Clearance_Shared_Contact_Notebook_Open.PageBlock_Right": [
+      "paper"
+    ],
+    "Clearance_Shared_Contact_Notebook_Open.Pages": [
+      "paper"
+    ],
+    "Clearance_Shared_Contact_Pen_Barrel": [
+      "plastic"
+    ],
+    "Clearance_Shared_Resume_Desk_Station.Top": [
+      "laminate"
+    ],
+    "Clearance_Shared_Resume_Prop_Printer.Body": [
+      "plastic"
+    ],
+    "Clearance_Shared_Resume_Prop_Printer.OutputTray": [
+      "plastic"
+    ],
+    "Clearance_Shared_Resume_Prop_Printer.PaperSheet": [
+      "paper"
+    ],
+    "Clearance_Shared_Resume_Prop_Printer.PaperStack": [
+      "paper"
+    ],
+    "Clearance_Shared_Resume_Prop_Printer.PrintButton": [
+      "plastic"
+    ],
+    "Clearance_Shared_Resume_Prop_Printer.RearSupport": [
+      "plastic"
+    ],
+    "Clearance_Shared_Resume_Prop_Printer.ScannerLid": [
+      "plastic"
+    ],
+    "Contact_Desk_Station.Top": [
+      "laminate"
+    ],
+    "Contact_Notebook_Open.Cover": [
+      "plastic"
+    ],
+    "Contact_Notebook_Open.PageBlock_Left": [
+      "paper"
+    ],
+    "Contact_Notebook_Open.PageBlock_Right": [
+      "paper"
+    ],
+    "Contact_Notebook_Open.Pages": [
+      "paper"
+    ],
+    "Contact_Pen_Barrel": [
+      "plastic"
+    ],
+    "Contact_SM_M5_Base_AQdtiiJfiakvCKx": [
+      "aluminum"
+    ],
+    "Contact_SM_M5_Base_cdsXAgNBwwCPrIE": [
+      "aluminum"
+    ],
+    "Contact_SM_M5_Base_lzNeOaWQWAReGok": [
+      "aluminum"
+    ],
+    "Contact_SM_M5_Base_mTDvrHXNRqkIrBd": [
+      "aluminum"
+    ],
+    "Contact_SM_M5_Base_qbFEMXRbwPWbFTN": [
+      "aluminum"
+    ],
+    "Contact_SM_M5_Base_UcEDhfwzyyGMEfj": [
+      "aluminum"
+    ],
+    "Contact_SM_M5_Base_WzbwnVztmigkRgn": [
+      "trackpad"
+    ],
+    "Contact_SM_M5_Base_WZqbfOdYdlPMpRs": [
+      "aluminum"
+    ],
+    "Contact_SM_M5_Lid_KjpcUkkMjGYeXkV": [
+      "aluminum"
+    ],
+    "Desk_Station.Top": [
+      "laminate"
+    ],
+    "FormulaSAE_Desk_Station.Top": [
+      "laminate"
+    ],
+    "FormulaSAE_SM_M5_Base_AQdtiiJfiakvCKx": [
+      "aluminum"
+    ],
+    "FormulaSAE_SM_M5_Base_cdsXAgNBwwCPrIE": [
+      "aluminum"
+    ],
+    "FormulaSAE_SM_M5_Base_lzNeOaWQWAReGok": [
+      "aluminum"
+    ],
+    "FormulaSAE_SM_M5_Base_mTDvrHXNRqkIrBd": [
+      "aluminum"
+    ],
+    "FormulaSAE_SM_M5_Base_qbFEMXRbwPWbFTN": [
+      "aluminum"
+    ],
+    "FormulaSAE_SM_M5_Base_UcEDhfwzyyGMEfj": [
+      "aluminum"
+    ],
+    "FormulaSAE_SM_M5_Base_WzbwnVztmigkRgn": [
+      "trackpad"
+    ],
+    "FormulaSAE_SM_M5_Base_WZqbfOdYdlPMpRs": [
+      "aluminum"
+    ],
+    "FormulaSAE_SM_M5_Lid_KjpcUkkMjGYeXkV": [
+      "aluminum"
+    ],
+    "HackAtlantic_SM_M5_Base_AQdtiiJfiakvCKx": [
+      "aluminum"
+    ],
+    "HackAtlantic_SM_M5_Base_cdsXAgNBwwCPrIE": [
+      "aluminum"
+    ],
+    "HackAtlantic_SM_M5_Base_lzNeOaWQWAReGok": [
+      "aluminum"
+    ],
+    "HackAtlantic_SM_M5_Base_mTDvrHXNRqkIrBd": [
+      "aluminum"
+    ],
+    "HackAtlantic_SM_M5_Base_qbFEMXRbwPWbFTN": [
+      "aluminum"
+    ],
+    "HackAtlantic_SM_M5_Base_UcEDhfwzyyGMEfj": [
+      "aluminum"
+    ],
+    "HackAtlantic_SM_M5_Base_WzbwnVztmigkRgn": [
+      "trackpad"
+    ],
+    "HackAtlantic_SM_M5_Base_WZqbfOdYdlPMpRs": [
+      "aluminum"
+    ],
+    "HackAtlantic_SM_M5_Lid_KjpcUkkMjGYeXkV": [
+      "aluminum"
+    ],
+    "Intro_SM_M5_Base_AQdtiiJfiakvCKx": [
+      "aluminum"
+    ],
+    "Intro_SM_M5_Base_cdsXAgNBwwCPrIE": [
+      "aluminum"
+    ],
+    "Intro_SM_M5_Base_lzNeOaWQWAReGok": [
+      "aluminum"
+    ],
+    "Intro_SM_M5_Base_mTDvrHXNRqkIrBd": [
+      "aluminum"
+    ],
+    "Intro_SM_M5_Base_qbFEMXRbwPWbFTN": [
+      "aluminum"
+    ],
+    "Intro_SM_M5_Base_UcEDhfwzyyGMEfj": [
+      "aluminum"
+    ],
+    "Intro_SM_M5_Base_WzbwnVztmigkRgn": [
+      "trackpad"
+    ],
+    "Intro_SM_M5_Base_WZqbfOdYdlPMpRs": [
+      "aluminum"
+    ],
+    "Intro_SM_M5_Lid_KjpcUkkMjGYeXkV": [
+      "aluminum"
+    ],
+    "Journey_Contact_Contact_Desk_Station.Top": [
+      "laminate"
+    ],
+    "Journey_Contact_Contact_Notebook_Open.Cover": [
+      "plastic"
+    ],
+    "Journey_Contact_Contact_Notebook_Open.PageBlock_Left": [
+      "paper"
+    ],
+    "Journey_Contact_Contact_Notebook_Open.PageBlock_Right": [
+      "paper"
+    ],
+    "Journey_Contact_Contact_Notebook_Open.Pages": [
+      "paper"
+    ],
+    "Journey_Contact_Contact_Pen_Barrel": [
+      "plastic"
+    ],
+    "Journey_FormulaSAE_FormulaSAE_Desk_Station.Top": [
+      "laminate"
+    ],
+    "Journey_PrintedPage": [
+      "paper"
+    ],
+    "Journey_Projects_Projects_Personal_Desktop": [
+      "walnut"
+    ],
+    "Journey_Projects_Projects_Personal_Ultrawide_Housing": [
+      "plastic"
+    ],
+    "Journey_Projects_Projects_Personal_Ultrawide_StandBase": [
+      "plastic"
+    ],
+    "Journey_Projects_Projects_Personal_Ultrawide_StandStem": [
+      "plastic"
+    ],
+    "Journey_Resume_Resume_Desk_Station.Top": [
+      "laminate"
+    ],
+    "Journey_Resume_Resume_Prop_Printer.Body": [
+      "plastic"
+    ],
+    "Journey_Resume_Resume_Prop_Printer.OutputTray": [
+      "plastic"
+    ],
+    "Journey_Resume_Resume_Prop_Printer.PaperSheet": [
+      "paper"
+    ],
+    "Journey_Resume_Resume_Prop_Printer.PaperStack": [
+      "paper"
+    ],
+    "Journey_Resume_Resume_Prop_Printer.PowerButton": [
+      "plastic"
+    ],
+    "Journey_Resume_Resume_Prop_Printer.RearSupport": [
+      "plastic"
+    ],
+    "Journey_Resume_Resume_Prop_Printer.ScannerLid": [
+      "plastic"
+    ],
+    "Journey_SM_M5_Base_AQdtiiJfiakvCKx": [
+      "aluminum"
+    ],
+    "Journey_SM_M5_Base_cdsXAgNBwwCPrIE": [
+      "aluminum"
+    ],
+    "Journey_SM_M5_Base_lzNeOaWQWAReGok": [
+      "aluminum"
+    ],
+    "Journey_SM_M5_Base_mTDvrHXNRqkIrBd": [
+      "aluminum"
+    ],
+    "Journey_SM_M5_Base_qbFEMXRbwPWbFTN": [
+      "aluminum"
+    ],
+    "Journey_SM_M5_Base_UcEDhfwzyyGMEfj": [
+      "aluminum"
+    ],
+    "Journey_SM_M5_Base_WzbwnVztmigkRgn": [
+      "trackpad"
+    ],
+    "Journey_SM_M5_Base_WZqbfOdYdlPMpRs": [
+      "aluminum"
+    ],
+    "Journey_SM_M5_Lid_KjpcUkkMjGYeXkV": [
+      "aluminum"
+    ],
+    "Journey_UltraMaritime_UltraMaritime_Ultra_Monitor_Left_Housing": [
+      "plastic"
+    ],
+    "Journey_UltraMaritime_UltraMaritime_Ultra_Monitor_Left_StandBase": [
+      "plastic"
+    ],
+    "Journey_UltraMaritime_UltraMaritime_Ultra_Monitor_Left_StandStem": [
+      "plastic"
+    ],
+    "Journey_UltraMaritime_UltraMaritime_Ultra_Monitor_Right_Housing": [
+      "plastic"
+    ],
+    "Journey_UltraMaritime_UltraMaritime_Ultra_Monitor_Right_StandBase": [
+      "plastic"
+    ],
+    "Journey_UltraMaritime_UltraMaritime_Ultra_Monitor_Right_StandStem": [
+      "plastic"
+    ],
+    "Notebook_Open.Cover": [
+      "plastic"
+    ],
+    "Notebook_Open.PageBlock_Left": [
+      "paper"
+    ],
+    "Notebook_Open.PageBlock_Right": [
+      "paper"
+    ],
+    "Notebook_Open.Pages": [
+      "paper"
+    ],
+    "Pen_Barrel": [
+      "plastic"
+    ],
+    "Personal_Desktop": [
+      "walnut"
+    ],
+    "Personal_M5_SM_M5_Base_AQdtiiJfiakvCKx": [
+      "aluminum"
+    ],
+    "Personal_M5_SM_M5_Base_cdsXAgNBwwCPrIE": [
+      "aluminum"
+    ],
+    "Personal_M5_SM_M5_Base_lzNeOaWQWAReGok": [
+      "aluminum"
+    ],
+    "Personal_M5_SM_M5_Base_mTDvrHXNRqkIrBd": [
+      "aluminum"
+    ],
+    "Personal_M5_SM_M5_Base_qbFEMXRbwPWbFTN": [
+      "aluminum"
+    ],
+    "Personal_M5_SM_M5_Base_UcEDhfwzyyGMEfj": [
+      "aluminum"
+    ],
+    "Personal_M5_SM_M5_Base_WzbwnVztmigkRgn": [
+      "trackpad"
+    ],
+    "Personal_M5_SM_M5_Base_WZqbfOdYdlPMpRs": [
+      "aluminum"
+    ],
+    "Personal_M5_SM_M5_Lid_KjpcUkkMjGYeXkV": [
+      "aluminum"
+    ],
+    "Personal_Ultrawide_Housing": [
+      "plastic"
+    ],
+    "Personal_Ultrawide_StandBase": [
+      "plastic"
+    ],
+    "Personal_Ultrawide_StandStem": [
+      "plastic"
+    ],
+    "Printer_PaperFeed_Review": [
+      "paper"
+    ],
+    "Projects_Personal_Desktop": [
+      "walnut"
+    ],
+    "Projects_Personal_Ultrawide_Housing": [
+      "plastic"
+    ],
+    "Projects_Personal_Ultrawide_StandBase": [
+      "plastic"
+    ],
+    "Projects_Personal_Ultrawide_StandStem": [
+      "plastic"
+    ],
+    "Projects_SM_M5_Base_AQdtiiJfiakvCKx": [
+      "aluminum"
+    ],
+    "Projects_SM_M5_Base_cdsXAgNBwwCPrIE": [
+      "aluminum"
+    ],
+    "Projects_SM_M5_Base_lzNeOaWQWAReGok": [
+      "aluminum"
+    ],
+    "Projects_SM_M5_Base_mTDvrHXNRqkIrBd": [
+      "aluminum"
+    ],
+    "Projects_SM_M5_Base_qbFEMXRbwPWbFTN": [
+      "aluminum"
+    ],
+    "Projects_SM_M5_Base_UcEDhfwzyyGMEfj": [
+      "aluminum"
+    ],
+    "Projects_SM_M5_Base_WzbwnVztmigkRgn": [
+      "trackpad"
+    ],
+    "Projects_SM_M5_Base_WZqbfOdYdlPMpRs": [
+      "aluminum"
+    ],
+    "Projects_SM_M5_Lid_KjpcUkkMjGYeXkV": [
+      "aluminum"
+    ],
+    "Prop_Printer.Body": [
+      "plastic"
+    ],
+    "Prop_Printer.OutputTray": [
+      "plastic"
+    ],
+    "Prop_Printer.PaperSheet": [
+      "paper"
+    ],
+    "Prop_Printer.PaperStack": [
+      "paper"
+    ],
+    "Prop_Printer.PowerButton": [
+      "plastic"
+    ],
+    "Prop_Printer.RearSupport": [
+      "plastic"
+    ],
+    "Prop_Printer.ScannerLid": [
+      "plastic"
+    ],
+    "Resume_Desk_Station.Top": [
+      "laminate"
+    ],
+    "Resume_Page.Sheet": [
+      "paper"
+    ],
+    "Resume_PaperFeed_Sheet": [
+      "paper"
+    ],
+    "Resume_PaperFeed_Sheet_Local": [
+      "paper"
+    ],
+    "Resume_Prop_Printer.Body": [
+      "plastic"
+    ],
+    "Resume_Prop_Printer.OutputTray": [
+      "plastic"
+    ],
+    "Resume_Prop_Printer.PaperSheet": [
+      "paper"
+    ],
+    "Resume_Prop_Printer.PaperStack": [
+      "paper"
+    ],
+    "Resume_Prop_Printer.PowerButton": [
+      "plastic"
+    ],
+    "Resume_Prop_Printer.RearSupport": [
+      "plastic"
+    ],
+    "Resume_Prop_Printer.ScannerLid": [
+      "plastic"
+    ],
+    "Resume_Resume_Page.Sheet": [
+      "paper"
+    ],
+    "Resume_SM_M5_Base_AQdtiiJfiakvCKx": [
+      "aluminum"
+    ],
+    "Resume_SM_M5_Base_cdsXAgNBwwCPrIE": [
+      "aluminum"
+    ],
+    "Resume_SM_M5_Base_lzNeOaWQWAReGok": [
+      "aluminum"
+    ],
+    "Resume_SM_M5_Base_mTDvrHXNRqkIrBd": [
+      "aluminum"
+    ],
+    "Resume_SM_M5_Base_qbFEMXRbwPWbFTN": [
+      "aluminum"
+    ],
+    "Resume_SM_M5_Base_UcEDhfwzyyGMEfj": [
+      "aluminum"
+    ],
+    "Resume_SM_M5_Base_WzbwnVztmigkRgn": [
+      "trackpad"
+    ],
+    "Resume_SM_M5_Base_WZqbfOdYdlPMpRs": [
+      "aluminum"
+    ],
+    "Resume_SM_M5_Lid_KjpcUkkMjGYeXkV": [
+      "aluminum"
+    ],
+    "Shared_Contact_Notebook_Open.Cover": [
+      "plastic"
+    ],
+    "Shared_Contact_Notebook_Open.PageBlock_Left": [
+      "paper"
+    ],
+    "Shared_Contact_Notebook_Open.PageBlock_Right": [
+      "paper"
+    ],
+    "Shared_Contact_Notebook_Open.Pages": [
+      "paper"
+    ],
+    "Shared_Contact_Pen_Barrel": [
+      "plastic"
+    ],
+    "Shared_Resume_Desk_Station.Top": [
+      "laminate"
+    ],
+    "Shared_Resume_Prop_Printer.Body": [
+      "plastic"
+    ],
+    "Shared_Resume_Prop_Printer.OutputTray": [
+      "plastic"
+    ],
+    "Shared_Resume_Prop_Printer.PaperSheet": [
+      "paper"
+    ],
+    "Shared_Resume_Prop_Printer.PaperStack": [
+      "paper"
+    ],
+    "Shared_Resume_Prop_Printer.PrintButton": [
+      "plastic"
+    ],
+    "Shared_Resume_Prop_Printer.RearSupport": [
+      "plastic"
+    ],
+    "Shared_Resume_Prop_Printer.ScannerLid": [
+      "plastic"
+    ],
+    "Shared_Resume_Resume_Page.Sheet": [
+      "paper"
+    ],
+    "Shared_Resume_SM_M5_Base_AQdtiiJfiakvCKx": [
+      "aluminum"
+    ],
+    "Shared_Resume_SM_M5_Base_cdsXAgNBwwCPrIE": [
+      "aluminum"
+    ],
+    "Shared_Resume_SM_M5_Base_lzNeOaWQWAReGok": [
+      "aluminum"
+    ],
+    "Shared_Resume_SM_M5_Base_mTDvrHXNRqkIrBd": [
+      "aluminum"
+    ],
+    "Shared_Resume_SM_M5_Base_qbFEMXRbwPWbFTN": [
+      "aluminum"
+    ],
+    "Shared_Resume_SM_M5_Base_UcEDhfwzyyGMEfj": [
+      "aluminum"
+    ],
+    "Shared_Resume_SM_M5_Base_WzbwnVztmigkRgn": [
+      "trackpad"
+    ],
+    "Shared_Resume_SM_M5_Base_WZqbfOdYdlPMpRs": [
+      "aluminum"
+    ],
+    "Shared_Resume_SM_M5_Lid_KjpcUkkMjGYeXkV": [
+      "aluminum"
+    ],
+    "SM_M5_Base_AQdtiiJfiakvCKx": [
+      "aluminum"
+    ],
+    "SM_M5_Base_cdsXAgNBwwCPrIE": [
+      "aluminum"
+    ],
+    "SM_M5_Base_lzNeOaWQWAReGok": [
+      "aluminum"
+    ],
+    "SM_M5_Base_mTDvrHXNRqkIrBd": [
+      "aluminum"
+    ],
+    "SM_M5_Base_qbFEMXRbwPWbFTN": [
+      "aluminum"
+    ],
+    "SM_M5_Base_UcEDhfwzyyGMEfj": [
+      "aluminum"
+    ],
+    "SM_M5_Base_WzbwnVztmigkRgn": [
+      "trackpad"
+    ],
+    "SM_M5_Base_WZqbfOdYdlPMpRs": [
+      "aluminum"
+    ],
+    "SM_M5_Lid_KjpcUkkMjGYeXkV": [
+      "aluminum"
+    ],
+    "Ultra_Monitor_Left_Housing": [
+      "plastic"
+    ],
+    "Ultra_Monitor_Left_StandBase": [
+      "plastic"
+    ],
+    "Ultra_Monitor_Left_StandStem": [
+      "plastic"
+    ],
+    "Ultra_Monitor_Right_Housing": [
+      "plastic"
+    ],
+    "Ultra_Monitor_Right_StandBase": [
+      "plastic"
+    ],
+    "Ultra_Monitor_Right_StandStem": [
+      "plastic"
+    ],
+    "UltraMaritime_SM_M5_Base_AQdtiiJfiakvCKx": [
+      "aluminum"
+    ],
+    "UltraMaritime_SM_M5_Base_cdsXAgNBwwCPrIE": [
+      "aluminum"
+    ],
+    "UltraMaritime_SM_M5_Base_lzNeOaWQWAReGok": [
+      "aluminum"
+    ],
+    "UltraMaritime_SM_M5_Base_mTDvrHXNRqkIrBd": [
+      "aluminum"
+    ],
+    "UltraMaritime_SM_M5_Base_qbFEMXRbwPWbFTN": [
+      "aluminum"
+    ],
+    "UltraMaritime_SM_M5_Base_UcEDhfwzyyGMEfj": [
+      "aluminum"
+    ],
+    "UltraMaritime_SM_M5_Base_WzbwnVztmigkRgn": [
+      "trackpad"
+    ],
+    "UltraMaritime_SM_M5_Base_WZqbfOdYdlPMpRs": [
+      "aluminum"
+    ],
+    "UltraMaritime_SM_M5_Lid_KjpcUkkMjGYeXkV": [
+      "aluminum"
+    ],
+    "UltraMaritime_Ultra_Monitor_Left_Housing": [
+      "plastic"
+    ],
+    "UltraMaritime_Ultra_Monitor_Left_StandBase": [
+      "plastic"
+    ],
+    "UltraMaritime_Ultra_Monitor_Left_StandStem": [
+      "plastic"
+    ],
+    "UltraMaritime_Ultra_Monitor_Right_Housing": [
+      "plastic"
+    ],
+    "UltraMaritime_Ultra_Monitor_Right_StandBase": [
+      "plastic"
+    ],
+    "UltraMaritime_Ultra_Monitor_Right_StandStem": [
+      "plastic"
+    ]
+  },
+  "geometry_and_motion_preserved": 1920,
+  "triangle_delta": 0,
+  "new_maps": "1K wood/aluminum; 512px plastic/paper/laminate/trackpad",
+  "environment": "Poly Haven Studio Small09,1K,CC0",
+  "source": "blender/portfolio-shared-desk.blend"
+}

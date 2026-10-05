@@ -1,0 +1,230 @@
+{
+  "units": "metres",
+  "scenes": {
+    "Contact": {
+      "visible_evaluated_triangles": 222422,
+      "finite_vertices": true,
+      "objects": 128,
+      "camera": "CAM_Contact_Birdseye"
+    },
+    "Formula SAE": {
+      "visible_evaluated_triangles": 180318,
+      "finite_vertices": true,
+      "objects": 231,
+      "camera": "CAM_FormulaSAE_Wide"
+    },
+    "Hack Atlantic": {
+      "visible_evaluated_triangles": 168004,
+      "finite_vertices": true,
+      "objects": 82,
+      "camera": "CAM_HackAtlantic_Animated"
+    },
+    "Intro": {
+      "visible_evaluated_triangles": 165422,
+      "finite_vertices": true,
+      "objects": 61,
+      "camera": "CAM_Intro_Wide"
+    },
+    "Completion \u2014 Portfolio Journey": {
+      "visible_evaluated_triangles": 165422,
+      "finite_vertices": true,
+      "objects": 420,
+      "camera": "CAM_Journey_Centered"
+    },
+    "Projects": {
+      "visible_evaluated_triangles": 168350,
+      "finite_vertices": true,
+      "objects": 72,
+      "camera": "CAM_Projects_Animated"
+    },
+    "Resume": {
+      "visible_evaluated_triangles": 184062,
+      "finite_vertices": true,
+      "objects": 90,
+      "camera": "CAM_Resume_Birdseye"
+    },
+    "Ultra Maritime": {
+      "visible_evaluated_triangles": 171570,
+      "finite_vertices": true,
+      "objects": 80,
+      "camera": "CAM_UltraMaritime_Animated"
+    }
+  },
+  "textures": {
+    "albedo.png": {
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "color_space": "sRGB"
+    },
+    "fsae-accelerator-pedal-sensor.png": {
+      "size": [
+        1024,
+        187
+      ],
+      "packed": true,
+      "color_space": "sRGB"
+    },
+    "fsae-data-logging.png": {
+      "size": [
+        1024,
+        323
+      ],
+      "packed": true,
+      "color_space": "sRGB"
+    },
+    "normal.png": {
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "color_space": "Non-Color"
+    },
+    "notebook-pages.png": {
+      "size": [
+        2048,
+        1467
+      ],
+      "packed": true,
+      "color_space": "sRGB"
+    },
+    "phone-number-plate.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true,
+      "color_space": "sRGB"
+    },
+    "resume-page.png": {
+      "size": [
+        1583,
+        2048
+      ],
+      "packed": true,
+      "color_space": "sRGB"
+    },
+    "roughness.png": {
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "color_space": "Non-Color"
+    }
+  },
+  "materials": {
+    "MAT_MacBook_Silver": {
+      "Metallic": 1.0,
+      "Roughness": 0.3799999952316284,
+      "Coat Weight": 0.0,
+      "Coat Roughness": 0.05000000074505806,
+      "IOR": 1.5,
+      "Transmission Weight": 0.0,
+      "Emission Strength": 0.0,
+      "base_color": [
+        0.5840784311294556,
+        0.5972017645835876,
+        0.6172065734863281,
+        1.0
+      ]
+    },
+    "MAT_MacBook_Keys": {
+      "Metallic": 0.0,
+      "Roughness": 0.550000011920929,
+      "Coat Weight": 0.0,
+      "Coat Roughness": 0.05000000074505806,
+      "IOR": 1.5,
+      "Transmission Weight": 0.0,
+      "Emission Strength": 0.0,
+      "base_color": [
+        0.013702083379030228,
+        0.013702083379030228,
+        0.016807375475764275,
+        1.0
+      ]
+    },
+    "MAT_MacBook_BlankGlass": {
+      "Metallic": 0.0,
+      "Roughness": 0.05000000074505806,
+      "Coat Weight": 0.0,
+      "Coat Roughness": 0.05000000074505806,
+      "IOR": 1.5,
+      "Transmission Weight": 0.0,
+      "Emission Strength": 0.0,
+      "base_color": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "MAT_Phone_RedPlastic": {
+      "Metallic": 0.0,
+      "Roughness": 0.2199999988079071,
+      "Coat Weight": 1.0,
+      "Coat Roughness": 0.05000000074505806,
+      "IOR": 1.5,
+      "Transmission Weight": 0.0,
+      "Emission Strength": 0.0,
+      "base_color": [
+        0.366252601146698,
+        0.005181516520678997,
+        0.01032982300966978,
+        1.0
+      ]
+    },
+    "MAT_Phone_Acrylic": {
+      "Metallic": 0.0,
+      "Roughness": 0.05000000074505806,
+      "Coat Weight": 0.0,
+      "Coat Roughness": 0.05000000074505806,
+      "IOR": 1.4900000095367432,
+      "Transmission Weight": 1.0,
+      "Emission Strength": 0.0,
+      "base_color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "MAT_Phone_Chrome": {
+      "Metallic": 1.0,
+      "Roughness": 0.15000000596046448,
+      "Coat Weight": 0.0,
+      "Coat Roughness": 0.05000000074505806,
+      "IOR": 1.5,
+      "Transmission Weight": 0.0,
+      "Emission Strength": 0.0,
+      "base_color": [
+        0.6795424818992615,
+        0.68668532371521,
+        0.715693473815918,
+        1.0
+      ]
+    }
+  },
+  "motion": {
+    "frames_checked": 721,
+    "maximum_center_error_pixels_at_1440": 0.0012335065346746887,
+    "maximum_projected_width_fraction": 0.5600000283568248,
+    "maximum_projected_height_fraction": 0.6400000288921223,
+    "minimum_world_z": 0.7400999665260315,
+    "reverse_playback_error": 0,
+    "hero_physical_scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "remaining_notes": [
+    "FSAE callout anchors are conceptual; actual sensor locations are unverified.",
+    "Existing laptop dimensions preserved (about 311.7 \u00d7 224.1 \u00d7 17.9 mm closed).",
+    "Authored tight birdseye crops retained; additional wider context cameras are available.",
+    "Paper final pose follows the elevated physical output tray instead of passing underneath it."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "macbook-open": {
+    "exit": 0,
+    "response": "{\"success\":true,\"imageHash\":\"1801e51f39fda045d0bb71ed08846b2f7024d0f5\",\"sizeBytes\":894350,\"contentType\":\"image/png\",\"placedOnNodeId\":\"3:7\"}",
+    "error": ""
+  },
+  "macbook-closed": {
+    "exit": 0,
+    "response": "{\"success\":true,\"imageHash\":\"5c94b9208e3dfa9078195ad9465031dce019d8b7\",\"sizeBytes\":459185,\"contentType\":\"image/png\",\"placedOnNodeId\":\"3:4\"}",
+    "error": ""
+  },
+  "hack-atlantic": {
+    "exit": 0,
+    "response": "{\"success\":true,\"imageHash\":\"4ae6b2675b9ca45ed06dde8240a1bdc420e2c4cf\",\"sizeBytes\":553600,\"contentType\":\"image/png\",\"placedOnNodeId\":\"3:2\"}",
+    "error": ""
+  },
+  "formula-sae": {
+    "exit": 0,
+    "response": "{\"success\":true,\"imageHash\":\"28d8844b072cd2ccb03ca5e2d4f306b8f9575f3e\",\"sizeBytes\":736776,\"contentType\":\"image/png\",\"placedOnNodeId\":\"3:3\"}",
+    "error": ""
+  },
+  "ultra-maritime": {
+    "exit": 0,
+    "response": "{\"success\":true,\"imageHash\":\"79549beeded96079b2ba43760fc035cec57b7203\",\"sizeBytes\":560313,\"contentType\":\"image/png\",\"placedOnNodeId\":\"3:6\"}",
+    "error": ""
+  },
+  "personal-desk": {
+    "exit": 0,
+    "response": "{\"success\":true,\"imageHash\":\"e9332bc86f4a382cfaf2138e64867f114c6dbd91\",\"sizeBytes\":535553,\"contentType\":\"image/png\",\"placedOnNodeId\":\"3:5\"}",
+    "error": ""
+  }
+}

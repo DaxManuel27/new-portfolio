@@ -1,0 +1,2127 @@
+{
+  "version": "1.1",
+  "date": "2026-10-01",
+  "file_key": "AAoP4nNd3n9QzR9C2Cjarm",
+  "source_board": "48:5573",
+  "status": "Figma-authored design specification; Blender camera fit and mechanical anchor verification pending",
+  "units": "metres / degrees",
+  "coordinate_system": {
+    "X": "right",
+    "Y": "toward desk back",
+    "Z": "up",
+    "rotation_order": "XYZ; fields pitch=X, roll=Y, yaw=Z",
+    "root": "virtual feet contact point; adapt existing Blender rig with parent offset",
+    "physical_scale": 1
+  },
+  "timing": {
+    "start_hold": [
+      0,
+      0.1
+    ],
+    "end_hold": [
+      0.9,
+      1
+    ],
+    "ease": "cubic smoothstep 3t\u00b2-2t\u00b3 per segment; zero slope at holds",
+    "reverse": "evaluate the same progress backwards; do not integrate",
+    "scroll_distance_vh": 150
+  },
+  "camera_note": "Metric camera seeds are concrete design values, not solved render matches. Fit to the linked endpoint pixel landmarks in Blender while retaining scale. Figma source scale values are framing cues, never mesh scale animation.",
+  "transitions": [
+    {
+      "id": 1,
+      "from": "Intro",
+      "to": "Hack Atlantic",
+      "intent": "Forward flip",
+      "source_node": "49:5958",
+      "poses": [
+        {
+          "p": 0,
+          "phase": "Start hold",
+          "position_m": [
+            0.0,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 0,
+          "yaw_deg": 25,
+          "roll_deg": 0,
+          "lid_deg": 0,
+          "camera_position_m": [
+            0.0,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            0.0,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 1,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.1,
+          "phase": "Departure",
+          "position_m": [
+            0.0,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 0,
+          "yaw_deg": 25,
+          "roll_deg": 0,
+          "lid_deg": 0,
+          "camera_position_m": [
+            0.0,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            0.0,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 1,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.3,
+          "phase": "Lift",
+          "position_m": [
+            0.5188,
+            0.0,
+            1.1
+          ],
+          "pitch_deg": 55,
+          "yaw_deg": 25,
+          "roll_deg": -10,
+          "lid_deg": 0,
+          "camera_position_m": [
+            0.5188,
+            -0.82,
+            1.592
+          ],
+          "camera_target_m": [
+            0.5188,
+            0.0,
+            1.18
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0.45,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.5,
+          "phase": "Rotation",
+          "position_m": [
+            1.0375,
+            0.0,
+            1.2
+          ],
+          "pitch_deg": 100,
+          "yaw_deg": 25,
+          "roll_deg": -25,
+          "lid_deg": 0,
+          "camera_position_m": [
+            1.0375,
+            -0.82,
+            1.692
+          ],
+          "camera_target_m": [
+            1.0375,
+            0.0,
+            1.28
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.7,
+          "phase": "Approach",
+          "position_m": [
+            1.5563,
+            0.0,
+            1.0
+          ],
+          "pitch_deg": 200,
+          "yaw_deg": 25,
+          "roll_deg": -15,
+          "lid_deg": 0,
+          "camera_position_m": [
+            1.5563,
+            -0.82,
+            1.492
+          ],
+          "camera_target_m": [
+            1.5563,
+            0.0,
+            1.08
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 0.45
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.9,
+          "phase": "Landing",
+          "position_m": [
+            2.075,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": -17.3,
+          "roll_deg": 0,
+          "lid_deg": 106,
+          "camera_position_m": [
+            2.075,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            2.075,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 1
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 1,
+          "phase": "End hold",
+          "position_m": [
+            2.075,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": -17.3,
+          "roll_deg": 0,
+          "lid_deg": 106,
+          "camera_position_m": [
+            2.075,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            2.075,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 1
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "from": "Hack Atlantic",
+      "to": "Formula SAE",
+      "intent": "Lift and turntable spin",
+      "source_node": "48:6021",
+      "poses": [
+        {
+          "p": 0,
+          "phase": "Start hold",
+          "position_m": [
+            2.075,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": -17.3,
+          "roll_deg": 0,
+          "lid_deg": 106,
+          "camera_position_m": [
+            2.075,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            2.075,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 1,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.1,
+          "phase": "Departure",
+          "position_m": [
+            2.075,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": -17.3,
+          "roll_deg": 0,
+          "lid_deg": 106,
+          "camera_position_m": [
+            2.075,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            2.075,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 1,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.3,
+          "phase": "Lift",
+          "position_m": [
+            2.4938,
+            0.0,
+            1.1
+          ],
+          "pitch_deg": 372,
+          "yaw_deg": -20,
+          "roll_deg": 0,
+          "lid_deg": 0,
+          "camera_position_m": [
+            2.4938,
+            -0.82,
+            1.592
+          ],
+          "camera_target_m": [
+            2.4938,
+            0.0,
+            1.18
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0.45,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.5,
+          "phase": "Rotation",
+          "position_m": [
+            2.9125,
+            0.0,
+            1.2
+          ],
+          "pitch_deg": 372,
+          "yaw_deg": 120,
+          "roll_deg": 0,
+          "lid_deg": 0,
+          "camera_position_m": [
+            2.9125,
+            -0.82,
+            1.692
+          ],
+          "camera_target_m": [
+            2.9125,
+            0.0,
+            1.28
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.7,
+          "phase": "Approach",
+          "position_m": [
+            3.3312,
+            0.0,
+            1.0
+          ],
+          "pitch_deg": 364,
+          "yaw_deg": 290,
+          "roll_deg": 0,
+          "lid_deg": 0,
+          "camera_position_m": [
+            3.3312,
+            -0.82,
+            1.492
+          ],
+          "camera_target_m": [
+            3.3312,
+            0.0,
+            1.08
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 0.45
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.9,
+          "phase": "Landing",
+          "position_m": [
+            3.75,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 385,
+          "roll_deg": 0,
+          "lid_deg": 0,
+          "camera_position_m": [
+            3.8933,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            3.8933,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            403.2,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 1
+          },
+          "subject_target_normalized": [
+            0.28,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.48,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 1,
+          "phase": "End hold",
+          "position_m": [
+            3.75,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 385,
+          "roll_deg": 0,
+          "lid_deg": 0,
+          "camera_position_m": [
+            3.8933,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            3.8933,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            403.2,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 1
+          },
+          "subject_target_normalized": [
+            0.28,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.48,
+          "hero_max_height_fraction": 0.64
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "from": "Formula SAE",
+      "to": "Ultra Maritime",
+      "intent": "Barrel roll; open on landing",
+      "source_node": "48:6638",
+      "poses": [
+        {
+          "p": 0,
+          "phase": "Start hold",
+          "position_m": [
+            3.75,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 385,
+          "roll_deg": 0,
+          "lid_deg": 0,
+          "camera_position_m": [
+            3.8933,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            3.8933,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            403.2,
+            480
+          ],
+          "station_visibility": {
+            "from": 1,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.28,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.48,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.1,
+          "phase": "Departure",
+          "position_m": [
+            3.75,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 385,
+          "roll_deg": 0,
+          "lid_deg": 0,
+          "camera_position_m": [
+            3.8933,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            3.8933,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            403.2,
+            480
+          ],
+          "station_visibility": {
+            "from": 1,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.28,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.48,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.3,
+          "phase": "Lift",
+          "position_m": [
+            4.3125,
+            0.0,
+            1.1
+          ],
+          "pitch_deg": 350,
+          "yaw_deg": 390,
+          "roll_deg": -40,
+          "lid_deg": 0,
+          "camera_position_m": [
+            4.3125,
+            -0.82,
+            1.592
+          ],
+          "camera_target_m": [
+            4.3125,
+            0.0,
+            1.18
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0.45,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.5,
+          "phase": "Rotation",
+          "position_m": [
+            4.875,
+            0.0,
+            1.2
+          ],
+          "pitch_deg": 350,
+          "yaw_deg": 380,
+          "roll_deg": -180,
+          "lid_deg": 0,
+          "camera_position_m": [
+            4.875,
+            -0.82,
+            1.692
+          ],
+          "camera_target_m": [
+            4.875,
+            0.0,
+            1.28
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.7,
+          "phase": "Approach",
+          "position_m": [
+            5.4375,
+            0.0,
+            1.0
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 345,
+          "roll_deg": -330,
+          "lid_deg": 45,
+          "camera_position_m": [
+            5.4375,
+            -0.82,
+            1.492
+          ],
+          "camera_target_m": [
+            5.4375,
+            0.0,
+            1.08
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 0.45
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.9,
+          "phase": "Landing",
+          "position_m": [
+            6.0,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 334.5,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            6.0,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            6.0,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 1
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 1,
+          "phase": "End hold",
+          "position_m": [
+            6.0,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 334.5,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            6.0,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            6.0,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 1
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "from": "Ultra Maritime",
+      "to": "Projects",
+      "intent": "Close, rise, underside reveal",
+      "source_node": "49:6477",
+      "poses": [
+        {
+          "p": 0,
+          "phase": "Start hold",
+          "position_m": [
+            6.0,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 334.5,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            6.0,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            6.0,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 1,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.1,
+          "phase": "Departure",
+          "position_m": [
+            6.0,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 334.5,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            6.0,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            6.0,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 1,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.3,
+          "phase": "Lift",
+          "position_m": [
+            6.475,
+            0.0,
+            1.1
+          ],
+          "pitch_deg": 340,
+          "yaw_deg": 334.5,
+          "roll_deg": -360,
+          "lid_deg": 20,
+          "camera_position_m": [
+            6.475,
+            -0.82,
+            1.592
+          ],
+          "camera_target_m": [
+            6.475,
+            0.0,
+            1.18
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0.45,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.5,
+          "phase": "Rotation",
+          "position_m": [
+            6.95,
+            0.0,
+            1.2
+          ],
+          "pitch_deg": 285,
+          "yaw_deg": 240,
+          "roll_deg": -360,
+          "lid_deg": 0,
+          "camera_position_m": [
+            6.95,
+            -0.82,
+            1.692
+          ],
+          "camera_target_m": [
+            6.95,
+            0.0,
+            1.28
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.7,
+          "phase": "Approach",
+          "position_m": [
+            7.425,
+            0.0,
+            1.0
+          ],
+          "pitch_deg": 345,
+          "yaw_deg": 60,
+          "roll_deg": -360,
+          "lid_deg": 50,
+          "camera_position_m": [
+            7.425,
+            -0.82,
+            1.492
+          ],
+          "camera_target_m": [
+            7.425,
+            0.0,
+            1.08
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 0.45
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.9,
+          "phase": "Landing",
+          "position_m": [
+            7.9,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": -25.5,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            7.9,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            7.9,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 1
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 1,
+          "phase": "End hold",
+          "position_m": [
+            7.9,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": -25.5,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            7.9,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            7.9,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 1
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "from": "Projects",
+      "to": "Resume",
+      "intent": "Half-open turntable; profile readable",
+      "source_node": "49:7128",
+      "poses": [
+        {
+          "p": 0,
+          "phase": "Start hold",
+          "position_m": [
+            7.9,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": -25.5,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            7.9,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            7.9,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 1,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.1,
+          "phase": "Departure",
+          "position_m": [
+            7.9,
+            0.0,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": -25.5,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            7.9,
+            -0.82,
+            1.232
+          ],
+          "camera_target_m": [
+            7.9,
+            0.0,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 1,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.3,
+          "phase": "Lift",
+          "position_m": [
+            8.35,
+            0.0112,
+            1.1
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 0,
+          "roll_deg": -360,
+          "lid_deg": 45,
+          "camera_position_m": [
+            8.35,
+            -0.8088,
+            1.592
+          ],
+          "camera_target_m": [
+            8.35,
+            0.0112,
+            1.18
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0.45,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.5,
+          "phase": "Rotation",
+          "position_m": [
+            8.8,
+            0.0225,
+            1.2
+          ],
+          "pitch_deg": 365,
+          "yaw_deg": 90,
+          "roll_deg": -360,
+          "lid_deg": 45,
+          "camera_position_m": [
+            8.8,
+            -0.7975,
+            1.692
+          ],
+          "camera_target_m": [
+            8.8,
+            0.0225,
+            1.28
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.7,
+          "phase": "Approach",
+          "position_m": [
+            9.25,
+            0.0338,
+            1.0
+          ],
+          "pitch_deg": 365,
+          "yaw_deg": 200,
+          "roll_deg": -360,
+          "lid_deg": 70,
+          "camera_position_m": [
+            9.25,
+            -0.7862,
+            1.492
+          ],
+          "camera_target_m": [
+            9.25,
+            0.0338,
+            1.08
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 0.45
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.9,
+          "phase": "Landing",
+          "position_m": [
+            9.7,
+            0.045,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 385,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            9.7,
+            -0.775,
+            1.232
+          ],
+          "camera_target_m": [
+            9.7,
+            0.045,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 1
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 1,
+          "phase": "End hold",
+          "position_m": [
+            9.7,
+            0.045,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 385,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            9.7,
+            -0.775,
+            1.232
+          ],
+          "camera_target_m": [
+            9.7,
+            0.045,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 1
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "from": "Resume",
+      "to": "Contact",
+      "intent": "Stay open; slow yaw and slide",
+      "source_node": "49:7871",
+      "poses": [
+        {
+          "p": 0,
+          "phase": "Start hold",
+          "position_m": [
+            9.7,
+            0.045,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 385,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            9.7,
+            -0.775,
+            1.232
+          ],
+          "camera_target_m": [
+            9.7,
+            0.045,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 1,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.1,
+          "phase": "Departure",
+          "position_m": [
+            9.7,
+            0.045,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 385,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            9.7,
+            -0.775,
+            1.232
+          ],
+          "camera_target_m": [
+            9.7,
+            0.045,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 1,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.3,
+          "phase": "Lift",
+          "position_m": [
+            10.205,
+            0.0488,
+            0.81
+          ],
+          "pitch_deg": 355,
+          "yaw_deg": 370,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            10.205,
+            -0.7712,
+            1.302
+          ],
+          "camera_target_m": [
+            10.205,
+            0.0488,
+            0.89
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0.45,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.5,
+          "phase": "Rotation",
+          "position_m": [
+            10.71,
+            0.0525,
+            0.83
+          ],
+          "pitch_deg": 352,
+          "yaw_deg": 325,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            10.71,
+            -0.7675,
+            1.322
+          ],
+          "camera_target_m": [
+            10.71,
+            0.0525,
+            0.91
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 0
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.7,
+          "phase": "Approach",
+          "position_m": [
+            11.215,
+            0.0562,
+            0.795
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 365,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            11.215,
+            -0.7638,
+            1.287
+          ],
+          "camera_target_m": [
+            11.215,
+            0.0562,
+            0.875
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 0.45
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 0.9,
+          "phase": "Landing",
+          "position_m": [
+            11.72,
+            0.06,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 385,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            11.72,
+            -0.76,
+            1.232
+          ],
+          "camera_target_m": [
+            11.72,
+            0.06,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 1
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        },
+        {
+          "p": 1,
+          "phase": "End hold",
+          "position_m": [
+            11.72,
+            0.06,
+            0.74
+          ],
+          "pitch_deg": 360,
+          "yaw_deg": 385,
+          "roll_deg": -360,
+          "lid_deg": 106,
+          "camera_position_m": [
+            11.72,
+            -0.76,
+            1.232
+          ],
+          "camera_target_m": [
+            11.72,
+            0.06,
+            0.82
+          ],
+          "camera_roll_deg": 0,
+          "lens_mm": 50,
+          "sensor_width_mm": 36,
+          "frame_px": [
+            1440,
+            960
+          ],
+          "subject_target_px": [
+            720,
+            480
+          ],
+          "station_visibility": {
+            "from": 0,
+            "to": 1
+          },
+          "subject_target_normalized": [
+            0.5,
+            0.5
+          ],
+          "hero_max_width_fraction": 0.56,
+          "hero_max_height_fraction": 0.64
+        }
+      ]
+    }
+  ],
+  "push_ins": [
+    {
+      "station": "Hack Atlantic",
+      "source_node": "54:6828",
+      "frame_px": [
+        1440,
+        960
+      ],
+      "laptop_bounds_px": [
+        363.655,
+        176.545,
+        713.6875,
+        665
+      ],
+      "relative_camera_yaw_deg": 0,
+      "camera_roll_deg": 0,
+      "elevation_seed_deg": 12,
+      "holds": [
+        [
+          0,
+          0.1
+        ],
+        [
+          0.9,
+          1
+        ]
+      ],
+      "easing": "smoothstep",
+      "framing": "A standee cropped at each edge"
+    },
+    {
+      "station": "Ultra Maritime",
+      "source_node": "54:6950",
+      "frame_px": [
+        1440,
+        960
+      ],
+      "laptop_bounds_px": [
+        232.3702,
+        70.43,
+        976.625,
+        910
+      ],
+      "relative_camera_yaw_deg": 0,
+      "camera_roll_deg": 0,
+      "elevation_seed_deg": 12,
+      "holds": [
+        [
+          0,
+          0.1
+        ],
+        [
+          0.9,
+          1
+        ]
+      ],
+      "easing": "smoothstep",
+      "framing": "Straight-on; preserve keyboard and slight bottom crop"
+    },
+    {
+      "station": "Projects",
+      "source_node": "54:7071",
+      "frame_px": [
+        1440,
+        960
+      ],
+      "laptop_bounds_px": [
+        232.3702,
+        70.43,
+        976.625,
+        910
+      ],
+      "relative_camera_yaw_deg": 0,
+      "camera_roll_deg": 0,
+      "elevation_seed_deg": 12,
+      "holds": [
+        [
+          0,
+          0.1
+        ],
+        [
+          0.9,
+          1
+        ]
+      ],
+      "easing": "smoothstep",
+      "framing": "Same laptop framing as Ultra"
+    }
+  ],
+  "birdseye": [
+    {
+      "station": "Resume",
+      "source_node": "55:7271",
+      "camera_elevation_end_deg": 90,
+      "camera_roll_deg": 0,
+      "projection": "orthographic",
+      "ortho_width_m": 0.45,
+      "target_station_local_m": [
+        0.23,
+        -0.12,
+        0.742
+      ],
+      "start_hold": [
+        0,
+        0.1
+      ],
+      "end_hold": [
+        0.9,
+        1
+      ]
+    },
+    {
+      "station": "Contact",
+      "source_node": "13:2882",
+      "camera_elevation_end_deg": 90,
+      "camera_roll_deg": 0,
+      "projection": "orthographic",
+      "ortho_width_m": 0.48,
+      "target_station_local_m": [
+        0.11,
+        -0.16,
+        0.748
+      ],
+      "start_hold": [
+        0,
+        0.1
+      ],
+      "end_hold": [
+        0.9,
+        1
+      ]
+    }
+  ],
+  "paper_feed": {
+    "page_mm": [
+      215.9,
+      279.4,
+      0.1
+    ],
+    "centre_x_m": 0.23,
+    "height_m": 0.742,
+    "leading_edge_Y_m": [
+      [
+        0,
+        0.21
+      ],
+      [
+        0.1,
+        0.21
+      ],
+      [
+        0.3,
+        0.0197
+      ],
+      [
+        0.5,
+        -0.0921
+      ],
+      [
+        0.9,
+        -0.2597
+      ],
+      [
+        1,
+        -0.2597
+      ]
+    ],
+    "sheet_trails_leading_edge_along": "+Y",
+    "printer_mask": "hide portion behind front slot; deterministic clip/occlusion",
+    "state": [
+      "hidden",
+      "emerging",
+      "printed"
+    ],
+    "no_emission": true
+  },
+  "accessibility": {
+    "mobile": "use existing mobile scenes 15:770\u201315:926 with same asset set; keep labels >=16 CSS px, use tighter camera framing",
+    "reduced_motion": "static landed checkpoint; optional 150 ms dissolve; disable flips/rolls/travel and paper movement; show printed state",
+    "no_second_asset_set": true
+  },
+  "framing_rule": {
+    "default_target_normalized": [
+      0.5,
+      0.5
+    ],
+    "hero_max_width_fraction": 0.56,
+    "hero_max_height_fraction": 0.64,
+    "exception": "Formula SAE landed/start hold X=0.28; recenter by lift. Other sideways moves only when station composition requires them.",
+    "physical_scale": 1,
+    "station_overview": "Full-station cards are context; blend overview after hero landing hold.",
+    "camera_fit": "Fit evaluated laptop bounds within width/height fractions; smooth camera distance across poses to avoid pumping."
+  }
+}

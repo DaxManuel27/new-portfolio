@@ -1,0 +1,242 @@
+{
+  "figma_url": "https://www.figma.com/design/GHhsIXL0aNThNEEc8sIjjC?node-id=7-2",
+  "page": "Device PBR textures",
+  "status": "Exported material designs; not applied or render-validated",
+  "materials": [
+    {
+      "name": "MacBookPro_Silver",
+      "roughness": 0.28,
+      "metallic": 1,
+      "tile_mm": 20,
+      "bump_distance_m": 0.000012,
+      "objects": [
+        "MacBook_Base",
+        "MacBook_DisplayHousing"
+      ],
+      "material_name": "MAT_MacBookPro_Silver",
+      "maps": [
+        {
+          "id": "7:3",
+          "name": "T_MacBookPro_Silver_BaseColor",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_MacBookPro_Silver_BaseColor.png",
+          "color_space": "sRGB"
+        },
+        {
+          "id": "7:1410",
+          "name": "T_MacBookPro_Silver_Roughness",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_MacBookPro_Silver_Roughness.png",
+          "color_space": "Non-Color"
+        },
+        {
+          "id": "7:2817",
+          "name": "T_MacBookPro_Silver_Metallic",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_MacBookPro_Silver_Metallic.png",
+          "color_space": "Non-Color"
+        },
+        {
+          "id": "7:2819",
+          "name": "T_MacBookPro_Silver_Height",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_MacBookPro_Silver_Height.png",
+          "color_space": "Non-Color"
+        }
+      ]
+    },
+    {
+      "name": "MacBookPro_Trackpad",
+      "roughness": 0.43,
+      "metallic": 0,
+      "tile_mm": 20,
+      "bump_distance_m": 0.000004,
+      "objects": [
+        "MacBook_Trackpad"
+      ],
+      "material_name": "MAT_MacBookPro_Trackpad",
+      "maps": [
+        {
+          "id": "7:4226",
+          "name": "T_MacBookPro_Trackpad_BaseColor",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_MacBookPro_Trackpad_BaseColor.png",
+          "color_space": "sRGB"
+        },
+        {
+          "id": "7:5631",
+          "name": "T_MacBookPro_Trackpad_Roughness",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_MacBookPro_Trackpad_Roughness.png",
+          "color_space": "Non-Color"
+        },
+        {
+          "id": "7:7036",
+          "name": "T_MacBookPro_Trackpad_Metallic",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_MacBookPro_Trackpad_Metallic.png",
+          "color_space": "Non-Color"
+        },
+        {
+          "id": "7:7038",
+          "name": "T_MacBookPro_Trackpad_Height",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_MacBookPro_Trackpad_Height.png",
+          "color_space": "Non-Color"
+        }
+      ]
+    },
+    {
+      "name": "Monitor_Housing",
+      "roughness": 0.46,
+      "metallic": 0,
+      "tile_mm": 30,
+      "bump_distance_m": 0.000025,
+      "objects": [
+        "Personal_Ultrawide_Housing",
+        "Ultra_Monitor_Left_Housing",
+        "Ultra_Monitor_Right_Housing"
+      ],
+      "material_name": "MAT_Monitor_Housing",
+      "maps": [
+        {
+          "id": "7:8443",
+          "name": "T_Monitor_Housing_BaseColor",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_Monitor_Housing_BaseColor.png",
+          "color_space": "sRGB"
+        },
+        {
+          "id": "7:9850",
+          "name": "T_Monitor_Housing_Roughness",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_Monitor_Housing_Roughness.png",
+          "color_space": "Non-Color"
+        },
+        {
+          "id": "7:11257",
+          "name": "T_Monitor_Housing_Metallic",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_Monitor_Housing_Metallic.png",
+          "color_space": "Non-Color"
+        },
+        {
+          "id": "7:11259",
+          "name": "T_Monitor_Housing_Height",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_Monitor_Housing_Height.png",
+          "color_space": "Non-Color"
+        }
+      ]
+    },
+    {
+      "name": "Device_BlackBezel",
+      "roughness": 0.31,
+      "metallic": 0,
+      "tile_mm": 20,
+      "bump_distance_m": 0.000008,
+      "objects": [
+        "MacBook_DisplayBezel",
+        "MacBook_CameraNotch"
+      ],
+      "note": "Optional monitor front rim material slot; current monitor models have no separate bezel object.",
+      "material_name": "MAT_Device_BlackBezel",
+      "maps": [
+        {
+          "id": "7:12666",
+          "name": "T_Device_BlackBezel_BaseColor",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_Device_BlackBezel_BaseColor.png",
+          "color_space": "sRGB"
+        },
+        {
+          "id": "7:14075",
+          "name": "T_Device_BlackBezel_Roughness",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_Device_BlackBezel_Roughness.png",
+          "color_space": "Non-Color"
+        },
+        {
+          "id": "7:15484",
+          "name": "T_Device_BlackBezel_Metallic",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_Device_BlackBezel_Metallic.png",
+          "color_space": "Non-Color"
+        },
+        {
+          "id": "7:15486",
+          "name": "T_Device_BlackBezel_Height",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_Device_BlackBezel_Height.png",
+          "color_space": "Non-Color"
+        }
+      ]
+    },
+    {
+      "name": "Monitor_Stand",
+      "roughness": 0.39,
+      "metallic": 0,
+      "tile_mm": 30,
+      "bump_distance_m": 0.00002,
+      "objects": [
+        "Personal_Ultrawide_StandBase",
+        "Personal_Ultrawide_StandStem",
+        "Ultra_Monitor_Left_StandBase",
+        "Ultra_Monitor_Left_StandStem",
+        "Ultra_Monitor_Right_StandBase",
+        "Ultra_Monitor_Right_StandStem"
+      ],
+      "material_name": "MAT_Monitor_Stand",
+      "maps": [
+        {
+          "id": "7:16895",
+          "name": "T_Monitor_Stand_BaseColor",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_Monitor_Stand_BaseColor.png",
+          "color_space": "sRGB"
+        },
+        {
+          "id": "7:18304",
+          "name": "T_Monitor_Stand_Roughness",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_Monitor_Stand_Roughness.png",
+          "color_space": "Non-Color"
+        },
+        {
+          "id": "7:19713",
+          "name": "T_Monitor_Stand_Metallic",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_Monitor_Stand_Metallic.png",
+          "color_space": "Non-Color"
+        },
+        {
+          "id": "7:19715",
+          "name": "T_Monitor_Stand_Height",
+          "width": 1024,
+          "height": 1024,
+          "file": "assets/textures/devices/T_Monitor_Stand_Height.png",
+          "color_space": "Non-Color"
+        }
+      ]
+    }
+  ]
+}

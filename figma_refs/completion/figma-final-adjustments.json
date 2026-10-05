@@ -1,0 +1,519 @@
+{
+  "audit": {
+    "mutatedNodeIds": [
+      "118:12513",
+      "118:12797",
+      "111:11081"
+    ],
+    "descendantCount": 3204,
+    "nodeTypeCounts": {
+      "TEXT": 997,
+      "FRAME": 331,
+      "INSTANCE": 52,
+      "VECTOR": 173,
+      "RECTANGLE": 1537,
+      "ELLIPSE": 112,
+      "GROUP": 2
+    },
+    "imageFilledNodes": [
+      {
+        "id": "113:11220",
+        "name": "Albedo · sRGB",
+        "type": "RECTANGLE",
+        "w": 320,
+        "h": 320
+      },
+      {
+        "id": "113:11223",
+        "name": "Roughness · Non-Color",
+        "type": "RECTANGLE",
+        "w": 320,
+        "h": 320
+      },
+      {
+        "id": "113:11226",
+        "name": "Normal · OpenGL +Y",
+        "type": "RECTANGLE",
+        "w": 320,
+        "h": 320
+      },
+      {
+        "id": "I116:11176;80:8541",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 12.594206809997559,
+        "h": 73.01485443115234
+      },
+      {
+        "id": "I116:11176;80:8542",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 12.594206809997559,
+        "h": 73.01485443115234
+      },
+      {
+        "id": "I116:11424;84:11405",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 25.66666603088379,
+        "h": 252.5416717529297
+      },
+      {
+        "id": "I116:11424;84:11406",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 25.66666603088379,
+        "h": 252.5416717529297
+      },
+      {
+        "id": "I116:11704;80:8541",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 12.594206809997559,
+        "h": 73.01485443115234
+      },
+      {
+        "id": "I116:11704;80:8542",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 12.594206809997559,
+        "h": 73.01485443115234
+      },
+      {
+        "id": "I116:11891;84:11405",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 25.66666603088379,
+        "h": 252.5416717529297
+      },
+      {
+        "id": "I116:11891;84:11406",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 25.66666603088379,
+        "h": 252.5416717529297
+      },
+      {
+        "id": "117:11536",
+        "name": "Hack Atlantic / Blender camera capture — 108°",
+        "type": "RECTANGLE",
+        "w": 860.4444580078125,
+        "h": 645.3333129882812
+      },
+      {
+        "id": "117:11537",
+        "name": "Clean plate / left standee",
+        "type": "RECTANGLE",
+        "w": 164.23611450195312,
+        "h": 120.69444274902344
+      },
+      {
+        "id": "117:11538",
+        "name": "Clean plate / baked laptop",
+        "type": "RECTANGLE",
+        "w": 106.94444274902344,
+        "h": 100.06944274902344
+      },
+      {
+        "id": "117:11539",
+        "name": "Clean plate / right standee",
+        "type": "RECTANGLE",
+        "w": 122.22222137451172,
+        "h": 132.15277099609375
+      },
+      {
+        "id": "117:11544",
+        "name": "Render (shifted)",
+        "type": "RECTANGLE",
+        "w": 860.4444580078125,
+        "h": 645.3333129882812
+      },
+      {
+        "id": "117:11547",
+        "name": "Render (shifted)",
+        "type": "RECTANGLE",
+        "w": 860.4444580078125,
+        "h": 645.3333129882812
+      },
+      {
+        "id": "I117:11548;81:12312",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 2.309471368789673,
+        "h": 12.303425788879395
+      },
+      {
+        "id": "I117:11548;81:12313",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 2.309471368789673,
+        "h": 12.303425788879395
+      },
+      {
+        "id": "117:11722",
+        "name": "Standee art (from render)",
+        "type": "RECTANGLE",
+        "w": 6217.8525390625,
+        "h": 4734.9365234375
+      },
+      {
+        "id": "117:11730",
+        "name": "Standee art (from render)",
+        "type": "RECTANGLE",
+        "w": 6217.8525390625,
+        "h": 4734.9365234375
+      },
+      {
+        "id": "I117:11733;84:10814",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 16.255556106567383,
+        "h": 44.08628463745117
+      },
+      {
+        "id": "I117:11733;84:10815",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 16.255556106567383,
+        "h": 44.08628463745117
+      },
+      {
+        "id": "117:11882",
+        "name": "Station / Ultra Maritime.",
+        "type": "RECTANGLE",
+        "w": 977.7777709960938,
+        "h": 977.7777709960938
+      },
+      {
+        "id": "I117:11883;81:8949",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 5.072059154510498,
+        "h": 30.71060562133789
+      },
+      {
+        "id": "I117:11883;81:8950",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 5.072059154510498,
+        "h": 30.71060562133789
+      },
+      {
+        "id": "I117:12051;84:10814",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 22.244443893432617,
+        "h": 60.32859420776367
+      },
+      {
+        "id": "I117:12051;84:10815",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 22.244443893432617,
+        "h": 60.32859420776367
+      },
+      {
+        "id": "117:12209",
+        "name": "Station / personal desk",
+        "type": "RECTANGLE",
+        "w": 977.7777709960938,
+        "h": 977.7777709960938
+      },
+      {
+        "id": "I117:12210;81:8949",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 5.072059154510498,
+        "h": 30.71060562133789
+      },
+      {
+        "id": "I117:12210;81:8950",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 5.072059154510498,
+        "h": 30.71060562133789
+      },
+      {
+        "id": "I117:12378;84:10814",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 22.244443893432617,
+        "h": 60.32859420776367
+      },
+      {
+        "id": "I117:12378;84:10815",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 22.244443893432617,
+        "h": 60.32859420776367
+      },
+      {
+        "id": "117:12561",
+        "name": "Station / Formula SAE.",
+        "type": "RECTANGLE",
+        "w": 527.0833129882812,
+        "h": 527.0833129882812
+      },
+      {
+        "id": "117:12607",
+        "name": "Station / Formula SAE.",
+        "type": "RECTANGLE",
+        "w": 685.2083129882812,
+        "h": 685.2083129882812
+      },
+      {
+        "id": "I121:12561;80:8541",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 6.881923675537109,
+        "h": 39.89792251586914
+      },
+      {
+        "id": "I121:12561;80:8542",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 6.881923675537109,
+        "h": 39.89792251586914
+      },
+      {
+        "id": "I121:12865;80:8541",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 6.881917476654053,
+        "h": 39.89788818359375
+      },
+      {
+        "id": "I121:12865;80:8542",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 6.881917476654053,
+        "h": 39.89788818359375
+      },
+      {
+        "id": "I121:13063;80:8541",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 7.370473384857178,
+        "h": 42.73028564453125
+      },
+      {
+        "id": "I121:13063;80:8542",
+        "name": "Speaker grille",
+        "type": "RECTANGLE",
+        "w": 7.370473384857178,
+        "h": 42.73028564453125
+      }
+    ],
+    "assets": [
+      {
+        "id": "112:11081",
+        "name": "Prop / Pen · top · 140 mm",
+        "type": "COMPONENT",
+        "children": 1,
+        "exports": []
+      },
+      {
+        "id": "112:11088",
+        "name": "Prop / Pen · side · 140 mm",
+        "type": "COMPONENT",
+        "children": 4,
+        "exports": []
+      },
+      {
+        "id": "112:11116",
+        "name": "Texture / Phone number plate · 1024²",
+        "type": "COMPONENT",
+        "children": 10,
+        "exports": [
+          {
+            "format": "PNG",
+            "suffix": "",
+            "contentsOnly": true,
+            "colorProfile": "DOCUMENT",
+            "constraint": {
+              "type": "WIDTH",
+              "value": 1024
+            }
+          }
+        ]
+      },
+      {
+        "id": "112:11147",
+        "name": "Texture / FSAE / Data logging",
+        "type": "COMPONENT",
+        "children": 2,
+        "exports": [
+          {
+            "format": "PNG",
+            "suffix": "",
+            "contentsOnly": true,
+            "colorProfile": "DOCUMENT",
+            "constraint": {
+              "type": "WIDTH",
+              "value": 1024
+            }
+          }
+        ]
+      },
+      {
+        "id": "112:11150",
+        "name": "Texture / FSAE / Accelerator pedal sensor",
+        "type": "COMPONENT",
+        "children": 2,
+        "exports": [
+          {
+            "format": "PNG",
+            "suffix": "",
+            "contentsOnly": true,
+            "colorProfile": "DOCUMENT",
+            "constraint": {
+              "type": "WIDTH",
+              "value": 1024
+            }
+          }
+        ]
+      },
+      {
+        "id": "113:11107",
+        "name": "Texture / Notebook pages · flat · 2048w",
+        "type": "COMPONENT",
+        "children": 38,
+        "exports": [
+          {
+            "format": "PNG",
+            "suffix": "",
+            "contentsOnly": true,
+            "colorProfile": "DOCUMENT",
+            "constraint": {
+              "type": "WIDTH",
+              "value": 2048
+            }
+          }
+        ]
+      },
+      {
+        "id": "113:11146",
+        "name": "Texture / Resume page · flat · US Letter",
+        "type": "COMPONENT",
+        "children": 3,
+        "exports": [
+          {
+            "format": "PNG",
+            "suffix": "",
+            "contentsOnly": true,
+            "colorProfile": "DOCUMENT",
+            "constraint": {
+              "type": "HEIGHT",
+              "value": 2048
+            }
+          }
+        ]
+      },
+      {
+        "id": "123:13219",
+        "name": "Export / notebook-pages · opaque PNG",
+        "type": "FRAME",
+        "children": 1,
+        "exports": [
+          {
+            "format": "PNG",
+            "suffix": "",
+            "contentsOnly": true,
+            "colorProfile": "DOCUMENT",
+            "constraint": {
+              "type": "SCALE",
+              "value": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "123:13259",
+        "name": "Export / resume-page · opaque PNG",
+        "type": "FRAME",
+        "children": 1,
+        "exports": [
+          {
+            "format": "PNG",
+            "suffix": "",
+            "contentsOnly": true,
+            "colorProfile": "DOCUMENT",
+            "constraint": {
+              "type": "SCALE",
+              "value": 1
+            }
+          }
+        ]
+      }
+    ],
+    "transitionPoseCount": 30,
+    "centeredPoses": 28,
+    "sideSettlePoses": 2,
+    "remainingPlaceholderCount": 0,
+    "boardBounds": {
+      "x": 64,
+      "y": 64,
+      "w": 2480,
+      "h": 20789.384765625
+    }
+  },
+  "lastAdjustments": {
+    "createdNodeIdsByPrefix": {
+      "125:": [
+        "13260",
+        "13261",
+        "13272",
+        "13273",
+        "13274",
+        "13275",
+        "13276",
+        "13277",
+        "13278",
+        "13279",
+        "13280",
+        "13281",
+        "13282",
+        "13283",
+        "13284",
+        "13285",
+        "13286",
+        "13287",
+        "13291"
+      ],
+      "I125:13261;112:": [
+        "11117",
+        "11118",
+        "11119",
+        "11120",
+        "11121",
+        "11122",
+        "11123",
+        "11124",
+        "11125",
+        "11126"
+      ],
+      "I125:13287;113:": [
+        "11147",
+        "11148",
+        "11149"
+      ]
+    },
+    "mutatedNodeIds": [
+      "121:12862",
+      "121:12861",
+      "111:11081"
+    ],
+    "guide": "125:13260",
+    "staticPrintedReference": "121:12861",
+    "descendantCount": 3052,
+    "nodeTypeCounts": {
+      "TEXT": 951,
+      "FRAME": 317,
+      "INSTANCE": 54,
+      "VECTOR": 161,
+      "RECTANGLE": 1445,
+      "ELLIPSE": 122,
+      "GROUP": 2
+    }
+  }
+}

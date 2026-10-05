@@ -1,0 +1,262 @@
+{
+  "macbook-journey.glb": {
+    "imported_meshes": 44,
+    "finite": true,
+    "dimensions_m": [
+      0.37097567319869995,
+      0.32859504222869873,
+      0.017930328845977783
+    ],
+    "textures": 9,
+    "all_textures_packed": true,
+    "animated_objects": 3,
+    "animated_shape_keys": 0
+  },
+  "notebook.glb": {
+    "imported_meshes": 4,
+    "finite": true,
+    "dimensions_m": [
+      0.3059999942779541,
+      0.21899999678134918,
+      0.008030000142753124
+    ],
+    "textures": 1,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 0
+  },
+  "pen.glb": {
+    "imported_meshes": 6,
+    "finite": true,
+    "dimensions_m": [
+      0.14000000059604645,
+      0.010900000110268593,
+      0.015300000086426735
+    ],
+    "textures": 0,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 0
+  },
+  "printer-paper-feed.glb": {
+    "imported_meshes": 1,
+    "finite": true,
+    "dimensions_m": [
+      0.2158999890089035,
+      0.11176000535488129,
+      0.03499728441238403
+    ],
+    "textures": 1,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 1
+  },
+  "printer.glb": {
+    "imported_meshes": 24,
+    "finite": true,
+    "dimensions_m": [
+      0.30000001192092896,
+      0.305094838142395,
+      0.1726660579442978
+    ],
+    "textures": 0,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 0
+  },
+  "resume-page.glb": {
+    "imported_meshes": 1,
+    "finite": true,
+    "dimensions_m": [
+      0.2159000039100647,
+      0.2793999910354614,
+      9.999999747378752e-05
+    ],
+    "textures": 1,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 0
+  },
+  "rotary-phone.glb": {
+    "imported_meshes": 42,
+    "finite": true,
+    "dimensions_m": [
+      0.32991164922714233,
+      0.20990192890167236,
+      0.17604616284370422
+    ],
+    "textures": 4,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 0
+  },
+  "station-contact.glb": {
+    "imported_meshes": 101,
+    "finite": true,
+    "dimensions_m": [
+      1.2000000476837158,
+      0.699999988079071,
+      0.2838660478591919
+    ],
+    "textures": 14,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 0
+  },
+  "station-formula-sae.glb": {
+    "imported_meshes": 219,
+    "finite": true,
+    "dimensions_m": [
+      1.4035283327102661,
+      0.7830288410186768,
+      0.6386162042617798
+    ],
+    "textures": 18,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 0
+  },
+  "station-hack-atlantic.glb": {
+    "imported_meshes": 71,
+    "finite": true,
+    "dimensions_m": [
+      3.6241393089294434,
+      0.699999988079071,
+      1.9790000915527344
+    ],
+    "textures": 11,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 0
+  },
+  "station-intro.glb": {
+    "imported_meshes": 52,
+    "finite": true,
+    "dimensions_m": [
+      0.7400000095367432,
+      0.3285950720310211,
+      0.0920303463935852
+    ],
+    "textures": 9,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 0
+  },
+  "station-projects.glb": {
+    "imported_meshes": 61,
+    "finite": true,
+    "dimensions_m": [
+      1.75,
+      0.75,
+      1.3274999856948853
+    ],
+    "textures": 22,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 0
+  },
+  "station-resume.glb": {
+    "imported_meshes": 74,
+    "finite": true,
+    "dimensions_m": [
+      1.2000000476837158,
+      0.699999988079071,
+      0.2838660478591919
+    ],
+    "textures": 10,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 0
+  },
+  "station-ultra-maritime.glb": {
+    "imported_meshes": 68,
+    "finite": true,
+    "dimensions_m": [
+      1.7999999523162842,
+      0.75,
+      1.3199999332427979
+    ],
+    "textures": 23,
+    "all_textures_packed": true,
+    "animated_objects": 0,
+    "animated_shape_keys": 0
+  },
+  "transition-1-intro-to-hack-atlantic.glb": {
+    "imported_meshes": 44,
+    "finite": true,
+    "dimensions_m": [
+      0.37097567319869995,
+      0.32859504222869873,
+      0.017930328845977783
+    ],
+    "textures": 9,
+    "all_textures_packed": true,
+    "animated_objects": 3,
+    "animated_shape_keys": 0
+  },
+  "transition-2-hack-atlantic-to-formula-sae.glb": {
+    "imported_meshes": 44,
+    "finite": true,
+    "dimensions_m": [
+      0.3791731595993042,
+      0.3619258403778076,
+      0.21656620502471924
+    ],
+    "textures": 9,
+    "all_textures_packed": true,
+    "animated_objects": 3,
+    "animated_shape_keys": 0
+  },
+  "transition-3-formula-sae-to-ultra-maritime.glb": {
+    "imported_meshes": 44,
+    "finite": true,
+    "dimensions_m": [
+      0.3709754943847656,
+      0.3285951018333435,
+      0.017930328845977783
+    ],
+    "textures": 9,
+    "all_textures_packed": true,
+    "animated_objects": 3,
+    "animated_shape_keys": 0
+  },
+  "transition-4-ultra-maritime-to-projects.glb": {
+    "imported_meshes": 44,
+    "finite": true,
+    "dimensions_m": [
+      0.3999495506286621,
+      0.38748621940612793,
+      0.21656620502471924
+    ],
+    "textures": 9,
+    "all_textures_packed": true,
+    "animated_objects": 3,
+    "animated_shape_keys": 0
+  },
+  "transition-5-projects-to-resume.glb": {
+    "imported_meshes": 44,
+    "finite": true,
+    "dimensions_m": [
+      0.3999500274658203,
+      0.38748621940612793,
+      0.21656620502471924
+    ],
+    "textures": 9,
+    "all_textures_packed": true,
+    "animated_objects": 3,
+    "animated_shape_keys": 0
+  },
+  "transition-6-resume-to-contact.glb": {
+    "imported_meshes": 44,
+    "finite": true,
+    "dimensions_m": [
+      0.3989086151123047,
+      0.38614150881767273,
+      0.21656620502471924
+    ],
+    "textures": 9,
+    "all_textures_packed": true,
+    "animated_objects": 3,
+    "animated_shape_keys": 0
+  }
+}

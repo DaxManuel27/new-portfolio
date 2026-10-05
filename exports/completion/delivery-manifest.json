@@ -1,0 +1,90 @@
+{
+  "macbook-journey.glb": {
+    "bytes": 11089520,
+    "sha256": "7bee03e6a275181457831bd9e566658449d8c26addc8567d17903a4ceed65998"
+  },
+  "notebook.glb": {
+    "bytes": 153732,
+    "sha256": "57af66e0b52bfdfe271c367e2fd1c25edeaceea0f48441d5f10081d5a6bc3723"
+  },
+  "pen.glb": {
+    "bytes": 53776,
+    "sha256": "e6acd162cfec8766b3c9f5291953de88173c6d5a79d291795e6f8da2cf6c147f"
+  },
+  "printer-paper-feed.glb": {
+    "bytes": 79112,
+    "sha256": "d423bb78485f0746f3d5401c137f1c82de50454e112716dd1f8330e4aeafc9c6"
+  },
+  "printer.glb": {
+    "bytes": 904340,
+    "sha256": "710789f301ecd33a5b606e37214a5fe9684df9a3c7ffb7b4616baddc7d2c11de"
+  },
+  "resume-page.glb": {
+    "bytes": 48728,
+    "sha256": "0ac95156adb85ec7fdb1219812c7cbc017a182da0f9b96cfc0748dbc05873644"
+  },
+  "rotary-phone.glb": {
+    "bytes": 4859584,
+    "sha256": "ea80683cf755254f79bc674537dc86fa44bff4722e00a99f05af462c5aebb86f"
+  },
+  "station-contact.glb": {
+    "bytes": 16159060,
+    "sha256": "a6843ed610e8875009d4dd4920f93ac9ed54e0db91e3b7f9b67653c793bb6e7c"
+  },
+  "station-formula-sae.glb": {
+    "bytes": 11998516,
+    "sha256": "e5273dfcf491c69d7e2f30db60d10a792b6dcfb2e8fb751d237f1c8437154bf5"
+  },
+  "station-hack-atlantic.glb": {
+    "bytes": 21426168,
+    "sha256": "87b896e97271aff97356e76188eb1ea12ce5b7ba6849c9752f49b6b08ff42f25"
+  },
+  "station-intro.glb": {
+    "bytes": 11139660,
+    "sha256": "9070a7c647304d899f73fed071dabc9b935621250a27eb9230e6d2c337c1139c"
+  },
+  "station-projects.glb": {
+    "bytes": 11761700,
+    "sha256": "7e2b6a0ba3216514081ffa40bf82feb47ae90e05edadecb1d82e7b0131854644"
+  },
+  "station-resume.glb": {
+    "bytes": 12066068,
+    "sha256": "6e7b6a4eac83620eeefeb413c6d7f28bae7653cddf2f02ab384da07f2a6a31c9"
+  },
+  "station-ultra-maritime.glb": {
+    "bytes": 11786788,
+    "sha256": "a69d64299300ba76a98cd2cfa6fdfe88eac2600663129cb0fb0b0599d4c8f919"
+  },
+  "transition-1-intro-to-hack-atlantic.glb": {
+    "bytes": 11060736,
+    "sha256": "7ab44d1d7d8abd038bd71db76e7301228f723698b137a5f1dd33ebb79dadfda0"
+  },
+  "transition-2-hack-atlantic-to-formula-sae.glb": {
+    "bytes": 11060740,
+    "sha256": "53e69ca2569f62c95f193ce4c331a7cf8f0ddfa5d469b4c2061a8d1aa749e981"
+  },
+  "transition-3-formula-sae-to-ultra-maritime.glb": {
+    "bytes": 11060744,
+    "sha256": "4a74e808d87478adf33a75698a00b99d613710d88ebc242ee2b30917e5b7d0a9"
+  },
+  "transition-4-ultra-maritime-to-projects.glb": {
+    "bytes": 11060740,
+    "sha256": "34591dedca5c77410d44a47785aa60ca561a825ed84638b182a9fea803cdd851"
+  },
+  "transition-5-projects-to-resume.glb": {
+    "bytes": 11060732,
+    "sha256": "77e1d30fb13d39eb4836a8fd559020bfa04caeb96e66993a12478195406c624a"
+  },
+  "transition-6-resume-to-contact.glb": {
+    "bytes": 11058964,
+    "sha256": "71e9a2b6a0a07b3ae924f2386f3eefd8a2e187f21eb0c1d205a361acf658ffbe"
+  },
+  "blender/portfolio-completed.blend": {
+    "bytes": 92550670,
+    "sha256": "362fe9a117cae4b5289dee00732fab8165c240278970d121be5fce98e8214508"
+  },
+  "blender/previews/completion/portfolio-journey.mp4": {
+    "bytes": 1264393,
+    "sha256": "5a43b8bdd691aa86e46d1e3ae66c0bdabb207522eef0bfaddf7e0c7def54e4f0"
+  }
+}

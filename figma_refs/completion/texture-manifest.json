@@ -1,0 +1,261 @@
+{
+  "version": "1.1",
+  "date": "2026-10-01",
+  "file_key": "AAoP4nNd3n9QzR9C2Cjarm",
+  "review_node": "111:11081",
+  "motion_node": "48:5573",
+  "assets": [
+    {
+      "name": "phone-number-plate",
+      "file": "figma_refs/completion/textures/phone-number-plate.png",
+      "working_file": "assets/textures/figma-completion/phone-number-plate.png",
+      "file_key": "AAoP4nNd3n9QzR9C2Cjarm",
+      "node_id": "112:11116",
+      "source_node_id": "44:5864",
+      "dimensions_px": [
+        1024,
+        1024
+      ],
+      "physical_dimensions_mm": [
+        122,
+        122
+      ],
+      "color_space": "sRGB",
+      "alpha_policy": "opaque",
+      "material_slot": "M_Phone_NumberPlate.BaseColor",
+      "version": "1.1",
+      "date": "2026-10-01",
+      "sha256": "3bf4c83f2fe1e4088de2c345ce01e1ce85a5fa616c09ae8b9ea78edbf7825783",
+      "svg_master": {
+        "file": "figma_refs/completion/textures/phone-number-plate.svg",
+        "sha256": "b164eb496357e1440ea2d3c8130ca49e6ba055c764c4eb541b957c1ff70cd15a"
+      }
+    },
+    {
+      "name": "fsae-data-logging",
+      "file": "figma_refs/completion/textures/fsae-data-logging.png",
+      "working_file": "assets/textures/figma-completion/fsae-data-logging.png",
+      "file_key": "AAoP4nNd3n9QzR9C2Cjarm",
+      "node_id": "112:11147",
+      "source_node_id": "40:3463",
+      "dimensions_px": [
+        1024,
+        323
+      ],
+      "physical_dimensions_mm": null,
+      "color_space": "sRGB",
+      "alpha_policy": "straight alpha with transparent padding",
+      "material_slot": "FSAE_Label_DataLogging.BaseColor/Alpha",
+      "version": "1.1",
+      "date": "2026-10-01",
+      "sha256": "2975c270fc51326804278ec14e54428916aab71e91885d5f966578ba3a50fbba",
+      "svg_master": {
+        "file": "figma_refs/completion/textures/fsae-data-logging.svg",
+        "sha256": "137e483a2292e55bca2117b789ac883f51a31d443590761836c59276e2e47414"
+      }
+    },
+    {
+      "name": "fsae-accelerator-pedal-sensor",
+      "file": "figma_refs/completion/textures/fsae-accelerator-pedal-sensor.png",
+      "working_file": "assets/textures/figma-completion/fsae-accelerator-pedal-sensor.png",
+      "file_key": "AAoP4nNd3n9QzR9C2Cjarm",
+      "node_id": "112:11150",
+      "source_node_id": "40:3463",
+      "dimensions_px": [
+        1024,
+        187
+      ],
+      "physical_dimensions_mm": null,
+      "color_space": "sRGB",
+      "alpha_policy": "straight alpha with transparent padding",
+      "material_slot": "FSAE_Label_Accelerator.BaseColor/Alpha",
+      "version": "1.1",
+      "date": "2026-10-01",
+      "sha256": "fe77c0cb8ba14532adc2984bf73b8f630d068436113725b0cc87fc90e2fb1d12",
+      "svg_master": {
+        "file": "figma_refs/completion/textures/fsae-accelerator-pedal-sensor.svg",
+        "sha256": "8afffb3a4ac1c5a6e74b03890742f39cbd23275abc72782c7e4499b3e3246de4"
+      }
+    },
+    {
+      "name": "notebook-pages",
+      "file": "figma_refs/completion/textures/notebook-pages.png",
+      "working_file": "assets/textures/figma-completion/notebook-pages.png",
+      "file_key": "AAoP4nNd3n9QzR9C2Cjarm",
+      "node_id": "123:13219",
+      "source_node_id": "44:5818",
+      "dimensions_px": [
+        2048,
+        1467
+      ],
+      "physical_dimensions_mm": [
+        296,
+        212
+      ],
+      "color_space": "sRGB",
+      "alpha_policy": "opaque",
+      "material_slot": "M_Notebook_Pages.BaseColor",
+      "version": "1.1",
+      "date": "2026-10-01",
+      "sha256": "052029a36d98cf268ec5f2621d43358b3489d53a10872b2c62c4775ce56dbac6"
+    },
+    {
+      "name": "resume-page",
+      "file": "figma_refs/completion/textures/resume-page.png",
+      "working_file": "assets/textures/figma-completion/resume-page.png",
+      "file_key": "AAoP4nNd3n9QzR9C2Cjarm",
+      "node_id": "123:13259",
+      "source_node_id": "55:7265",
+      "dimensions_px": [
+        1583,
+        2048
+      ],
+      "physical_dimensions_mm": [
+        215.9,
+        279.4
+      ],
+      "color_space": "sRGB",
+      "alpha_policy": "opaque",
+      "material_slot": "M_Resume_Paper.BaseColor",
+      "version": "1.1",
+      "date": "2026-10-01",
+      "sha256": "453bf2ffd539f9b27be26de25a1ddf53de00767f81d28d054b2030ee823dd3dc"
+    },
+    {
+      "name": "phone-plastic-albedo",
+      "file": "figma_refs/completion/textures/phone-plastic-albedo.png",
+      "working_file": "assets/textures/figma-completion/phone-plastic-albedo.png",
+      "file_key": "AAoP4nNd3n9QzR9C2Cjarm",
+      "node_id": "99:11028",
+      "source_node_id": "99:11025",
+      "dimensions_px": [
+        512,
+        512
+      ],
+      "physical_dimensions_mm": [
+        25,
+        25
+      ],
+      "color_space": "sRGB",
+      "alpha_policy": "opaque",
+      "material_slot": "M_Phone_RedPlastic.BaseColor",
+      "version": "1.1",
+      "date": "2026-10-01",
+      "sha256": "f01e79e55ead781cea7bd8a6ddb30543ed8de6a7877878edea8aba678ee3e2e0"
+    },
+    {
+      "name": "phone-plastic-roughness",
+      "file": "figma_refs/completion/textures/phone-plastic-roughness.png",
+      "working_file": "assets/textures/figma-completion/phone-plastic-roughness.png",
+      "file_key": "AAoP4nNd3n9QzR9C2Cjarm",
+      "node_id": "99:11030",
+      "source_node_id": "99:11025",
+      "dimensions_px": [
+        512,
+        512
+      ],
+      "physical_dimensions_mm": [
+        25,
+        25
+      ],
+      "color_space": "Non-Color",
+      "alpha_policy": "opaque",
+      "material_slot": "M_Phone_RedPlastic.Roughness",
+      "version": "1.1",
+      "date": "2026-10-01",
+      "sha256": "e3a54eb080c8944e14c86f3a7a0006a32a8ec3c73b0c18f2377587e2407d8376"
+    },
+    {
+      "name": "phone-plastic-normal",
+      "file": "figma_refs/completion/textures/phone-plastic-normal.png",
+      "working_file": "assets/textures/figma-completion/phone-plastic-normal.png",
+      "file_key": "AAoP4nNd3n9QzR9C2Cjarm",
+      "node_id": "99:11032",
+      "source_node_id": "99:11025",
+      "dimensions_px": [
+        512,
+        512
+      ],
+      "physical_dimensions_mm": [
+        25,
+        25
+      ],
+      "color_space": "Non-Color / OpenGL +Y",
+      "alpha_policy": "opaque",
+      "material_slot": "M_Phone_RedPlastic.Normal",
+      "version": "1.1",
+      "date": "2026-10-01",
+      "sha256": "415ef46e2b1d39704a4509696cb86d27b9892994ff81b624150391b438acab42"
+    }
+  ],
+  "notes": [
+    "Keep texture RGB unchanged; set color space on Blender image datablock. Material alpha is OPAQUE except FSAE labels.",
+    "FSAE physical dimensions depend on camera distance; match 17 px text in a 1440-wide scene. Source label boxes are 330x104 and 570x104 with 34 px text.",
+    "Phone UV square spans the 122 mm plate; local +Y maps to image top. Hole radius 42 mm, angles 57+27i degrees, digits 1 through 9 then 0.",
+    "No synthesized maps for pen: solid material specifications are on the Figma sheet.",
+    "Resume contains existing name/contact/rule only. No experience content was supplied in its source artwork.",
+    "Mechanical FSAE anchors and final metric camera fit require verification in Blender."
+  ],
+  "phone_digit_registration": [
+    {
+      "digit": 1,
+      "angle_deg": 57,
+      "x_px": 703.9986526059532,
+      "y_px": 216.3480017524853
+    },
+    {
+      "digit": 2,
+      "angle_deg": 84,
+      "x_px": 548.8488536738954,
+      "y_px": 161.40657642624018
+    },
+    {
+      "digit": 3,
+      "angle_deg": 111,
+      "x_px": 385.6664854586535,
+      "y_px": 182.88994276400285
+    },
+    {
+      "digit": 4,
+      "angle_deg": 138,
+      "x_px": 250.02317496613307,
+      "y_px": 276.11500722719853
+    },
+    {
+      "digit": 5,
+      "angle_deg": 165,
+      "x_px": 171.48739395868654,
+      "y_px": 420.7599221986129
+    },
+    {
+      "digit": 6,
+      "angle_deg": 192,
+      "x_px": 167.17891793147942,
+      "y_px": 585.2939835958211
+    },
+    {
+      "digit": 7,
+      "angle_deg": 219,
+      "x_px": 238.0369384398246,
+      "y_px": 733.850912936651
+    },
+    {
+      "digit": 8,
+      "angle_deg": 246,
+      "x_px": 368.6153315950491,
+      "y_px": 834.0472380515819
+    },
+    {
+      "digit": 9,
+      "angle_deg": 273,
+      "x_px": 530.4497115253814,
+      "y_px": 864.0414674649567
+    },
+    {
+      "digit": 0,
+      "angle_deg": 300,
+      "x_px": 688.2622950819673,
+      "y_px": 817.295250540665
+    }
+  ]
+}

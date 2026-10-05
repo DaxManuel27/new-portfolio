@@ -1,0 +1,802 @@
+[
+  {
+    "kind": "data-dive",
+    "local": 0.1,
+    "pose": {
+      "position": [
+        5.670648197708766,
+        2.0573782093058797,
+        -9.83357807407538
+      ],
+      "quaternion": [
+        -0.22772220024758086,
+        0.20725018596035483,
+        0.04967331698722844,
+        0.9501171093677271
+      ],
+      "width": 1.1306150504009487
+    },
+    "focus": {
+      "project": "data",
+      "dive": 0.1,
+      "isolate": 0,
+      "reveal": 0,
+      "amount": 0.045000000000000005,
+      "carOpacity": 1,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0.6479999999999999,
+      "lightMix": 0
+    }
+  },
+  {
+    "kind": "data-dive",
+    "local": 0.3,
+    "pose": {
+      "position": [
+        5.198519865122115,
+        1.7059906994823026,
+        -11.081340525687216
+      ],
+      "quaternion": [
+        -0.31377543263774854,
+        0.23113928106585674,
+        0.0790441543040835,
+        0.9175356299848549
+      ],
+      "width": 0.6300417073177124
+    },
+    "focus": {
+      "project": "data",
+      "dive": 0.3,
+      "isolate": 0,
+      "reveal": 0,
+      "amount": 0.135,
+      "carOpacity": 1,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0
+    }
+  },
+  {
+    "kind": "data-dive",
+    "local": 0.5,
+    "pose": {
+      "position": [
+        4.693262577056885,
+        1.2000000476837158,
+        -12.33814811706543
+      ],
+      "quaternion": [
+        -0.03896926455788094,
+        0.8571925172386173,
+        0.509314035043956,
+        0.06558657268972508
+      ],
+      "width": 0.26046511097764746
+    },
+    "focus": {
+      "project": "data",
+      "dive": 0.5,
+      "isolate": 0,
+      "reveal": 0,
+      "amount": 0.225,
+      "carOpacity": 1,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0
+    }
+  },
+  {
+    "kind": "data-dive",
+    "local": 0.7,
+    "pose": {
+      "position": [
+        4.685380320163505,
+        1.0627389534667022,
+        -12.279595208080744
+      ],
+      "quaternion": [
+        -0.011193473112136263,
+        0.8645645521751391,
+        0.502027136722377,
+        0.01927680669148814
+      ],
+      "width": 0.10767870324874758
+    },
+    "focus": {
+      "project": "data",
+      "dive": 0.7,
+      "isolate": 0,
+      "reveal": 0,
+      "amount": 0.315,
+      "carOpacity": 1,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0
+    }
+  },
+  {
+    "kind": "data-dive",
+    "local": 0.9,
+    "pose": {
+      "position": [
+        4.693042445247163,
+        0.9734137564139732,
+        -12.201932564974909
+      ],
+      "quaternion": [
+        -0.010122825043185268,
+        0.8119323156459991,
+        0.5834938131660967,
+        0.014085922751426158
+      ],
+      "width": 0.0600045736279023
+    },
+    "focus": {
+      "project": "data",
+      "dive": 0.9,
+      "isolate": 0,
+      "reveal": 0,
+      "amount": 0.405,
+      "carOpacity": 1,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0
+    }
+  },
+  {
+    "kind": "data-isolate",
+    "local": 0.1,
+    "pose": {
+      "position": [
+        4.693262577056884,
+        0.9600000381469725,
+        -12.19314765930176
+      ],
+      "quaternion": [
+        7.612997075010717e-15,
+        0.7999996452329103,
+        0.6000004730224949,
+        -1.0150650262803076e-14
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 0.1,
+      "reveal": 0,
+      "amount": 0.485,
+      "carOpacity": 0.9446064139941691,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0.028000000000000004
+    }
+  },
+  {
+    "kind": "data-isolate",
+    "local": 0.3,
+    "pose": {
+      "position": [
+        4.693262577056884,
+        0.9600000381469725,
+        -12.19314765930176
+      ],
+      "quaternion": [
+        7.612997075010717e-15,
+        0.7999996452329103,
+        0.6000004730224949,
+        -1.0150650262803076e-14
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 0.3,
+      "reveal": 0,
+      "amount": 0.555,
+      "carOpacity": 0.6064139941690961,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0.216
+    }
+  },
+  {
+    "kind": "data-isolate",
+    "local": 0.5,
+    "pose": {
+      "position": [
+        4.693262577056884,
+        0.9600000381469725,
+        -12.19314765930176
+      ],
+      "quaternion": [
+        7.612997075010717e-15,
+        0.7999996452329103,
+        0.6000004730224949,
+        -1.0150650262803076e-14
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 0.5,
+      "reveal": 0,
+      "amount": 0.625,
+      "carOpacity": 0.1982507288629738,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0.5
+    }
+  },
+  {
+    "kind": "data-isolate",
+    "local": 0.7,
+    "pose": {
+      "position": [
+        4.693262577056884,
+        0.9600000381469725,
+        -12.19314765930176
+      ],
+      "quaternion": [
+        7.612997075010717e-15,
+        0.7999996452329103,
+        0.6000004730224949,
+        -1.0150650262803076e-14
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 0.7,
+      "reveal": 0,
+      "amount": 0.695,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0.7839999999999999
+    }
+  },
+  {
+    "kind": "data-isolate",
+    "local": 0.9,
+    "pose": {
+      "position": [
+        4.692181889541517,
+        0.8966876116990712,
+        -12.117522520087265
+      ],
+      "quaternion": [
+        -0.45868713266068517,
+        0.09122286109078488,
+        0.047406858606872646,
+        0.8826307799430962
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 0.9,
+      "reveal": 0,
+      "amount": 0.765,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0.972
+    }
+  },
+  {
+    "kind": "data-reveal",
+    "local": 0.1,
+    "pose": {
+      "position": [
+        4.687828381289456,
+        0.8700000333786011,
+        -12.116831295623617
+      ],
+      "quaternion": [
+        -0.3166556264997005,
+        0.08410612827571176,
+        0.028201128686642075,
+        0.944383433639828
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 1,
+      "reveal": 0.1,
+      "amount": 0.8200000000000001,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 0.15625,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 1
+    }
+  },
+  {
+    "kind": "data-reveal",
+    "local": 0.3,
+    "pose": {
+      "position": [
+        4.687828381289456,
+        0.8700000333786011,
+        -12.116831295623617
+      ],
+      "quaternion": [
+        -0.3166556264997005,
+        0.08410612827571176,
+        0.028201128686642075,
+        0.944383433639828
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 1,
+      "reveal": 0.3,
+      "amount": 0.8600000000000001,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 0.84375,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 1
+    }
+  },
+  {
+    "kind": "data-reveal",
+    "local": 0.5,
+    "pose": {
+      "position": [
+        4.687828381289456,
+        0.8700000333786011,
+        -12.116831295623617
+      ],
+      "quaternion": [
+        -0.3166556264997005,
+        0.08410612827571176,
+        0.028201128686642075,
+        0.944383433639828
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 1,
+      "reveal": 0.5,
+      "amount": 0.9,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 1,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 1
+    }
+  },
+  {
+    "kind": "data-reveal",
+    "local": 0.7,
+    "pose": {
+      "position": [
+        4.687828381289456,
+        0.8700000333786011,
+        -12.116831295623617
+      ],
+      "quaternion": [
+        -0.3166556264997005,
+        0.08410612827571176,
+        0.028201128686642075,
+        0.944383433639828
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 1,
+      "reveal": 0.7,
+      "amount": 0.9400000000000001,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 1,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 1
+    }
+  },
+  {
+    "kind": "data-reveal",
+    "local": 0.9,
+    "pose": {
+      "position": [
+        4.687828381289456,
+        0.8700000333786011,
+        -12.116831295623617
+      ],
+      "quaternion": [
+        -0.3166556264997005,
+        0.08410612827571176,
+        0.028201128686642075,
+        0.944383433639828
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 1,
+      "reveal": 0.9,
+      "amount": 0.9800000000000001,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 1,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 1
+    }
+  },
+  {
+    "kind": "data-hold",
+    "local": 0.1,
+    "pose": {
+      "position": [
+        4.687828381289456,
+        0.8700000333786011,
+        -12.116831295623617
+      ],
+      "quaternion": [
+        -0.3166556264997005,
+        0.08410612827571176,
+        0.028201128686642075,
+        0.944383433639828
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 1,
+      "reveal": 1,
+      "amount": 1,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 1,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 1
+    }
+  },
+  {
+    "kind": "data-hold",
+    "local": 0.3,
+    "pose": {
+      "position": [
+        4.687828381289456,
+        0.8700000333786011,
+        -12.116831295623617
+      ],
+      "quaternion": [
+        -0.3166556264997005,
+        0.08410612827571176,
+        0.028201128686642075,
+        0.944383433639828
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 1,
+      "reveal": 1,
+      "amount": 1,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 1,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 1
+    }
+  },
+  {
+    "kind": "data-hold",
+    "local": 0.5,
+    "pose": {
+      "position": [
+        4.687828381289456,
+        0.8700000333786011,
+        -12.116831295623617
+      ],
+      "quaternion": [
+        -0.3166556264997005,
+        0.08410612827571176,
+        0.028201128686642075,
+        0.944383433639828
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 1,
+      "reveal": 1,
+      "amount": 1,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 1,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 1
+    }
+  },
+  {
+    "kind": "data-hold",
+    "local": 0.7,
+    "pose": {
+      "position": [
+        4.687828381289456,
+        0.8700000333786011,
+        -12.116831295623617
+      ],
+      "quaternion": [
+        -0.3166556264997005,
+        0.08410612827571176,
+        0.028201128686642075,
+        0.944383433639828
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 1,
+      "reveal": 1,
+      "amount": 1,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 1,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 1
+    }
+  },
+  {
+    "kind": "data-hold",
+    "local": 0.9,
+    "pose": {
+      "position": [
+        4.687828381289456,
+        0.8700000333786011,
+        -12.116831295623617
+      ],
+      "quaternion": [
+        -0.3166556264997005,
+        0.08410612827571176,
+        0.028201128686642075,
+        0.944383433639828
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 1,
+      "reveal": 1,
+      "amount": 1,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 1,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 1
+    }
+  },
+  {
+    "kind": "data-return",
+    "local": 0.1,
+    "pose": {
+      "position": [
+        4.687828381289456,
+        0.8700000333786011,
+        -12.116831295623617
+      ],
+      "quaternion": [
+        -0.3166556264997005,
+        0.08410612827571176,
+        0.028201128686642075,
+        0.944383433639828
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 1,
+      "reveal": 0.6,
+      "amount": 0.92,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 1,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 1
+    }
+  },
+  {
+    "kind": "data-return",
+    "local": 0.3,
+    "pose": {
+      "position": [
+        4.69428306505755,
+        0.9190731117610044,
+        -12.127590645615683
+      ],
+      "quaternion": [
+        -0.5617804948868881,
+        0.10527199655452367,
+        0.07235416559722996,
+        0.8173648860984891
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 0.8571428571428572,
+      "reveal": 0,
+      "amount": 0.75,
+      "carOpacity": 0,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0.9446064139941692
+    }
+  },
+  {
+    "kind": "data-return",
+    "local": 0.5,
+    "pose": {
+      "position": [
+        4.693262577056884,
+        0.9600000381469725,
+        -12.19314765930176
+      ],
+      "quaternion": [
+        7.612997075010717e-15,
+        0.7999996452329103,
+        0.6000004730224949,
+        -1.0150650262803076e-14
+      ],
+      "width": 0.055
+    },
+    "focus": {
+      "project": "data",
+      "dive": 1,
+      "isolate": 0.2857142857142857,
+      "reveal": 0,
+      "amount": 0.55,
+      "carOpacity": 0.636206002600957,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0.19825072886297376
+    }
+  },
+  {
+    "kind": "data-return",
+    "local": 0.7,
+    "pose": {
+      "position": [
+        4.6882701985876905,
+        1.0344039844993902,
+        -12.253539144399527
+      ],
+      "quaternion": [
+        -0.012540785356708925,
+        0.853395932222019,
+        0.5207068970427673,
+        0.02055331947985672
+      ],
+      "width": 0.08941720405268916
+    },
+    "focus": {
+      "project": "data",
+      "dive": 0.75,
+      "isolate": 0,
+      "reveal": 0,
+      "amount": 0.3375,
+      "carOpacity": 1,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0
+    }
+  },
+  {
+    "kind": "data-return",
+    "local": 0.9,
+    "pose": {
+      "position": [
+        5.353431257272388,
+        1.8182486264201507,
+        -10.670098814236487
+      ],
+      "quaternion": [
+        -0.2723144047721327,
+        0.21902594674260492,
+        0.06380575202681245,
+        0.9347734087014872
+      ],
+      "width": 0.7587138823600683
+    },
+    "focus": {
+      "project": "data",
+      "dive": 0.2499999999999999,
+      "isolate": 0,
+      "reveal": 0,
+      "amount": 0.11249999999999995,
+      "carOpacity": 1,
+      "detailOpacity": 1,
+      "textOpacity": 0,
+      "cutaway": 1,
+      "seatCutaway": 1,
+      "calloutOpacity": 0,
+      "lightMix": 0
+    }
+  }
+]

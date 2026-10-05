@@ -1,11 +1,30 @@
+# Local dependencies and generated browser output
 node_modules/
 dist/
+test-results/
+.vite/
 .DS_Store
-*.local
-.gstack/
+*.log
 
-# Next.js
-/.next/
-/out/
-next-env.d.ts
-*.tsbuildinfo
+# Local credentials and editor state
+.env
+.env.*
+!.env.example
+.codex/
+.agents/
+
+# Local authoring backups and large source binaries
+backups/
+blender/backups/
+*.blend
+*.blend1
+*.blend2
+*.step
+*.zip
+assets/models/raspberry-pi-5/converted.glb
+
+# Generated review captures (runtime assets remain in web/public)
+exports/**/*.png
+exports/**/*.jpg
+exports/**/*.jpeg
+exports/**/*.webp

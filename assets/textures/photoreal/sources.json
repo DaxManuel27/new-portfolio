@@ -1,0 +1,40 @@
+{
+  "license": "CC0",
+  "environment": "https://polyhaven.com/a/studio_small_09",
+  "wood": "https://polyhaven.com/a/walnut_veneer_02",
+  "downloads": [
+    [
+      "studio_small_09_1k.hdr",
+      {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/studio_small_09_1k.hdr",
+        "size": 1615248,
+        "md5": "d5d7eb9d26d341d6aa4d11c1a54fd97c"
+      }
+    ],
+    [
+      "walnut_color_2k.png",
+      {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/walnut_veneer_02/walnut_veneer_02_diff_2k.png",
+        "md5": "d0aee187ba4258da2b8998abac738b5c",
+        "size": 20967169
+      }
+    ],
+    [
+      "walnut_roughness_2k.png",
+      {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/walnut_veneer_02/walnut_veneer_02_rough_2k.png",
+        "md5": "b4b8e3228042d13a082f1572f21caa3e",
+        "size": 7506710
+      }
+    ],
+    [
+      "walnut_normal_2k.png",
+      {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/walnut_veneer_02/walnut_veneer_02_nor_gl_2k.png",
+        "md5": "913290ef6342f4a4dc91d5c0aabd2317",
+        "size": 19226010
+      }
+    ]
+  ],
+  "reference": "https://www.apple.com/macbook-pro/"
+}

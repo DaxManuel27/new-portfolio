@@ -1,0 +1,223 @@
+{
+  "macbook-journey.glb": {
+    "bytes": 11089520,
+    "meshes": 44,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": [
+      {
+        "name": "macbook-journey",
+        "channels": 3,
+        "start": 0,
+        "end": 24
+      }
+    ]
+  },
+  "notebook.glb": {
+    "bytes": 153732,
+    "meshes": 4,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": []
+  },
+  "pen.glb": {
+    "bytes": 53776,
+    "meshes": 6,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": []
+  },
+  "printer-paper-feed.glb": {
+    "bytes": 79112,
+    "meshes": 1,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": [
+      {
+        "name": "printer-paper-feed",
+        "channels": 1,
+        "start": 0,
+        "end": 4
+      }
+    ]
+  },
+  "printer.glb": {
+    "bytes": 904340,
+    "meshes": 24,
+    "extensions": [
+      "KHR_materials_emissive_strength"
+    ],
+    "animations": []
+  },
+  "resume-page.glb": {
+    "bytes": 48728,
+    "meshes": 1,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": []
+  },
+  "rotary-phone.glb": {
+    "bytes": 4859584,
+    "meshes": 42,
+    "extensions": [
+      "KHR_materials_clearcoat",
+      "KHR_materials_transmission",
+      "KHR_materials_ior"
+    ],
+    "animations": []
+  },
+  "station-contact.glb": {
+    "bytes": 16159060,
+    "meshes": 101,
+    "extensions": [
+      "KHR_materials_clearcoat",
+      "KHR_materials_transmission",
+      "KHR_materials_ior"
+    ],
+    "animations": []
+  },
+  "station-formula-sae.glb": {
+    "bytes": 11998516,
+    "meshes": 219,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": []
+  },
+  "station-hack-atlantic.glb": {
+    "bytes": 21426168,
+    "meshes": 71,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": []
+  },
+  "station-intro.glb": {
+    "bytes": 11139660,
+    "meshes": 52,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": []
+  },
+  "station-projects.glb": {
+    "bytes": 11761700,
+    "meshes": 61,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": []
+  },
+  "station-resume.glb": {
+    "bytes": 12066068,
+    "meshes": 74,
+    "extensions": [
+      "KHR_materials_clearcoat",
+      "KHR_materials_emissive_strength"
+    ],
+    "animations": []
+  },
+  "station-ultra-maritime.glb": {
+    "bytes": 11786788,
+    "meshes": 68,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": []
+  },
+  "transition-1-intro-to-hack-atlantic.glb": {
+    "bytes": 11060736,
+    "meshes": 44,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": [
+      {
+        "name": "transition-1-intro-to-hack-atlantic",
+        "channels": 3,
+        "start": 0,
+        "end": 4
+      }
+    ]
+  },
+  "transition-2-hack-atlantic-to-formula-sae.glb": {
+    "bytes": 11060740,
+    "meshes": 44,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": [
+      {
+        "name": "transition-2-hack-atlantic-to-formula-sae",
+        "channels": 3,
+        "start": 0,
+        "end": 4
+      }
+    ]
+  },
+  "transition-3-formula-sae-to-ultra-maritime.glb": {
+    "bytes": 11060744,
+    "meshes": 44,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": [
+      {
+        "name": "transition-3-formula-sae-to-ultra-maritime",
+        "channels": 3,
+        "start": 0,
+        "end": 4
+      }
+    ]
+  },
+  "transition-4-ultra-maritime-to-projects.glb": {
+    "bytes": 11060740,
+    "meshes": 44,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": [
+      {
+        "name": "transition-4-ultra-maritime-to-projects",
+        "channels": 3,
+        "start": 0,
+        "end": 4
+      }
+    ]
+  },
+  "transition-5-projects-to-resume.glb": {
+    "bytes": 11060732,
+    "meshes": 44,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": [
+      {
+        "name": "transition-5-projects-to-resume",
+        "channels": 3,
+        "start": 0,
+        "end": 4
+      }
+    ]
+  },
+  "transition-6-resume-to-contact.glb": {
+    "bytes": 11058964,
+    "meshes": 44,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "animations": [
+      {
+        "name": "transition-6-resume-to-contact",
+        "channels": 3,
+        "start": 0,
+        "end": 4
+      }
+    ]
+  }
+}

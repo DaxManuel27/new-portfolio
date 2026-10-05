@@ -1,0 +1,578 @@
+{
+  "created": {
+    "scenes": 0,
+    "collections": 0,
+    "objects": 6,
+    "meshes": 5,
+    "materials": 2,
+    "images": 0,
+    "cameras": 0,
+    "curves": 0,
+    "worlds": 0,
+    "lights": 0
+  },
+  "backup": "/Users/daxmanuel/Documents/ChatGPT/portfolio-site-blender/blender/portfolio-elements.pre-figma-20261001-2044.blend",
+  "checklist_before": [
+    {
+      "item": "C1",
+      "figma_nodes": "29:843,29:840,29:841,29:842,43:6648,43:6641,43:6642,43:6643,53:7003,53:7000,53:7001,53:7002,60:8570,55:7160",
+      "status": "EXISTS",
+      "matches": [
+        {
+          "object": "MacBook_TravelRoot"
+        },
+        {
+          "object": "MacBook_BaseGroup"
+        },
+        {
+          "object": "MacBook_LidPivot"
+        },
+        {
+          "object": "MacBook_Screen"
+        }
+      ],
+      "evidence": "Accepted M5: 311.730 mm wide (0.999134\u00d7 requested width), separate animated lid pivot and display. Visual checked against saved M5 preview and supplied render. Existing rig conventions preserved."
+    },
+    {
+      "item": "C2",
+      "figma_nodes": "31:656,52:6712,31:666,31:697,31:728,31:772,31:813,52:6667,52:6676,52:6685",
+      "status": "EXISTS",
+      "matches": [
+        {
+          "material": "M_Screen_Blank"
+        },
+        {
+          "material": "M_Screen_HackAtlantic"
+        },
+        {
+          "material": "M_Screen_FormulaSAE"
+        },
+        {
+          "material": "M_Screen_UltraMaritime"
+        },
+        {
+          "material": "M_Screen_Projects"
+        },
+        {
+          "material": "M_Screen_Resume"
+        },
+        {
+          "material": "M_Screen_Contact"
+        }
+      ],
+      "evidence": "7/7 matching supplied station screens. Existing monitor/project graphics serve other surfaces."
+    },
+    {
+      "item": "C3",
+      "figma_nodes": "29:851",
+      "status": "MISSING",
+      "matches": [
+        {
+          "object": "Desk_Station",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Desk_Station.Leg_00",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Desk_Station.Leg_01",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Desk_Station.Leg_10",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Desk_Station.Leg_11",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Desk_Station.Top",
+          "evidence": "Owned Figma tag"
+        }
+      ],
+      "evidence": "Candidates require hierarchy/material/visual inspection before final classification."
+    },
+    {
+      "item": "C4",
+      "figma_nodes": "11:391",
+      "status": "EXISTS",
+      "matches": [
+        {
+          "object": "Prop_LandingDesk",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_LandingDesk.AmberLine",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_LandingDesk.FrontBand",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_LandingDesk.FrontEdge",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_LandingDesk.Leg_00",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_LandingDesk.Leg_01",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_LandingDesk.Leg_10",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_LandingDesk.Leg_11",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_LandingDesk.Top",
+          "evidence": "Owned Figma tag"
+        }
+      ],
+      "evidence": "Candidates require hierarchy/material/visual inspection before final classification."
+    },
+    {
+      "item": "C5",
+      "figma_nodes": "11:360,55:7252",
+      "status": "EXISTS",
+      "matches": [
+        {
+          "object": "FC_OutputSlotCutter",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.Body",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.ControlGroove",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.ControlStrip",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.Foot_00",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.Foot_01",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.Foot_10",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.Foot_11",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.FrontIndicator",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.FrontStripe",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.LidGrip",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.MiniDisplay",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.OutputDarkBack",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.OutputRim",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.OutputSlot",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.OutputTray",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.PaperSheet",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.PaperStack",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.PowerButton",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.PowerRing",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.RearSupport",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.ScannerGroove",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.ScannerLid",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.StatusLED",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_Printer.TrayEdge",
+          "evidence": "Owned Figma tag"
+        }
+      ],
+      "evidence": "Candidates require hierarchy/material/visual inspection before final classification."
+    },
+    {
+      "item": "C6",
+      "figma_nodes": "11:385,44:5864",
+      "status": "EXISTS",
+      "matches": [
+        {
+          "object": "FC_FingerHoleCutter_0",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "FC_FingerHoleCutter_1",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "FC_FingerHoleCutter_2",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "FC_FingerHoleCutter_3",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "FC_FingerHoleCutter_4",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "FC_FingerHoleCutter_5",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "FC_FingerHoleCutter_6",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "FC_FingerHoleCutter_7",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "FC_FingerHoleCutter_8",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "FC_FingerHoleCutter_9",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.Body",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.CardRing",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.CentreCard",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.CentrePin",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.CoiledCord",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.CradleProng_0",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.CradleProng_1",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.CupTrim_0",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.CupTrim_1",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.Dial",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.DialBezel",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.FingerStop",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.FingerWheel",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.Foot_00",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.Foot_01",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.Foot_10",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.Foot_11",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.FrontTrim",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.HandsetBrassStripe",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.HandsetCup_0",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.HandsetCup_1",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.HandsetHandle",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.NumberPlate",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.ProngBrass_0",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.ProngBrass_1",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_000",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_001",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_002",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_010",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_011",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_012",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_020",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_021",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_022",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_100",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_101",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_102",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_110",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_111",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_112",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_120",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_121",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Prop_RotaryTelephone.SpeakerHole_122",
+          "evidence": "Owned Figma tag"
+        }
+      ],
+      "evidence": "Candidates require hierarchy/material/visual inspection before final classification."
+    },
+    {
+      "item": "C7",
+      "figma_nodes": "44:5817",
+      "status": "EXISTS",
+      "matches": [
+        {
+          "object": "Notebook_Open",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Notebook_Open.Cover",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Notebook_Open.PageBlock_Left",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Notebook_Open.PageBlock_Right",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Notebook_Open.Pages",
+          "evidence": "Owned Figma tag"
+        }
+      ],
+      "evidence": "Candidates require hierarchy/material/visual inspection before final classification."
+    },
+    {
+      "item": "C8",
+      "figma_nodes": "55:7265",
+      "status": "EXISTS",
+      "matches": [
+        {
+          "object": "Resume_Page",
+          "evidence": "Owned Figma tag"
+        },
+        {
+          "object": "Resume_Page.Sheet",
+          "evidence": "Owned Figma tag"
+        }
+      ],
+      "evidence": "Candidates require hierarchy/material/visual inspection before final classification."
+    },
+    {
+      "item": "C9",
+      "figma_nodes": "29:843,43:6648,53:7003,60:8570,55:7160",
+      "status": "EXISTS",
+      "matches": [
+        {
+          "object": "CAM_Figma_34",
+          "evidence": "Figma tag"
+        },
+        {
+          "object": "CAM_Figma_DeskRenders",
+          "evidence": "Figma tag"
+        },
+        {
+          "object": "CAM_Figma_Front",
+          "evidence": "Figma tag"
+        },
+        {
+          "object": "CAM_Figma_HackAtlantic",
+          "evidence": "Figma tag"
+        },
+        {
+          "object": "CAM_Figma_Top",
+          "evidence": "Figma tag"
+        },
+        {
+          "object": "FC_Studio_Fill",
+          "evidence": "Figma tag"
+        },
+        {
+          "object": "FC_Studio_Key",
+          "evidence": "Figma tag"
+        },
+        {
+          "object": "FC_Studio_Rim",
+          "evidence": "Figma tag"
+        }
+      ],
+      "evidence": {
+        "CAM_Figma_34": [
+          "CAM_Figma_34"
+        ],
+        "CAM_Figma_DeskRenders": [
+          "CAM_Figma_DeskRenders"
+        ],
+        "CAM_Figma_HackAtlantic": [
+          "CAM_Figma_HackAtlantic"
+        ],
+        "CAM_Figma_Front": [
+          "CAM_Figma_Front"
+        ],
+        "CAM_Figma_Top": [
+          "CAM_Figma_Top"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "asset": "personal-desk",
+    "objects": 66,
+    "triangles_evaluated": 168350,
+    "materials": 34,
+    "dimensions_m": [
+      1.75,
+      0.75,
+      1.3274999856948853
+    ],
+    "geometry_issues": [],
+    "budget_triangles": 180000,
+    "budget_pass": true,
+    "glb_bytes": 12680192,
+    "roundtrip_dimensions_m": [
+      1.75,
+      0.75,
+      1.3274999856948853
+    ],
+    "roundtrip_pass": true,
+    "note": "Replaced MacBook with supplied M5 detail; web optimization pending"
+  },
+  {
+    "asset": "ultra-maritime-desk",
+    "objects": 25,
+    "triangles_evaluated": 3602,
+    "materials": 7,
+    "dimensions_m": [
+      1.7999999523162842,
+      0.75,
+      1.3199999332427979
+    ],
+    "geometry_issues": [],
+    "budget_triangles": 30000,
+    "budget_pass": true,
+    "glb_bytes": 155896,
+    "roundtrip_dimensions_m": [
+      1.7999999523162842,
+      0.75,
+      1.3199999332427979
+    ],
+    "roundtrip_pass": true
+  },
+  {
+    "asset": "hack-atlantic-check-in",
+    "objects": 28,
+    "triangles_evaluated": 4086,
+    "materials": 8,
+    "dimensions_m": [
+      3.624139428138733,
+      0.6999998092651367,
+      1.9790000915527344
+    ],
+    "geometry_issues": [],
+    "budget_triangles": 30000,
+    "budget_pass": true,
+    "glb_bytes": 10371324,
+    "roundtrip_dimensions_m": [
+      3.624139428138733,
+      0.699999988079071,
+      1.9790000915527344
+    ],
+    "roundtrip_pass": true
+  },
+  {
+    "asset": "fsae-car",
+    "objects": 167,
+    "triangles_evaluated": 14816,
+    "materials": 7,
+    "dimensions_m": [
+      1.5559998750686646,
+      2.5850000381469727,
+      0.9819999933242798
+    ],
+    "geometry_issues": [],
+    "budget_triangles": 30000,
+    "budget_pass": true,
+    "glb_bytes": 514188,
+    "roundtrip_dimensions_m": [
+      1.555999994277954,
+      2.5850000381469727,
+      0.9819999933242798
+    ],
+    "roundtrip_pass": true
+  }
+]

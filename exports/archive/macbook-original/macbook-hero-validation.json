@@ -1,0 +1,262 @@
+{
+  "status": "PASS",
+  "budget_triangles": 15000,
+  "meshes": [
+    {
+      "name": "SM_MacBook_Base",
+      "triangles": 188,
+      "degenerate_faces": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_MacBook_Lid",
+      "triangles": 188,
+      "degenerate_faces": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_MacBook_Lid_Device_BlackBezel_Hero",
+      "triangles": 24,
+      "degenerate_faces": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "MacBook_Screen",
+      "triangles": 2,
+      "degenerate_faces": 0,
+      "nonmanifold_edges": 4,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_MacBook_Trackpad",
+      "triangles": 188,
+      "degenerate_faces": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_MacBook_Base_MacBook_KeyboardRubber",
+      "triangles": 9980,
+      "degenerate_faces": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "hinge_sweep": [
+    {
+      "opening_degrees": 0,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 3,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 6,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 9,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 12,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 15,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 18,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 21,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 24,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 27,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 30,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 33,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 36,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 39,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 42,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 45,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 48,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 51,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 54,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 57,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 60,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 63,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 66,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 69,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 72,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 75,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 78,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 81,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 84,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 87,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 90,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 93,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 96,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 99,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 102,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 105,
+      "intersections_outside_hinge": 0
+    },
+    {
+      "opening_degrees": 108,
+      "intersections_outside_hinge": 0
+    }
+  ],
+  "triangles": 10570,
+  "materials": 5,
+  "closed_dimensions_m": [
+    0.3555999994277954,
+    0.24849999696016312,
+    0.01992500014603138
+  ],
+  "open_dimensions_m": [
+    0.3555999994277954,
+    0.32189736515283585,
+    0.25053173303604126
+  ],
+  "export_bytes": 1364148,
+  "roundtrip_objects": 10,
+  "roundtrip_names": [
+    "MacBook_TravelRoot.001",
+    "MacBook_SpinPivot.001",
+    "MacBook_BaseGroup.001",
+    "SM_MacBook_Base.001",
+    "SM_MacBook_Base_MacBook_KeyboardRubber.001",
+    "SM_MacBook_Trackpad.001",
+    "MacBook_LidPivot.001",
+    "MacBook_Screen.001",
+    "SM_MacBook_Lid.001",
+    "SM_MacBook_Lid_Device_BlackBezel_Hero.001"
+  ],
+  "roundtrip_animations": [
+    "MacBook_Lid_OpenClose.003"
+  ],
+  "roundtrip_open_dimensions_m": [
+    0.3555999994277954,
+    0.32189738005399704,
+    0.25053170323371887
+  ]
+}

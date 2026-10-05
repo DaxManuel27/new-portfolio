@@ -1,0 +1,27 @@
+{
+  "aluminum": {
+    "tileMeters": 0.02
+  },
+  "plastic": {
+    "tileMeters": 0.035
+  },
+  "paper": {
+    "tileMeters": 0.025
+  },
+  "laminate": {
+    "tileMeters": 0.08
+  },
+  "trackpad": {
+    "mapping": "entire local surface"
+  },
+  "wood": {
+    "tileMeters": 1.5,
+    "finish": "walnut veneer, smooth satin varnish"
+  },
+  "normalConvention": "OpenGL tangent space; no displacement",
+  "textureResolution": {
+    "wood": 1024,
+    "aluminum": 1024,
+    "otherSurfaces": 512
+  }
+}

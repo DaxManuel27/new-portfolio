@@ -1,0 +1,44 @@
+[
+  {
+    "file": "exports/rotary-phone.glb",
+    "bytes": 4827536,
+    "nodes": 44,
+    "meshes": 42,
+    "extensions": [
+      "KHR_materials_clearcoat",
+      "KHR_materials_transmission",
+      "KHR_materials_ior"
+    ],
+    "finite_accessors": "PASS"
+  },
+  {
+    "file": "exports/macbook-hero.glb",
+    "bytes": 11055620,
+    "nodes": 48,
+    "meshes": 44,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "finite_accessors": "PASS"
+  },
+  {
+    "file": "exports/personal-desk.glb",
+    "bytes": 11761624,
+    "nodes": 66,
+    "meshes": 61,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "finite_accessors": "PASS"
+  },
+  {
+    "file": "exports/hack-atlantic-docked.glb",
+    "bytes": 21424980,
+    "nodes": 76,
+    "meshes": 71,
+    "extensions": [
+      "KHR_materials_clearcoat"
+    ],
+    "finite_accessors": "PASS"
+  }
+]

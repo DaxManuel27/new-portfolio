@@ -1,0 +1,65 @@
+[
+  {
+    "filename": "station-intro.glb",
+    "originalBytes": 11629548,
+    "bytes": 27588,
+    "meshes": 5,
+    "animations": 0
+  },
+  {
+    "filename": "station-hack-atlantic.glb",
+    "originalBytes": 21916052,
+    "bytes": 1922680,
+    "meshes": 17,
+    "animations": 0
+  },
+  {
+    "filename": "station-formula-sae.glb",
+    "originalBytes": 12723640,
+    "bytes": 596532,
+    "meshes": 167,
+    "animations": 0
+  },
+  {
+    "filename": "station-ultra-maritime.glb",
+    "originalBytes": 12265856,
+    "bytes": 318244,
+    "meshes": 13,
+    "animations": 0
+  },
+  {
+    "filename": "station-projects.glb",
+    "originalBytes": 15398920,
+    "bytes": 2154932,
+    "meshes": 10,
+    "animations": 0
+  },
+  {
+    "filename": "station-resume.glb",
+    "originalBytes": 18159476,
+    "bytes": 1978308,
+    "meshes": 54,
+    "animations": 0
+  },
+  {
+    "filename": "station-contact.glb",
+    "originalBytes": 18159476,
+    "bytes": 1978308,
+    "meshes": 54,
+    "animations": 0
+  },
+  {
+    "filename": "macbook-journey.glb",
+    "originalBytes": 11579440,
+    "bytes": 2339804,
+    "meshes": 44,
+    "animations": 1
+  },
+  {
+    "filename": "printer-paper-feed.glb",
+    "originalBytes": 2535464,
+    "bytes": 698060,
+    "meshes": 1,
+    "animations": 1
+  }
+]

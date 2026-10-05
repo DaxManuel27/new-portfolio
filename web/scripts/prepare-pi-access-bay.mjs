@@ -1,0 +1,6 @@
+import {NodeIO} from '@gltf-transform/core';import {ALL_EXTENSIONS} from '@gltf-transform/extensions';import {dedup,prune,meshopt,textureCompress} from '@gltf-transform/functions';import {MeshoptEncoder} from 'meshoptimizer';import {writeFile,readFile} from 'node:fs/promises';import sharp from 'sharp';
+const root=new URL('../../',import.meta.url);await MeshoptEncoder.ready;const io=new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({'meshopt.encoder':MeshoptEncoder});
+const doc=await io.read(new URL('exports/station-reorder/station-formula-sae.glb',root).pathname);await doc.transform(prune({keepLeaves:true}),dedup(),textureCompress({encoder:sharp,targetFormat:'webp',slots:/^(baseColorTexture|emissiveTexture)$/,lossless:true}),meshopt({encoder:MeshoptEncoder,level:'medium',quantizePosition:16,quantizeNormal:12,quantizeTexcoord:16}));const bytes=await io.writeBinary(doc);
+const routes=JSON.parse(await readFile(new URL('exports/fsae-details/routes.json',root),'utf8'));
+for(const dir of ['web/public/assets','exports/web']){await writeFile(new URL(`${dir}/station-formula-sae.glb`,root),bytes);const path=new URL(`${dir}/journey.json`,root),m=JSON.parse(await readFile(path,'utf8'));m.reorder.car.focusRoutes=routes;await writeFile(path,JSON.stringify(m));}
+console.log('Prepared logger access bay car',bytes.length);

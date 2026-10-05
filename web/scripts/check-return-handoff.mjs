@@ -1,0 +1,9 @@
+import os from 'node:os';import assert from 'node:assert/strict';import sharp from 'sharp';import {writeFile} from 'node:fs/promises';
+const {chromium}=await import(`${os.homedir()}/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs`);const b=await chromium.launch({channel:'chrome',headless:true});const report=[];
+try{for(const [width,height] of [[1200,900],[390,844],[2040,1134]]){
+ const p=await b.newPage({viewport:{width,height}});await p.goto('http://127.0.0.1:5173/#formula-sae');await p.waitForFunction(()=>window.__portfolio?.snapshot().ready);await p.waitForFunction(()=>getComputedStyle(document.querySelector('#boot')).opacity==='0');await p.waitForFunction(()=>window.__portfolio.settled());
+ async function seek(kind,t){await p.evaluate(({kind,t})=>{const a=window.__portfolio,k=a.phases.find(k=>k.kind===kind);a.seek((k.start+(k.end-k.start)*t)/a.totalUnits)},{kind,t});await p.waitForTimeout(250);return p.evaluate(()=>window.__portfolio.snapshot());}
+ const a=await seek('car-monitor-return',.08),aa=await p.screenshot({path:`test-results/desk-return/${width}-actual-before.png`});const c=await seek('car-monitor-return',.12),cc=await p.screenshot({path:`test-results/desk-return/${width}-actual-after.png`});assert.ok(a.visibleStations.includes(3));assert.ok(c.visibleStations.includes(2));
+ const x=await sharp(aa).raw().toBuffer(),y=await sharp(cc).raw().toBuffer();const difference=x.reduce((v,n,i)=>v+Math.abs(n-y[i]),0)/x.length;assert.ok(difference<3);report.push({width,height,difference,before:a.phase,after:c.phase});
+ await seek('projects-monitor-entry',0);await p.waitForFunction(()=>window.__portfolio.settled());await p.screenshot({path:`test-results/desk-return/${width}-final-desk.png`});await p.close();
+}await writeFile('test-results/desk-return/handoff-validation.json',JSON.stringify(report,null,2));console.log(report);}finally{await b.close();}

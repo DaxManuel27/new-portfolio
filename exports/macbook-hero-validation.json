@@ -1,0 +1,665 @@
+{
+  "status": "PASS",
+  "model": "User supplied MacBook Pro 14-inch M5",
+  "budget_triangles": 180000,
+  "budget_note": "Preserve supplied detail; browser optimization remains pending",
+  "meshes": [
+    {
+      "name": "SM_M5_Base_AQdtiiJfiakvCKx",
+      "triangles": 5898,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_cdsXAgNBwwCPrIE",
+      "triangles": 4068,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_UcEDhfwzyyGMEfj",
+      "triangles": 40,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_DmUcWNXfiLPcftc",
+      "triangles": 20011,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_ELAWKPIQpGuqYuU",
+      "triangles": 168,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_FmsrGmNZGtSredn",
+      "triangles": 24,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_jbtMEbemwaBHRTw",
+      "triangles": 468,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_jfSniDGKVWZvpyG",
+      "triangles": 3036,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_lZDBMTdjXPebUMa",
+      "triangles": 492,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_ZroMGzfQtHrkgUh",
+      "triangles": 8544,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_bckGBpxpLXNHmCa",
+      "triangles": 516,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_JXvTyELxHLGtnWp",
+      "triangles": 224,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_cpUmMDYlGqLEAMt",
+      "triangles": 32,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_sIzFavpnYbDfLWk",
+      "triangles": 3206,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_sonZrhRIQDlQHcy",
+      "triangles": 7476,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_aBJxhjUzVIkBmJN",
+      "triangles": 2880,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_mTDvrHXNRqkIrBd",
+      "triangles": 1600,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_fVNvUQeYMdbMNOA",
+      "triangles": 3760,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_IJeReHnhQHJFtgB",
+      "triangles": 3437,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_lzNeOaWQWAReGok",
+      "triangles": 2,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_WZqbfOdYdlPMpRs",
+      "triangles": 4563,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_CFihWZPNFpzuzyX",
+      "triangles": 4,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_qbFEMXRbwPWbFTN",
+      "triangles": 651,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_bzDyZTvUFAEJLcq",
+      "triangles": 32,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_dAVNlHAHYLbkxrB",
+      "triangles": 9652,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_EBRhBFNqcMTaWWv",
+      "triangles": 192,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_LsmCMkPRBVEEGpg",
+      "triangles": 51148,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_wyClPAIazRlKQnt",
+      "triangles": 19611,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_WzbwnVztmigkRgn",
+      "triangles": 360,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Base_rFquJMQWzuecHQa",
+      "triangles": 631,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_eFpSjyrDhTgtyuf",
+      "triangles": 36,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_LBeBZdkKmrJVhJd",
+      "triangles": 96,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_MwJmMcLbTBwQpxl",
+      "triangles": 112,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_OCxZAMeEkQKexHA",
+      "triangles": 72,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_XodVrcYKiUPGCmX",
+      "triangles": 698,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_JNlPAPsywCtwJrd",
+      "triangles": 3180,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_KjpcUkkMjGYeXkV",
+      "triangles": 4193,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_UEFeUEhkJPdlgXF",
+      "triangles": 1478,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_xiLiwJHfkqIwaTs",
+      "triangles": 183,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_LQtuXuSGFKsUXjP",
+      "triangles": 176,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_nAIWMiVEtSYdjdZ",
+      "triangles": 176,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "MacBook_Screen",
+      "triangles": 96,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_WyuoVWKMOcOlXJM",
+      "triangles": 268,
+      "zero_area": 0,
+      "uv_layers": 1,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SM_M5_Lid_QSjoCOCzvxPnLpK",
+      "triangles": 428,
+      "zero_area": 0,
+      "uv_layers": 2,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "hinge_sweep": [
+    {
+      "degrees": 0,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 3,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 6,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 9,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 12,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 15,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 18,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 21,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 24,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 27,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 30,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 33,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 36,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 39,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 42,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 45,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 48,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 51,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 54,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 57,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 60,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 63,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 66,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 69,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 72,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 75,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 78,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 81,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 84,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 87,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 90,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 93,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 96,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 99,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 102,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 105,
+      "intersections_outside_15mm_hinge_region": 0
+    },
+    {
+      "degrees": 108,
+      "intersections_outside_15mm_hinge_region": 0
+    }
+  ],
+  "triangles": 163918,
+  "materials": 28,
+  "closed_dimensions_m": [
+    0.3117298483848572,
+    0.2240917682647705,
+    0.017930328845977783
+  ],
+  "open_dimensions_m": [
+    0.3117298483848572,
+    0.2933766841888428,
+    0.21421680878847837
+  ],
+  "export_bytes": 12651936,
+  "roundtrip_objects": 48,
+  "roundtrip_dimensions_m": [
+    0.3117298483848572,
+    0.2933766841888428,
+    0.21421680878847837
+  ],
+  "roundtrip_animations": [
+    "MacBook_Lid_OpenClose_M5.001"
+  ],
+  "personal_desk_updated": true
+}

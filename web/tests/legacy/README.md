@@ -1,0 +1,1 @@
+Retired by station-reorder-plan.md: the MacBook never flies to Projects or the shared desk. These historical tests refer to the preserved pre-reorder assets in backups/pre-station-reorder; they are intentionally outside the active test glob. Printer geometry and interactions remain active.

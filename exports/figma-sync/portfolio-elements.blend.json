@@ -1,0 +1,212 @@
+{
+  "file": "/Users/daxmanuel/Documents/ChatGPT/portfolio-site-blender/blender/portfolio-elements.blend",
+  "macbook": [
+    {
+      "object": "MacBook_Screen",
+      "material": "MAT_MacBook_BlankGlass"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_AQdtiiJfiakvCKx",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_bzDyZTvUFAEJLcq",
+      "material": "MAT_MacBook_Keys"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_cdsXAgNBwwCPrIE",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_dAVNlHAHYLbkxrB",
+      "material": "MAT_MacBook_Keys"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_LsmCMkPRBVEEGpg",
+      "material": "MAT_MacBook_Keys"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_lzNeOaWQWAReGok",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_mTDvrHXNRqkIrBd",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_qbFEMXRbwPWbFTN",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_UcEDhfwzyyGMEfj",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_WzbwnVztmigkRgn",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_WZqbfOdYdlPMpRs",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Lid_KjpcUkkMjGYeXkV",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Lid_nAIWMiVEtSYdjdZ",
+      "material": "MAT_MacBook_BlankGlass"
+    },
+    {
+      "object": "Personal_MacBook_Screen",
+      "material": "MAT_MacBook_BlankGlass"
+    },
+    {
+      "object": "SM_M5_Base_AQdtiiJfiakvCKx",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_bzDyZTvUFAEJLcq",
+      "material": "MAT_MacBook_Keys"
+    },
+    {
+      "object": "SM_M5_Base_cdsXAgNBwwCPrIE",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_dAVNlHAHYLbkxrB",
+      "material": "MAT_MacBook_Keys"
+    },
+    {
+      "object": "SM_M5_Base_LsmCMkPRBVEEGpg",
+      "material": "MAT_MacBook_Keys"
+    },
+    {
+      "object": "SM_M5_Base_lzNeOaWQWAReGok",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_mTDvrHXNRqkIrBd",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_qbFEMXRbwPWbFTN",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_UcEDhfwzyyGMEfj",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_WzbwnVztmigkRgn",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_WZqbfOdYdlPMpRs",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Lid_KjpcUkkMjGYeXkV",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Lid_nAIWMiVEtSYdjdZ",
+      "material": "MAT_MacBook_BlankGlass"
+    }
+  ],
+  "phone": [
+    {
+      "object": "Prop_RotaryTelephone.Body",
+      "material": "MAT_Phone_RedPlastic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.HandsetCup_0",
+      "material": "MAT_Phone_RedPlastic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.CupTrim_0",
+      "material": "MAT_Phone_RedPlastic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.HandsetCup_1",
+      "material": "MAT_Phone_RedPlastic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.CupTrim_1",
+      "material": "MAT_Phone_RedPlastic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.HandsetHandle",
+      "material": "MAT_Phone_RedPlastic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.HandsetBrassStripe",
+      "material": "MAT_Phone_RedPlastic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.CradleProng_0",
+      "material": "MAT_Phone_RedPlastic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.ProngBrass_0",
+      "material": "MAT_Phone_RedPlastic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.CradleProng_1",
+      "material": "MAT_Phone_RedPlastic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.ProngBrass_1",
+      "material": "MAT_Phone_RedPlastic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.DialBezel",
+      "material": "MAT_Phone_Chrome"
+    },
+    {
+      "object": "Prop_RotaryTelephone.NumberPlate",
+      "material": "MAT_Phone_NumberRing"
+    },
+    {
+      "object": "Prop_RotaryTelephone.FingerWheel",
+      "material": "MAT_Phone_Acrylic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.CardRing",
+      "material": "MAT_Phone_Chrome"
+    },
+    {
+      "object": "Prop_RotaryTelephone.CentreCard",
+      "material": "MAT_Phone_NumberRing"
+    },
+    {
+      "object": "Prop_RotaryTelephone.CentrePin",
+      "material": "MAT_Phone_Chrome"
+    },
+    {
+      "object": "Prop_RotaryTelephone.FingerStop",
+      "material": "MAT_Phone_Chrome"
+    },
+    {
+      "object": "Prop_RotaryTelephone.FrontTrim",
+      "material": "MAT_Phone_RedPlastic"
+    },
+    {
+      "object": "Prop_RotaryTelephone.CoiledCord",
+      "material": "MAT_Phone_RedPlastic"
+    }
+  ],
+  "placement": [],
+  "exports": [
+    {
+      "file": "rotary-phone.glb",
+      "triangles": 54528,
+      "objects": 44
+    },
+    {
+      "file": "personal-desk.glb",
+      "triangles": 168350,
+      "objects": 66
+    }
+  ]
+}

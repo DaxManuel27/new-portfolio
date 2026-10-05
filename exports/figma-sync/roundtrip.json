@@ -1,0 +1,41 @@
+[
+  {
+    "material": "MAT_Phone_Chrome.001",
+    "coat": 0.0,
+    "transmission": 0.0,
+    "ior": 1.5,
+    "normal_strength": []
+  },
+  {
+    "material": "MAT_Phone_RedPlastic.002",
+    "coat": 1.0,
+    "transmission": 0.0,
+    "ior": 1.5,
+    "normal_strength": [
+      0.15000000596046448
+    ]
+  },
+  {
+    "material": "MAT_Phone_Acrylic.001",
+    "coat": 0.0,
+    "transmission": 1.0,
+    "ior": 1.4900000095367432,
+    "normal_strength": []
+  },
+  {
+    "material": "MAT_Phone_NumberRing.001",
+    "coat": 0.0,
+    "transmission": 0.0,
+    "ior": 1.5,
+    "normal_strength": []
+  },
+  {
+    "material": "MAT_Phone_RedPlastic.001",
+    "coat": 1.0,
+    "transmission": 0.0,
+    "ior": 1.5,
+    "normal_strength": [
+      0.15000000596046448
+    ]
+  }
+]

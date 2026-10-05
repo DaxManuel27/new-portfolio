@@ -1,0 +1,132 @@
+{
+  "file": "/Users/daxmanuel/Documents/ChatGPT/portfolio-site-blender/blender/hack-atlantic-docked.blend",
+  "macbook": [
+    {
+      "object": "MacBook_Screen",
+      "material": "MAT_MacBook_BlankGlass"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_AQdtiiJfiakvCKx",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_bzDyZTvUFAEJLcq",
+      "material": "MAT_MacBook_Keys"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_cdsXAgNBwwCPrIE",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_dAVNlHAHYLbkxrB",
+      "material": "MAT_MacBook_Keys"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_LsmCMkPRBVEEGpg",
+      "material": "MAT_MacBook_Keys"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_lzNeOaWQWAReGok",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_mTDvrHXNRqkIrBd",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_qbFEMXRbwPWbFTN",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_UcEDhfwzyyGMEfj",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_WzbwnVztmigkRgn",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Base_WZqbfOdYdlPMpRs",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Lid_KjpcUkkMjGYeXkV",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "Personal_M5_SM_M5_Lid_nAIWMiVEtSYdjdZ",
+      "material": "MAT_MacBook_BlankGlass"
+    },
+    {
+      "object": "Personal_MacBook_Screen",
+      "material": "MAT_MacBook_BlankGlass"
+    },
+    {
+      "object": "SM_M5_Base_AQdtiiJfiakvCKx",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_bzDyZTvUFAEJLcq",
+      "material": "MAT_MacBook_Keys"
+    },
+    {
+      "object": "SM_M5_Base_cdsXAgNBwwCPrIE",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_dAVNlHAHYLbkxrB",
+      "material": "MAT_MacBook_Keys"
+    },
+    {
+      "object": "SM_M5_Base_LsmCMkPRBVEEGpg",
+      "material": "MAT_MacBook_Keys"
+    },
+    {
+      "object": "SM_M5_Base_lzNeOaWQWAReGok",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_mTDvrHXNRqkIrBd",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_qbFEMXRbwPWbFTN",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_UcEDhfwzyyGMEfj",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_WzbwnVztmigkRgn",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Base_WZqbfOdYdlPMpRs",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Lid_KjpcUkkMjGYeXkV",
+      "material": "MAT_MacBook_Silver"
+    },
+    {
+      "object": "SM_M5_Lid_nAIWMiVEtSYdjdZ",
+      "material": "MAT_MacBook_BlankGlass"
+    }
+  ],
+  "phone": [],
+  "placement": [
+    {
+      "scene": "Hack Atlantic \u2014 MacBook on branded desk",
+      "laptop": [
+        0.07499998807907104,
+        0.03999999538064003,
+        0.7494837641716003
+      ],
+      "standee_midpoint_x": 0.07499998807907104,
+      "table_top": 0.7400000095367432,
+      "feet_bottom": 0.7401000261306763
+    }
+  ],
+  "exports": []
+}

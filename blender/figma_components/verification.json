@@ -1,0 +1,1582 @@
+{
+  "dimensions": [
+    {
+      "object": "CAM_Figma_34",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (CAMERA)."
+    },
+    {
+      "object": "CAM_Figma_DeskRenders",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (CAMERA)."
+    },
+    {
+      "object": "CAM_Figma_Front",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (CAMERA)."
+    },
+    {
+      "object": "CAM_Figma_HackAtlantic",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (CAMERA)."
+    },
+    {
+      "object": "CAM_Figma_Top",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (CAMERA)."
+    },
+    {
+      "object": "Desk_Station",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (EMPTY)."
+    },
+    {
+      "object": "Desk_Station.Leg_00",
+      "world_bbox_mm": [
+        19.199999049305916,
+        19.200000911951065,
+        48.00000041723251
+      ],
+      "expected_world_bbox_mm": [
+        19.2,
+        19.2,
+        48.0
+      ],
+      "max_error_mm": 9.506940834569377e-07,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Desk_Station.Leg_01",
+      "world_bbox_mm": [
+        19.199999049305916,
+        19.200026988983154,
+        48.00000041723251
+      ],
+      "expected_world_bbox_mm": [
+        19.2,
+        19.2,
+        48.0
+      ],
+      "max_error_mm": 2.6988983155007418e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Desk_Station.Leg_10",
+      "world_bbox_mm": [
+        19.19996738433838,
+        19.200000911951065,
+        48.00000041723251
+      ],
+      "expected_world_bbox_mm": [
+        19.2,
+        19.2,
+        48.0
+      ],
+      "max_error_mm": 3.261566162038321e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Desk_Station.Leg_11",
+      "world_bbox_mm": [
+        19.19996738433838,
+        19.200026988983154,
+        48.00000041723251
+      ],
+      "expected_world_bbox_mm": [
+        19.2,
+        19.2,
+        48.0
+      ],
+      "max_error_mm": 3.261566162038321e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Desk_Station.Top",
+      "world_bbox_mm": [
+        720.0000286102295,
+        395.9999978542328,
+        19.199997186660767
+      ],
+      "expected_world_bbox_mm": [
+        720.0,
+        396.0,
+        19.2
+      ],
+      "max_error_mm": 2.86102294921875e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "FC_FingerHoleCutter_0",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "Hidden boolean construction tool."
+    },
+    {
+      "object": "FC_FingerHoleCutter_1",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "Hidden boolean construction tool."
+    },
+    {
+      "object": "FC_FingerHoleCutter_2",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "Hidden boolean construction tool."
+    },
+    {
+      "object": "FC_FingerHoleCutter_3",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "Hidden boolean construction tool."
+    },
+    {
+      "object": "FC_FingerHoleCutter_4",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "Hidden boolean construction tool."
+    },
+    {
+      "object": "FC_FingerHoleCutter_5",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "Hidden boolean construction tool."
+    },
+    {
+      "object": "FC_FingerHoleCutter_6",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "Hidden boolean construction tool."
+    },
+    {
+      "object": "FC_FingerHoleCutter_7",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "Hidden boolean construction tool."
+    },
+    {
+      "object": "FC_FingerHoleCutter_8",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "Hidden boolean construction tool."
+    },
+    {
+      "object": "FC_FingerHoleCutter_9",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "Hidden boolean construction tool."
+    },
+    {
+      "object": "FC_OutputSlotCutter",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "Hidden boolean construction tool."
+    },
+    {
+      "object": "FC_Studio_Fill",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (LIGHT)."
+    },
+    {
+      "object": "FC_Studio_Key",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (LIGHT)."
+    },
+    {
+      "object": "FC_Studio_Rim",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (LIGHT)."
+    },
+    {
+      "object": "Notebook_Open",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (EMPTY)."
+    },
+    {
+      "object": "Notebook_Open.Cover",
+      "world_bbox_mm": [
+        305.999755859375,
+        218.99999678134918,
+        2.0000000949949026
+      ],
+      "expected_world_bbox_mm": [
+        306.0,
+        219.0,
+        2.0
+      ],
+      "max_error_mm": 0.000244140625,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Notebook_Open.PageBlock_Left",
+      "world_bbox_mm": [
+        148.00000190734863,
+        209.99999344348907,
+        5.995947169139981
+      ],
+      "expected_world_bbox_mm": [
+        148.0,
+        210.0,
+        6.0
+      ],
+      "max_error_mm": 0.00405283086001873,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Notebook_Open.PageBlock_Right",
+      "world_bbox_mm": [
+        148.00000190734863,
+        209.99999344348907,
+        5.995947169139981
+      ],
+      "expected_world_bbox_mm": [
+        148.0,
+        210.0,
+        6.0
+      ],
+      "max_error_mm": 0.00405283086001873,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Notebook_Open.Pages",
+      "world_bbox_mm": [
+        296.00000381469727,
+        211.99999749660492,
+        3.000000026077032
+      ],
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "INFORMATION",
+      "note": "Curved/swept surface: informational world bounds; nominal dimensions encoded in build geometry."
+    },
+    {
+      "object": "Prop_LandingDesk",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (EMPTY)."
+    },
+    {
+      "object": "Prop_LandingDesk.AmberLine",
+      "world_bbox_mm": [
+        737.9999160766602,
+        0.1800060272216797,
+        0.1800060272216797
+      ],
+      "expected_world_bbox_mm": [
+        738.0,
+        0.18,
+        0.18
+      ],
+      "max_error_mm": 8.392333984375e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_LandingDesk.FrontBand",
+      "world_bbox_mm": [
+        740.0000095367432,
+        0.299990177154541,
+        11.99999824166298
+      ],
+      "expected_world_bbox_mm": [
+        740.0,
+        0.3,
+        12.0
+      ],
+      "max_error_mm": 9.822845458973273e-06,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_LandingDesk.FrontEdge",
+      "world_bbox_mm": [
+        739.0000820159912,
+        0.20000338554382324,
+        0.5999952554702759
+      ],
+      "expected_world_bbox_mm": [
+        739.0,
+        0.2,
+        0.6
+      ],
+      "max_error_mm": 8.20159912109375e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_LandingDesk.Leg_00",
+      "world_bbox_mm": [
+        19.999980926513672,
+        19.999995827674866,
+        59.99999865889549
+      ],
+      "expected_world_bbox_mm": [
+        20.0,
+        20.0,
+        60.0
+      ],
+      "max_error_mm": 1.9073486328125e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_LandingDesk.Leg_01",
+      "world_bbox_mm": [
+        19.999980926513672,
+        19.999995827674866,
+        59.99999865889549
+      ],
+      "expected_world_bbox_mm": [
+        20.0,
+        20.0,
+        60.0
+      ],
+      "max_error_mm": 1.9073486328125e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_LandingDesk.Leg_10",
+      "world_bbox_mm": [
+        19.999980926513672,
+        19.999995827674866,
+        59.99999865889549
+      ],
+      "expected_world_bbox_mm": [
+        20.0,
+        20.0,
+        60.0
+      ],
+      "max_error_mm": 1.9073486328125e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_LandingDesk.Leg_11",
+      "world_bbox_mm": [
+        19.999980926513672,
+        19.999995827674866,
+        59.99999865889549
+      ],
+      "expected_world_bbox_mm": [
+        20.0,
+        20.0,
+        60.0
+      ],
+      "max_error_mm": 1.9073486328125e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_LandingDesk.Top",
+      "world_bbox_mm": [
+        740.0000095367432,
+        300.00001192092896,
+        13.999998569488525
+      ],
+      "expected_world_bbox_mm": [
+        740.0,
+        300.0,
+        14.0
+      ],
+      "max_error_mm": 1.1920928955078125e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (EMPTY)."
+    },
+    {
+      "object": "Prop_Printer.Body",
+      "world_bbox_mm": [
+        299.9999523162842,
+        209.99999344348907,
+        120.00000104308128
+      ],
+      "expected_world_bbox_mm": [
+        300.0,
+        210.0,
+        120.0
+      ],
+      "max_error_mm": 4.76837158203125e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.ControlGroove",
+      "world_bbox_mm": [
+        86.99989318847656,
+        37.00000047683716,
+        0.4000067710876465
+      ],
+      "expected_world_bbox_mm": [
+        87.0,
+        37.0,
+        0.4
+      ],
+      "max_error_mm": 0.0001068115234375,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.ControlStrip",
+      "world_bbox_mm": [
+        85.99996566772461,
+        35.999998450279236,
+        0.20000338554382324
+      ],
+      "expected_world_bbox_mm": [
+        86.0,
+        36.0,
+        0.2
+      ],
+      "max_error_mm": 3.4332275390625e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.Foot_00",
+      "world_bbox_mm": [
+        40.9998893737793,
+        30.000001192092896,
+        4.999999888241291
+      ],
+      "expected_world_bbox_mm": [
+        41.0,
+        30.0,
+        5.0
+      ],
+      "max_error_mm": 0.000110626220703125,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.Foot_01",
+      "world_bbox_mm": [
+        40.9998893737793,
+        30.000001192092896,
+        4.999999888241291
+      ],
+      "expected_world_bbox_mm": [
+        41.0,
+        30.0,
+        5.0
+      ],
+      "max_error_mm": 0.000110626220703125,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.Foot_10",
+      "world_bbox_mm": [
+        40.9998893737793,
+        30.000001192092896,
+        4.999999888241291
+      ],
+      "expected_world_bbox_mm": [
+        41.0,
+        30.0,
+        5.0
+      ],
+      "max_error_mm": 0.000110626220703125,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.Foot_11",
+      "world_bbox_mm": [
+        40.9998893737793,
+        30.000001192092896,
+        4.999999888241291
+      ],
+      "expected_world_bbox_mm": [
+        41.0,
+        30.0,
+        5.0
+      ],
+      "max_error_mm": 0.000110626220703125,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.FrontIndicator",
+      "world_bbox_mm": [
+        7.999897003173828,
+        0.7999986410140991,
+        8.000001311302185
+      ],
+      "expected_world_bbox_mm": [
+        8.0,
+        0.8000003496911063,
+        8.00000003496911
+      ],
+      "max_error_mm": 0.000102996826171875,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.FrontStripe",
+      "world_bbox_mm": [
+        62.99996376037598,
+        0.5999952554702759,
+        3.000006079673767
+      ],
+      "expected_world_bbox_mm": [
+        63.0,
+        0.6,
+        3.0
+      ],
+      "max_error_mm": 3.62396240234375e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.LidGrip",
+      "world_bbox_mm": [
+        79.99992370605469,
+        4.0000006556510925,
+        0.4000067710876465
+      ],
+      "expected_world_bbox_mm": [
+        80.0,
+        4.0,
+        0.4
+      ],
+      "max_error_mm": 7.62939453125e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.MiniDisplay",
+      "world_bbox_mm": [
+        37.99998760223389,
+        0.6999969482421875,
+        12.999996542930603
+      ],
+      "expected_world_bbox_mm": [
+        38.0,
+        0.7000005682480477,
+        13.000000030597972
+      ],
+      "max_error_mm": 1.239776611328125e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.OutputDarkBack",
+      "world_bbox_mm": [
+        226.0000705718994,
+        0.4000067710876465,
+        17.99999549984932
+      ],
+      "expected_world_bbox_mm": [
+        226.0,
+        0.4,
+        18.0
+      ],
+      "max_error_mm": 7.05718994140625e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.OutputRim",
+      "world_bbox_mm": [
+        227.99992561340332,
+        0.4000067710876465,
+        19.600003957748413
+      ],
+      "expected_world_bbox_mm": [
+        228.0,
+        0.40000085674321045,
+        19.600000017484557
+      ],
+      "max_error_mm": 7.43865966796875e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.OutputSlot",
+      "world_bbox_mm": [
+        226.0000705718994,
+        0.49999356269836426,
+        18.000002950429916
+      ],
+      "expected_world_bbox_mm": [
+        226.0,
+        0.5000007868049892,
+        18.000000021855694
+      ],
+      "max_error_mm": 7.05718994140625e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.OutputTray",
+      "world_bbox_mm": [
+        239.68803882598877,
+        50.00000447034836,
+        7.900495082139969
+      ],
+      "expected_world_bbox_mm": [
+        240.0,
+        50.0,
+        8.0
+      ],
+      "max_error_mm": 0.31196117401123047,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.PaperSheet",
+      "world_bbox_mm": [
+        175.99987983703613,
+        37.865445017814636,
+        40.40497541427612
+      ],
+      "expected_world_bbox_mm": [
+        176.0,
+        37.953346848487854,
+        40.49288681149483
+      ],
+      "max_error_mm": 0.08791139721870422,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.PaperStack",
+      "world_bbox_mm": [
+        175.99987983703613,
+        37.86543756723404,
+        40.40497541427612
+      ],
+      "expected_world_bbox_mm": [
+        176.0,
+        37.953346848487854,
+        40.49288681149483
+      ],
+      "max_error_mm": 0.08791139721870422,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.PowerButton",
+      "world_bbox_mm": [
+        12.700080871582031,
+        12.700006365776062,
+        1.5499889850616455
+      ],
+      "expected_world_bbox_mm": [
+        12.7,
+        12.7,
+        1.55
+      ],
+      "max_error_mm": 8.087158203196054e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.PowerRing",
+      "world_bbox_mm": [
+        13.99993896484375,
+        13.999998569488525,
+        1.5000104904174805
+      ],
+      "expected_world_bbox_mm": [
+        14.0,
+        14.0,
+        1.5
+      ],
+      "max_error_mm": 6.103515625e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.RearSupport",
+      "world_bbox_mm": [
+        200.00004768371582,
+        45.48969864845276,
+        48.33212494850159
+      ],
+      "expected_world_bbox_mm": [
+        200.0,
+        45.929218888282776,
+        48.77163976430893
+      ],
+      "max_error_mm": 0.4395202398300171,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.ScannerGroove",
+      "world_bbox_mm": [
+        272.800087928772,
+        138.799998909235,
+        0.6000027060508728
+      ],
+      "expected_world_bbox_mm": [
+        272.8,
+        138.8,
+        0.6
+      ],
+      "max_error_mm": 8.792877196128757e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.ScannerLid",
+      "world_bbox_mm": [
+        272.0000743865967,
+        137.9999928176403,
+        1.5000104904174805
+      ],
+      "expected_world_bbox_mm": [
+        272.0,
+        138.0,
+        1.5
+      ],
+      "max_error_mm": 7.43865966796875e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.StatusLED",
+      "world_bbox_mm": [
+        6.400108337402344,
+        6.400004029273987,
+        0.49999356269836426
+      ],
+      "expected_world_bbox_mm": [
+        6.4,
+        6.4,
+        0.5
+      ],
+      "max_error_mm": 0.00010833740234339473,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_Printer.TrayEdge",
+      "world_bbox_mm": [
+        240.00000953674316,
+        0.6999969482421875,
+        0.6657391786575317
+      ],
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "INFORMATION",
+      "note": "Curved/swept surface: informational world bounds; nominal dimensions encoded in build geometry."
+    },
+    {
+      "object": "Prop_RotaryTelephone",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (EMPTY)."
+    },
+    {
+      "object": "Prop_RotaryTelephone.Body",
+      "world_bbox_mm": [
+        219.8038101196289,
+        209.80386435985565,
+        108.99002570658922
+      ],
+      "expected_world_bbox_mm": [
+        220.0,
+        210.0,
+        109.0
+      ],
+      "max_error_mm": 0.19618988037109375,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.CardRing",
+      "world_bbox_mm": [
+        39.50023651123047,
+        34.448180347681046,
+        20.246371626853943
+      ],
+      "expected_world_bbox_mm": [
+        39.5,
+        34.55800283551216,
+        20.35621777176857
+      ],
+      "max_error_mm": 0.10984614491462708,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.CentreCard",
+      "world_bbox_mm": [
+        38.00010681152344,
+        33.1624960526824,
+        19.546285271644592
+      ],
+      "expected_world_bbox_mm": [
+        38.0,
+        33.30896475315094,
+        19.69282031059265
+      ],
+      "max_error_mm": 0.14653503894805908,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.CentrePin",
+      "world_bbox_mm": [
+        6.000041961669922,
+        5.291227251291275,
+        3.204852342605591
+      ],
+      "expected_world_bbox_mm": [
+        6.0,
+        5.346152329444886,
+        3.2598076164722443
+      ],
+      "max_error_mm": 0.05495527386665344,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.CoiledCord",
+      "world_bbox_mm": [
+        113.90900611877441,
+        91.46774932742119,
+        45.82597501575947
+      ],
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "INFORMATION",
+      "note": "Curved/swept surface: informational world bounds; nominal dimensions encoded in build geometry."
+    },
+    {
+      "object": "Prop_RotaryTelephone.CradleProng_0",
+      "world_bbox_mm": [
+        26.000022888183594,
+        12.000001966953278,
+        14.99999314546585
+      ],
+      "expected_world_bbox_mm": [
+        26.0,
+        12.0,
+        15.0
+      ],
+      "max_error_mm": 2.288818359375e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.CradleProng_1",
+      "world_bbox_mm": [
+        26.000022888183594,
+        12.000001966953278,
+        14.99999314546585
+      ],
+      "expected_world_bbox_mm": [
+        26.0,
+        12.0,
+        15.0
+      ],
+      "max_error_mm": 2.288818359375e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.CupTrim_0",
+      "world_bbox_mm": [
+        64.00012969970703,
+        64.00000676512718,
+        0.49999356269836426
+      ],
+      "expected_world_bbox_mm": [
+        64.0,
+        64.0,
+        0.5
+      ],
+      "max_error_mm": 0.00012969970703125,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.CupTrim_1",
+      "world_bbox_mm": [
+        64.00012969970703,
+        64.00000676512718,
+        0.49999356269836426
+      ],
+      "expected_world_bbox_mm": [
+        64.0,
+        64.0,
+        0.5
+      ],
+      "max_error_mm": 0.00012969970703125,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.Dial",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (EMPTY)."
+    },
+    {
+      "object": "Prop_RotaryTelephone.DialBezel",
+      "world_bbox_mm": [
+        127.99978256225586,
+        111.98509484529495,
+        66.23174995183945
+      ],
+      "expected_world_bbox_mm": [
+        128.0,
+        112.35124969482422,
+        66.59807616472244
+      ],
+      "max_error_mm": 0.3663262128829956,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.FingerStop",
+      "world_bbox_mm": [
+        14.742851257324219,
+        12.415163218975067,
+        8.287310600280762
+      ],
+      "expected_world_bbox_mm": [
+        14.827863454818726,
+        12.560382843017578,
+        8.40644097328186
+      ],
+      "max_error_mm": 0.145219624042511,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.FingerWheel",
+      "world_bbox_mm": [
+        111.9999885559082,
+        98.62867929041386,
+        59.0977817773819
+      ],
+      "expected_world_bbox_mm": [
+        112.0,
+        98.99484348297119,
+        59.46410155296326
+      ],
+      "max_error_mm": 0.36631977558135986,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.Foot_00",
+      "world_bbox_mm": [
+        31.000137329101562,
+        31.000003218650818,
+        6.000000052154064
+      ],
+      "expected_world_bbox_mm": [
+        31.0,
+        31.0,
+        6.0
+      ],
+      "max_error_mm": 0.0001373291015625,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.Foot_01",
+      "world_bbox_mm": [
+        31.000137329101562,
+        31.000003218650818,
+        6.000000052154064
+      ],
+      "expected_world_bbox_mm": [
+        31.0,
+        31.0,
+        6.0
+      ],
+      "max_error_mm": 0.0001373291015625,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.Foot_10",
+      "world_bbox_mm": [
+        31.000137329101562,
+        31.000003218650818,
+        6.000000052154064
+      ],
+      "expected_world_bbox_mm": [
+        31.0,
+        31.0,
+        6.0
+      ],
+      "max_error_mm": 0.0001373291015625,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.Foot_11",
+      "world_bbox_mm": [
+        31.000137329101562,
+        31.000003218650818,
+        6.000000052154064
+      ],
+      "expected_world_bbox_mm": [
+        31.0,
+        31.0,
+        6.0
+      ],
+      "max_error_mm": 0.0001373291015625,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.FrontTrim",
+      "world_bbox_mm": [
+        188.02785873413086,
+        0.6999969482421875,
+        2.665450796484947
+      ],
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "INFORMATION",
+      "note": "Curved/swept surface: informational world bounds; nominal dimensions encoded in build geometry."
+    },
+    {
+      "object": "Prop_RotaryTelephone.HandsetBrassStripe",
+      "world_bbox_mm": [
+        116.68729782104492,
+        2.200007438659668,
+        12.332260608673096
+      ],
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "INFORMATION",
+      "note": "Curved/swept surface: informational world bounds; nominal dimensions encoded in build geometry."
+    },
+    {
+      "object": "Prop_RotaryTelephone.HandsetCup_0",
+      "world_bbox_mm": [
+        64.00012969970703,
+        64.00000676512718,
+        30.000001192092896
+      ],
+      "expected_world_bbox_mm": [
+        64.0,
+        64.0,
+        30.0
+      ],
+      "max_error_mm": 0.00012969970703125,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.HandsetCup_1",
+      "world_bbox_mm": [
+        64.00012969970703,
+        64.00000676512718,
+        30.000001192092896
+      ],
+      "expected_world_bbox_mm": [
+        64.0,
+        64.0,
+        30.0
+      ],
+      "max_error_mm": 0.00012969970703125,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.HandsetHandle",
+      "world_bbox_mm": [
+        151.04055404663086,
+        30.000001192092896,
+        42.42037236690521
+      ],
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "INFORMATION",
+      "note": "Curved/swept surface: informational world bounds; nominal dimensions encoded in build geometry."
+    },
+    {
+      "object": "Prop_RotaryTelephone.NumberPlate",
+      "world_bbox_mm": [
+        122.00021743774414,
+        105.97201809287071,
+        61.682865023612976
+      ],
+      "expected_world_bbox_mm": [
+        122.0,
+        106.15509736537933,
+        61.866025388240814
+      ],
+      "max_error_mm": 0.18316036462783813,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.ProngBrass_0",
+      "world_bbox_mm": [
+        24.000167846679688,
+        0.5000010132789612,
+        13.0000039935112
+      ],
+      "expected_world_bbox_mm": [
+        24.0,
+        0.5,
+        13.0
+      ],
+      "max_error_mm": 0.0001678466796875,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.ProngBrass_1",
+      "world_bbox_mm": [
+        24.000167846679688,
+        0.5000010132789612,
+        13.0000039935112
+      ],
+      "expected_world_bbox_mm": [
+        24.0,
+        0.5,
+        13.0
+      ],
+      "max_error_mm": 0.0001678466796875,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_000",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_001",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_002",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_010",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_011",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_012",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_020",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_021",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_022",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_100",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_101",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_102",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_110",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_111",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_112",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_120",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_121",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_RotaryTelephone.SpeakerHole_122",
+      "world_bbox_mm": [
+        3.200054168701172,
+        3.1999945640563965,
+        0.299990177154541
+      ],
+      "expected_world_bbox_mm": [
+        3.2,
+        3.2,
+        0.3
+      ],
+      "max_error_mm": 5.4168701171697364e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Resume_Page",
+      "world_bbox_mm": null,
+      "expected_world_bbox_mm": null,
+      "max_error_mm": null,
+      "status": "NOT_APPLICABLE",
+      "note": "No render geometry (EMPTY)."
+    },
+    {
+      "object": "Resume_Page.Sheet",
+      "world_bbox_mm": [
+        215.89994430541992,
+        279.3999910354614,
+        0.09999999747378752
+      ],
+      "expected_world_bbox_mm": [
+        215.9,
+        279.4,
+        0.1
+      ],
+      "max_error_mm": 5.569458008380934e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Desk_Station (complete assembly)",
+      "world_bbox_mm": [
+        720.0000286102295,
+        395.9999978542328,
+        67.20000132918358
+      ],
+      "expected_world_bbox_mm": [
+        720.0,
+        396.0,
+        67.2
+      ],
+      "max_error_mm": 2.86102294921875e-05,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "object": "Prop_LandingDesk (complete assembly)",
+      "world_bbox_mm": [
+        740.0000095367432,
+        300.35001039505005,
+        74.00000095367432
+      ],
+      "expected_world_bbox_mm": [
+        740,
+        300,
+        74
+      ],
+      "max_error_mm": 0.35001039505004883,
+      "status": "PASS",
+      "note": ""
+    }
+  ],
+  "overlays": [
+    {
+      "item": "C3",
+      "boundary_coverage_within_3px": 0.9374358974358974,
+      "camera": [
+        68,
+        0,
+        -25
+      ],
+      "notes": "Exact supplied anchor, scale and resolution; compare physical bevels to painted edges."
+    }
+  ],
+  "preview_untouched": [],
+  "original_untouched": [],
+  "macbook": "EXISTS; no new model, no lid_angle edits or MacBook overlays required.",
+  "status": "NEEDS_REVIEW",
+  "numerical_status": "PASS",
+  "overlay_status": "NEEDS_REVIEW"
+}
