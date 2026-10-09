@@ -90,3 +90,58 @@
 .racing-annotation.arrived .racing-leader{display:block;position:absolute;inset:0;width:100%;height:100%;pointer-events:none;fill:#eee6d9}
 .racing-leader path{fill:none;stroke:#eee6d9;stroke-width:1;opacity:.6}
 @media(max-width:760px){.racing-annotation .desk-content{left:6%;top:auto;bottom:7%;width:88%;max-height:43%;background:linear-gradient(#100f0de8,#100f0df5);padding:16px}.racing-annotation h2{font-size:26px;margin-bottom:16px}.racing-annotation .racing-eyebrow{font-size:10px;margin-bottom:12px}.racing-annotation p{font-size:13px}.racing-annotation.arrived .racing-leader{display:none}}
+
+/* One label anatomy and timing for every desk destination. */
+.callout.ready{opacity:.67;transition:opacity 150ms ease}
+.callout.highlighted,.callout:focus-within,.callout:hover{opacity:1}
+.callout svg{position:absolute;left:0;top:0;width:1px;height:1px;overflow:visible;fill:#e9bc8e;stroke:#e6dfd2;stroke-width:1;pointer-events:none}
+.callout button,.callout[data-id] button{position:absolute;right:auto;margin:0;padding:8px 13px;min-height:32px;max-width:340px;font:11px 'IBM Plex Mono',monospace;line-height:1.45;white-space:nowrap;border:1px solid #e6dfd220;box-shadow:0 3px 18px #0002;transition:background 150ms ease}
+.callout[data-id="ultra-maritime"] button{white-space:normal;width:210px;border-radius:18px;text-align:center}
+.label-company{display:block}
+.fabric-used .scroll-cue{display:none}
+
+
+.mobile-tagline{display:none}
+.in-destination .mobile-tagline{display:none}
+.desk-loader p{font:13px 'IBM Plex Mono',monospace}
+.desk-dialog .fabric-controls[hidden]{display:none}
+.fabric-controls .fabric-hit{position:fixed;display:block;background:transparent;border:0;padding:0;margin:0;touch-action:none;cursor:grab}
+.fabric-hit:active{cursor:grabbing}.fabric-hit:focus-visible{outline:2px solid #e9bc8e;outline-offset:7px}
+.desk-dialog .fabric-controls nav{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);display:flex;flex-wrap:nowrap;align-items:center;gap:10px;background:#17241cf5;border:1px solid #e6dfd24d;border-radius:24px;padding:6px 12px;white-space:nowrap;font:11px 'IBM Plex Mono',monospace}
+.fabric-controls nav button{background:transparent;color:#e6dfd2;border:0;min-height:40px;padding:8px;font:inherit}
+.immersive[data-destination="hack-atlantic"]:not(.reading-fabric) .desk-content{position:absolute;width:1px!important;height:1px!important;clip-path:inset(50%);padding:0;overflow:hidden;pointer-events:none}
+.immersive.reading-fabric .desk-content{left:50%!important;top:88px!important;transform:translateX(-50%);width:min(640px,90vw)!important;height:calc(100svh - 190px)!important;background:#eee4cd;padding:25px 32px;color:#233d34;border-radius:8px;z-index:2}
+.reading-fabric .fabric-hit{display:none}.scroll-transcript p{white-space:pre-line;color:#233d34}.scroll-transcript a{color:#233d34}
+.immersive:not(.arrived) .fabric-controls{visibility:hidden}
+@media(max-width:1100px){.callout button,.callout[data-id] button{font-size:10px;max-width:230px}.callout[data-id="ultra-maritime"] button{width:208px}}
+@media(max-width:760px){.desk-headline{top:80px;font-size:76px;opacity:1!important}.mobile-tagline{display:block;position:absolute;left:26px;top:220px;font:10px 'IBM Plex Mono',monospace;max-width:320px}.mobile-objects{bottom:25px;gap:8px}.mobile-objects button{opacity:.8;max-width:260px}.mobile-objects [data-open="ultra-maritime"]{white-space:normal;width:245px}.fabric-controls nav span{display:none}.desk-dialog .fabric-controls nav{max-width:95vw;gap:8px}.in-destination .mobile-objects{display:none}}
+.desk-grain{background:radial-gradient(ellipse at 50% 46%,transparent 32%,#070c08aa 100%)}
+@media(max-width:760px){.mobile-objects .label-dash{display:none}.mobile-objects .label-company{display:block}}
+
+/* Round 2: quiet typography, direct screen focus, restored event print. */
+@font-face{font-family:'HA League Spartan';src:url('/assets/fonts/league-spartan-800.ttf') format('truetype');font-weight:800;font-display:swap}
+.callout button,.callout[data-id] button{background:none;border:0;border-radius:0;padding:0;min-height:0;box-shadow:none;color:#e6dfd2;text-shadow:0 1px 3px #0009;font:11px/1.5 'IBM Plex Mono',monospace}
+.callout[data-id="ultra-maritime"] button{width:162px;white-space:normal;text-align:left}
+.callout.ready{opacity:.85}.callout.highlighted,.callout:focus-within{opacity:1}
+.callout button:hover,.callout button:focus-visible{background:none;text-decoration:underline;text-underline-offset:4px;color:#fff5e5}
+.callout button:focus-visible{outline:2px solid #e6dfd2;outline-offset:5px}
+.mobile-objects button{background:none;border:0;border-radius:0;padding:4px;color:#e6dfd2;text-shadow:0 1px 3px #0009}
+.desk-grain{background:radial-gradient(ellipse at 50% 45%,transparent 48%,#0e09054d 100%)}
+.immersive[data-destination="about"] .desk-content{display:block}
+.scroll-transcript img{display:block;width:100%;height:auto}
+.restored-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.restored-stats dd{margin:4px 0;font-size:24px}
+
+.desk-headline{position:absolute;left:4.5%;top:max(76px,8.5%);width:46%;margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:800;color:#9d998c;line-height:.8;letter-spacing:0}
+.desk-headline span{display:block}.desk-headline span:first-child{font-size:21.8vw}.desk-headline span:last-child{font-size:11vw;margin-top:.1em}
+@media(max-width:759px){.desk-headline{left:7%;top:88px;width:86%}.desk-headline span:first-child{font-size:40.7vw}.desk-headline span:last-child{font-size:20.6vw}}
+
+@media(max-width:760px){.desk-headline.scene-title-ready{opacity:0!important}}
+
+/* Reveal the room and its controls together, after loading and the first frame. */
+#workspace.is-loading > :not(.desk-loader){visibility:hidden}
+
+.about-gallery-controls{display:none;position:fixed;bottom:28px;left:50%;transform:translateX(-50%);gap:12px;align-items:center;pointer-events:auto}.arrived[data-destination="about"] .about-gallery-controls{display:flex}.about-gallery-controls button{min-height:44px;min-width:44px;padding:8px 16px;border:1px solid #e6dfd250;border-radius:22px;color:#eee4d4;background:#17241cf2;font:12px system-ui,sans-serif}
+
+@media(prefers-reduced-motion:reduce){.about-gallery-controls [data-gallery="pause"]{display:none}}
+
+.desk-dialog .about-gallery-controls{width:max-content;max-width:calc(100vw - 32px);flex-wrap:nowrap;margin:0}.about-gallery-controls button{flex-shrink:0}

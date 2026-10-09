@@ -1,0 +1,17 @@
+import {chromium} from '/Users/daxmanuel/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs';
+import assert from 'node:assert/strict';import {mkdir,writeFile} from 'node:fs/promises';
+await mkdir('test-results/about',{recursive:true});const browser=await chromium.launch({channel:'chrome',headless:true});
+try{const page=await browser.newPage({viewport:{width:1440,height:960}});const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+await page.goto('http://127.0.0.1:5173/?qa');await page.waitForFunction(()=>window.__roomQA?.snapshot().ready,null,{timeout:90000});await page.addStyleTag({content:'.qa-output{display:none}'});
+const overview=await page.evaluate(()=>window.__roomQA.snapshot().about.offset);await page.waitForTimeout(500);assert.notEqual(await page.evaluate(()=>window.__roomQA.snapshot().about.offset),overview,'Gallery moves before opening About');
+await page.evaluate(()=>window.__roomQA.open('about'));await page.waitForTimeout(1800);
+const start=await page.evaluate(()=>window.__roomQA.snapshot().about);await page.waitForTimeout(500);const end=await page.evaluate(()=>window.__roomQA.snapshot().about);assert.notEqual(start.offset,end.offset);assert.ok(end.videoReady>=2);assert.equal(end.subtitleLines.length,2);assert.equal(end.items,8);
+await page.evaluate(()=>window.__roomQA.close());await page.waitForFunction(()=>!window.__roomQA.snapshot().transitioning);const returned=await page.evaluate(()=>window.__roomQA.snapshot().about.offset);await page.waitForTimeout(500);assert.notEqual(await page.evaluate(()=>window.__roomQA.snapshot().about.offset),returned,'Gallery keeps moving after zooming out');
+await page.evaluate(()=>window.__roomQA.open('about'));await page.waitForFunction(()=>!window.__roomQA.snapshot().transitioning);
+await page.locator('[data-gallery=pause]').click();await page.waitForTimeout(50);const paused=await page.evaluate(()=>window.__roomQA.snapshot().about.offset);await page.waitForTimeout(300);assert.equal(await page.evaluate(()=>window.__roomQA.snapshot().about.offset),paused);
+for(const [width,height]of [[1440,960],[1024,768],[390,844]]){await page.setViewportSize({width,height});await page.waitForTimeout(350);await page.screenshot({path:`test-results/about/profile-${width}.png`});assert.ok((await page.locator('.desk-content').textContent()).includes('Software Engineering @ UNB'));}
+await page.setViewportSize({width:1440,height:960});for(let i=0;i<5;i++)await page.locator('[data-gallery=next]').click();await page.waitForTimeout(400);await page.screenshot({path:'test-results/about/video.png'});
+await page.locator('[data-gallery=pause]').click();await page.emulateMedia({reducedMotion:'reduce'});await page.waitForTimeout(100);const reduced=await page.evaluate(()=>window.__roomQA.snapshot().about.offset);await page.waitForTimeout(300);assert.equal(await page.evaluate(()=>window.__roomQA.snapshot().about.offset),reduced);
+await page.evaluate(()=>window.__roomQA.close());await page.waitForTimeout(200);assert.equal(await page.evaluate(()=>window.__roomQA.snapshot().about.videoPlaying),false);
+assert.deepEqual(errors,[]);await writeFile('test-results/about/report.json',JSON.stringify({errors,animation:true,pause:true,reducedMotion:true,videoReady:end.videoReady,viewports:[1440,1024,390]},null,2));console.log('About layout, animation, pause, video, reduced motion and exit checks passed.');
+}finally{await browser.close();}

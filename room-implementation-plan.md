@@ -1,0 +1,5 @@
+# Room revision — implementation brief
+
+The active entrypoint is web/src/workspace.ts. Plain Three.js loads a Meshopt/KTX2 desk GLB; DOM labels call the same focus controller as raycast clicks. Existing title is a camera-child canvas plane, so it is not actually attached to a wall. Existing desk materials use baked lightmaps. Preserve the model and existing book, contact, racing and résumé controllers.
+
+Add modular runtime room/lettering, scroll frame and lamp using meter-scale primitives (under 15k extra triangles; maps at most 2048). Match these additions in a separate Blender room review file, preserving scene-realism.blend. Reuse bundled Cormorant and Plex fonts. One warm shadow-casting spotlight; cool fill and rim do not cast shadows. Replace laptop artwork with editable About copy. Frame content reuses existing Hack Atlantic data plus explicit editable recap placeholders where source facts are missing. Shared label config and collision-aware DOM component. Desktop and mobile browser verification, reduced motion, existing unit suite and production build.

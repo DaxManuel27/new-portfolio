@@ -27,7 +27,7 @@ export class ScrollNavigationGesture {
   return false;
  }
 }
-type DeskScrollOptions={target:(event:MouseEvent)=>string;busy:()=>boolean;open:(id:string)=>void};
+type DeskScrollOptions={ignore?:(event:WheelEvent)=>boolean;atTop?:()=>boolean;target:(event:MouseEvent)=>string;busy:()=>boolean;open:(id:string)=>void};
 export function installScrollBack(dialog:HTMLDialogElement,content:HTMLElement,onBack:()=>void,desk?:DeskScrollOptions){
  const gesture=new ScrollNavigationGesture();
  const reset=()=>gesture.reset(performance.now());
@@ -35,11 +35,12 @@ export function installScrollBack(dialog:HTMLDialogElement,content:HTMLElement,o
  document.addEventListener('pointerleave',()=>{if(!dialog.open)gesture.setTarget('');});
  window.addEventListener('blur',reset);
  window.addEventListener('wheel',event=>{
+  if(desk?.ignore?.(event)){reset();return;}
   const now=performance.now();
   if(event.ctrlKey||event.metaKey||Math.abs(event.deltaX)>Math.abs(event.deltaY)){reset();return;}
   const target=dialog.open?'back':desk?.target(event)??'';
   // Preserve reading position, including nested scrollable content.
-  let atTop=dialog.scrollTop<=1&&content.scrollTop<=1;
+  let atTop=dialog.scrollTop<=1&&content.scrollTop<=1&&(!dialog.open||(desk?.atTop?.()??true));
   if(dialog.open)for(let element=event.target instanceof Element?event.target:null;element&&element!==document.body;element=element.parentElement){
    if(element.scrollTop>1&&/(auto|scroll)/.test(getComputedStyle(element).overflowY))atTop=false;
   }

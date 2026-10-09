@@ -1,3 +1,7 @@
+# Current interactive room
+
+The current landing page is the interactive room in `web/src/workspace.ts`. See [the Round 2 handoff](docs/room-round2.md) for the current scene, editable content, Blender/Figma sources and validation. Start it with `npm run dev`.
+
 # Portfolio scroll preview
 
 The browser application is in `web/`. This repository contains only this portfolio project, including the runtime assets in `web/public/assets/`, supporting scripts, and project documentation. Large Blender working files and local backups remain outside version control; they are not needed to run or build the website.

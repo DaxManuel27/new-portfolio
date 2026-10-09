@@ -1,0 +1,62 @@
+{
+  "plantRemoved": true,
+  "desktopPlantPresent": true,
+  "wallBottom": -0.5,
+  "floorTop": 5.960464413701239e-11,
+  "floorBack": -2.008999990463257,
+  "wallZ": -1.51,
+  "trimHeight": 0.024,
+  "trimMatchesWall": true,
+  "shadowLights": 1,
+  "fabric": {
+    "width": 2048,
+    "height": 4096,
+    "anisotropy": 16,
+    "maxAnisotropy": 16,
+    "mipmaps": true,
+    "colorSpace": "srgb"
+  },
+  "name": {
+    "width": 2048,
+    "height": 1200
+  },
+  "labels": [
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "padding": "0px",
+      "leader": "M0 0 L-49.49747468305833 -49.49747468305833"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "padding": "0px",
+      "leader": "M0 0 L39.59797974644664 -39.59797974644664"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "padding": "0px",
+      "leader": "M0 0 L69.29646455628165 69.29646455628165"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "padding": "0px",
+      "leader": "M0 0 L39.597979746446754 39.5979797464467"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "padding": "0px",
+      "leader": "M0 0 L49.49747468305827 49.49747468305827"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px",
+      "padding": "0px",
+      "leader": "M0 0 L39.597979746446754 -39.59797974644667"
+    }
+  ],
+  "tagline": false
+}

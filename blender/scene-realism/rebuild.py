@@ -105,6 +105,9 @@ for x in [-.26,.26]:
  box('Chair_Chrome_Arm',(.026,.33,.016),(x,-.09,.49),chrome,chair,W,.007)
 box('Chair_Chrome_Top',(.53,.022,.018),(0,0,.74),chrome,chair,W,.008)
 box('Chair_Seat',(.50,.46,.065),(0,.14,.20),leather,chair,W,.026)
+# Keep armrests beside the seat with clear chrome mounting joints.
+exec((R/'blender/scene-realism/fix-chair-arms.py').read_text())
+exec((R/'blender/scene-realism/remove-mug.py').read_text())
 # Wall and motivated soft studio lights.
 wall=mat('MAT_Wall_Charcoal',(.018,.016,.014),.95);box('Wall',(12,.08,7),(0,1.55,2),wall,col=W,bevel=0)
 for o in bpy.data.collections['COL_Lighting'].objects:

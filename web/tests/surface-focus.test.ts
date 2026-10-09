@@ -16,4 +16,4 @@ for(const aspect of [1440/1000,1280/800,390/844])for(const kind of ['screen','pa
   assert.ok(pose.position.clone().sub(pose.target).dot(kind==='page'?new T.Vector3(0,1,0):new T.Vector3(0,0,1))>0);
  });
 }
-test('screens and physical paper destinations use immersive camera framing',()=>assert.deepEqual([...immersiveDestinations],['hack-atlantic','ultra-maritime','contact','resume']));
+test('screens and physical paper destinations use immersive camera framing',()=>assert.deepEqual([...immersiveDestinations],['about','hack-atlantic','ultra-maritime','contact','resume']));

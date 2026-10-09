@@ -1,0 +1,12 @@
+{
+  "wood": {
+    "license": "CC0",
+    "source": "https://polyhaven.com/a/walnut_veneer_02",
+    "derivedFrom": "assets/textures/photoreal/sources.json",
+    "size": 1024
+  },
+  "linen": {
+    "source": "Original procedural weave normal",
+    "size": 256
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "revision": "Round 2",
+  "build": "passed",
+  "typecheck": "passed",
+  "lint": "not configured",
+  "tests": {
+    "passed": 123,
+    "total": 125,
+    "preExistingFailures": [
+      "desk-return monitor-layout snapshot",
+      "desk-six-fixes existing GLB budget"
+    ]
+  },
+  "browserWidths": [
+    1440,
+    1024,
+    390
+  ],
+  "round2Audit": "passed",
+  "floorWallJoin": "continuous; wall extends below floor; matching 24 mm skirting",
+  "shadowLights": 1,
+  "fabricTexture": [
+    2048,
+    4096
+  ],
+  "sourceCommits": [
+    "6aacadb7dd78aa3013cd3641f151cbe2f631cda7",
+    "8afeabe85ae928bf8b0086be51e551f8374cd47e"
+  ],
+  "report": "../../docs/room-round2.md"
+}

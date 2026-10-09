@@ -1,5 +1,5 @@
 import * as T from 'three';
-export const immersiveDestinations=new Set(['hack-atlantic','ultra-maritime','contact','resume']);
+export const immersiveDestinations=new Set(['about','hack-atlantic','ultra-maritime','contact','resume']);
 /** Frame the surface with 10% breathing room; the notebook includes its open cover. */
 export function surfacePose(mesh:T.Mesh,fov:number,aspect:number,spread=false,uvRange:readonly[number,number]=[0,1]){
  mesh.updateWorldMatrix(true,false);const position=mesh.geometry.getAttribute('position'),uv=mesh.geometry.getAttribute('uv');
