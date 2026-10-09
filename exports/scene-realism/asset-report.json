@@ -1,0 +1,131 @@
+{
+  "bytes": 8715060,
+  "lightmapBytes": 513246,
+  "triangles": 165398,
+  "primitives": 92,
+  "animations": 0,
+  "textures": [
+    {
+      "name": "pothos-variegation",
+      "bytes": 85936,
+      "reused": true
+    },
+    {
+      "name": "carbon-normal",
+      "bytes": 2486,
+      "reused": true
+    },
+    {
+      "name": "carbon-roughness",
+      "bytes": 1526,
+      "reused": true
+    },
+    {
+      "name": "hack-landing",
+      "bytes": 2078584,
+      "reused": true
+    },
+    {
+      "name": "avHeUoiiNZxsWLT",
+      "bytes": 74340,
+      "reused": true
+    },
+    {
+      "name": "zQcfHhnoVHsfHBA",
+      "bytes": 73661,
+      "reused": true
+    },
+    {
+      "name": "yZHxHesWWWUpuZv",
+      "bytes": 7616,
+      "reused": true
+    },
+    {
+      "name": "pCuukbyhubpzTGt",
+      "bytes": 20511,
+      "reused": true
+    },
+    {
+      "name": "QXbODWyRdbzqhGa",
+      "bytes": 41369,
+      "reused": true
+    },
+    {
+      "name": "FUBzmdVsRJOfrDB-PpEFuGZXKtkDnsj",
+      "bytes": 30724,
+      "reused": true
+    },
+    {
+      "name": "xeictubZvSoMtRg",
+      "bytes": 260434,
+      "reused": true
+    },
+    {
+      "name": "xpwrPLRCFhukBHj",
+      "bytes": 227215,
+      "reused": true
+    },
+    {
+      "name": "dJaYPieHYAsHRvp",
+      "bytes": 3428,
+      "reused": true
+    },
+    {
+      "name": "mug",
+      "bytes": 20176,
+      "reused": true
+    },
+    {
+      "name": "um-cover-front",
+      "bytes": 89249,
+      "reused": true
+    },
+    {
+      "name": "um-page-left",
+      "bytes": 597886,
+      "reused": true
+    },
+    {
+      "name": "um-page-right",
+      "bytes": 938882,
+      "reused": true
+    },
+    {
+      "name": "plastic-normal",
+      "bytes": 159104,
+      "reused": true
+    },
+    {
+      "name": "plastic-roughness",
+      "bytes": 113296,
+      "reused": true
+    },
+    {
+      "name": "paper-normal",
+      "bytes": 116245,
+      "reused": true
+    },
+    {
+      "name": "paper-roughness",
+      "bytes": 74481,
+      "reused": true
+    },
+    {
+      "name": "notebook-pages",
+      "bytes": 101755,
+      "reused": true
+    },
+    {
+      "name": "resume-attached",
+      "bytes": 840603,
+      "reused": true
+    },
+    {
+      "name": "printer-download-label",
+      "bytes": 10563,
+      "reused": true
+    }
+  ],
+  "compression": "Meshopt + KTX2 UASTC/Basis",
+  "provisional": true
+}

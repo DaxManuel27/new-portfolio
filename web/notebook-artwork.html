@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Notebook artwork export</title><style>@font-face{font-family:Kalam;src:url('/fonts/kalam-regular.ttf')}body{background:#aaa;display:flex;gap:20px;flex-wrap:wrap}canvas{width:450px;height:auto}</style></head><body><script type="module">
+import {loadNotebookFont,paintNotebookPage} from './src/notebook-display.ts';
+import {notebookLayout} from './src/notebook-layout.ts';
+await loadNotebookFont();
+const report=[];
+for(const [id,side,mobile,page] of [['left','left',false,0],['right','right',false,0],['mobile-intro','left',true,0],['mobile-notes-1','right',true,1],['mobile-notes-2','right',true,2]]){
+ const canvas=paintNotebookPage(side,mobile,page);canvas.id=id;document.body.append(canvas);const link=document.createElement('a');link.href=canvas.toDataURL('image/png');link.download=id+'.png';link.dataset.artwork=id;link.textContent='Export '+id;document.body.append(link);
+ const ctx=canvas.getContext('2d');const layout=notebookLayout(side,mobile,page,(text,size)=>{ctx.font=`${size}px Kalam`;return ctx.measureText(text).width;});report.push({id,layout});
+}
+const data=document.createElement('script');data.type='application/json';data.id='layout-report';data.textContent=JSON.stringify(report);document.body.append(data);
+</script></body></html>

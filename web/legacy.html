@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101010" />
+    <meta name="description" content="Dax Manuel's portfolio — a journey through the work." />
+    <title>Dax Manuel — Portfolio</title>
+    <script>
+      // Reset before the browser and animation library capture a restored scroll position.
+      history.scrollRestoration = 'manual';
+      if (performance.getEntriesByType('navigation')[0]?.type === 'reload') {
+        history.replaceState({ ...history.state, portfolioProgress: 0 }, '', location.pathname + location.search);
+        window.scrollTo(0, 0);
+      }
+    </script>
+    <link rel="icon" href="%BASE_URL%favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%BASE_URL%favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%BASE_URL%favicon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%BASE_URL%apple-touch-icon.png" />
+  </head>
+  <body>
+    <button class="skip" id="skip">Skip animation and view contact links</button>
+    <div id="stage" aria-label="Portfolio scenes animated by scrolling">
+      <h1 id="intro-name" aria-label="Dax Manuel"><span class="first" aria-hidden="true">Dax</span><span class="last" aria-hidden="true">Manuel</span></h1>
+      <h2 id="fsae-title" aria-label="UNB Formula Racing — Founding Member &amp; Software Project Lead"><span class="first" aria-hidden="true">UNB Formula</span><span class="last" aria-hidden="true">Racing</span><span class="fsae-role" aria-hidden="true">Founding Member &amp; Software Project Lead</span></h2>
+      <canvas id="scene" aria-label="A MacBook travels through seven portfolio scenes"></canvas>
+      <div id="loading" class="opening" role="status" aria-live="polite">
+        <img id="poster" src="/assets/intro.webp" alt="" />
+        <div class="loading-message"><span id="loading-label">Preparing the journey…</span><button id="retry" hidden>Try again</button></div>
+      </div>
+      <section id="reel" aria-label="Projects" hidden>
+        <div class="reel-head"><h2 id="reel-heading" class="section-title"><span class="first">Personal</span> <span class="last">Projects</span></h2></div>
+        <div id="reel-frame" aria-hidden="true"></div>
+        <ol id="reel-track"></ol>
+        <p id="reel-hint" aria-hidden="true">Scroll to continue</p>
+      </section>
+      <p id="reel-announcement" class="visually-hidden" aria-live="polite" aria-atomic="true"></p>
+      <p id="hint">Scroll to explore <span aria-hidden="true">↓</span></p>
+      <div id="print-controls" class="resume-controls" hidden>
+        <button id="print-resume" data-resume-print>Print Resume</button>
+        <span id="print-status" role="status" aria-live="polite"></span>
+      </div>
+      <p id="model-credits" class="model-credits" hidden>3D models: Raspberry Pi 5 © 2026 Raspberry Pi Ltd (<a href="%BASE_URL%assets/raspberry-pi-5-LICENSE.txt" target="_blank" rel="noopener noreferrer">licence</a>).</p>
+      <nav id="notebook-links" aria-label="Contact links written in the notebook" hidden>
+        <a data-notebook-link="github" href="https://github.com/daxmanuel27" target="_blank" rel="noopener noreferrer" aria-label="GitHub: github.com/daxmanuel27"></a>
+        <a data-notebook-link="linkedin" href="https://linkedin.com/in/nikolasdaxmanuel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn: linkedin.com/in/nikolasdaxmanuel"></a>
+        <a data-notebook-link="email" href="mailto:mail@daxmanuel.com" aria-label="Email mail@daxmanuel.com"></a>
+        <a data-notebook-link="phone" href="tel:+15068972218" aria-label="Call 506-897-2218"></a>
+        <a data-notebook-link="x" href="https://x.com/bydaxmanuel" target="_blank" rel="noopener noreferrer" aria-label="X: x.com/bydaxmanuel"></a>
+      </nav>
+    </div>
+    <main id="scroll-space" aria-label="Scroll through the portfolio"></main>
+    <main id="fallback" aria-label="Portfolio still views" hidden>
+      <p id="fallback-note">Explore the portfolio at your own pace.</p>
+      <div id="stills"></div>
+      <section id="accessible-contact"><h2>Get in touch</h2><p><a href="mailto:mail@daxmanuel.com">mail@daxmanuel.com</a> · <a href="tel:+15068972218">506-897-2218</a></p><p><a href="https://github.com/daxmanuel27" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://linkedin.com/in/nikolasdaxmanuel" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://x.com/bydaxmanuel" target="_blank" rel="noopener noreferrer">X</a></p><p class="model-credits">3D models: Raspberry Pi 5 © 2026 Raspberry Pi Ltd (<a href="%BASE_URL%assets/raspberry-pi-5-LICENSE.txt" target="_blank" rel="noopener noreferrer">licence</a>).</p></section>
+    </main>
+    <div id="boot" role="progressbar" aria-label="Loading portfolio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="boot-inner">
+        <span id="boot-count" aria-hidden="true">0</span>
+        <div class="boot-track" aria-hidden="true"><span id="boot-bar"></span></div>
+      </div>
+    </div>
+    <button id="motion-toggle" aria-pressed="false">Reduce motion</button>
+    <aside id="review" hidden aria-label="Preview controls">
+      <label>Scene <select id="chapter"></select></label>
+      <label class="scrubber">Journey <input id="scrub" type="range" min="0" max="1" step="0.0001" value="0" /></label>
+      <output id="phase-label"></output>
+    </aside>
+    <noscript><style>#stage,#scroll-space,#motion-toggle{display:none}#fallback[hidden]{display:block}</style><p class="noscript">JavaScript is off. <a href="mailto:mail@daxmanuel.com">Contact Dax by email</a> or explore <a href="https://github.com/daxmanuel27">GitHub</a>.</p><img src="/assets/contact.webp" alt="Contact desk with MacBook, notebook and red phone" style="width:100%;max-width:1100px" /></noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

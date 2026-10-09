@@ -2,7 +2,7 @@ import {ease,type JourneyState} from './journey';
 import content from './ultra-maritime.json';
 export function createUltraContent(){
  const root=document.createElement('section');root.className='ultra-copy ultra-screen-copy';
- const emphasis=(text:string)=>text.replace(/over 50%|30\+ functions/g,match=>`<strong>${match}</strong>`);
+ const emphasis=(text:string)=>text.replace(/over 50%|35\+ functions/g,match=>`<strong>${match}</strong>`);
  root.innerHTML=`<header class="um-header"><h2><span>ULTRA</span><span>MARITIME</span></h2><p class="um-role">${content.role}</p></header><div class="um-resume"><p class="um-meta">${content.dates} · ${content.location}</p><ul>${content.contributions.map(text=>`<li><span class="um-bullet" aria-hidden="true">•</span><span>${emphasis(text)}</span></li>`).join('')}</ul></div>`;
  return root;
 }

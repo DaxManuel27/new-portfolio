@@ -1,0 +1,182 @@
+[
+  {
+    "object": "Desk_Top.001",
+    "texture": "LM_Desk_Top.001.png",
+    "uvChannel": 1,
+    "size": 1024
+  },
+  {
+    "object": "Cabinet_Case",
+    "texture": "LM_Cabinet_Case.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Cabinet_Drawer_0",
+    "texture": "LM_Cabinet_Drawer_0.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Cabinet_Pull_0",
+    "texture": "LM_Cabinet_Pull_0.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Cabinet_Drawer_1",
+    "texture": "LM_Cabinet_Drawer_1.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Cabinet_Pull_1",
+    "texture": "LM_Cabinet_Pull_1.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Cabinet_Drawer_2",
+    "texture": "LM_Cabinet_Drawer_2.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Cabinet_Pull_2",
+    "texture": "LM_Cabinet_Pull_2.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Desk_Frame_Leg",
+    "texture": "LM_Desk_Frame_Leg.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Desk_Frame_Leg.001",
+    "texture": "LM_Desk_Frame_Leg.001.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Desk_Frame_Leg.002",
+    "texture": "LM_Desk_Frame_Leg.002.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Desk_Frame_Leg.003",
+    "texture": "LM_Desk_Frame_Leg.003.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Desk_Frame_Rail",
+    "texture": "LM_Desk_Frame_Rail.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Back_Core",
+    "texture": "LM_Chair_Back_Core.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Back_Cushion_00",
+    "texture": "LM_Chair_Back_Cushion_00.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Back_Cushion_01",
+    "texture": "LM_Chair_Back_Cushion_01.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Back_Cushion_02",
+    "texture": "LM_Chair_Back_Cushion_02.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Back_Cushion_03",
+    "texture": "LM_Chair_Back_Cushion_03.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Back_Cushion_04",
+    "texture": "LM_Chair_Back_Cushion_04.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Back_Cushion_05",
+    "texture": "LM_Chair_Back_Cushion_05.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Back_Cushion_06",
+    "texture": "LM_Chair_Back_Cushion_06.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Back_Cushion_07",
+    "texture": "LM_Chair_Back_Cushion_07.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Back_Cushion_08",
+    "texture": "LM_Chair_Back_Cushion_08.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Chrome_Side",
+    "texture": "LM_Chair_Chrome_Side.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Chrome_Arm",
+    "texture": "LM_Chair_Chrome_Arm.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Chrome_Side.001",
+    "texture": "LM_Chair_Chrome_Side.001.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Chrome_Arm.001",
+    "texture": "LM_Chair_Chrome_Arm.001.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Chrome_Top",
+    "texture": "LM_Chair_Chrome_Top.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Chair_Seat",
+    "texture": "LM_Chair_Seat.png",
+    "uvChannel": 1,
+    "size": 256
+  },
+  {
+    "object": "Wall",
+    "texture": "LM_Wall.png",
+    "uvChannel": 1,
+    "size": 1024
+  }
+]

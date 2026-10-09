@@ -4,9 +4,9 @@
   "dates": "May 2026 – Aug 2026",
   "location": "Dartmouth, NS",
   "contributions": [
-    "Engineered an internal tool exporting test suites from DOORS into Excel files with Python via REST API, reducing export times by over 50%.",
-    "Authored test suites covering 30+ functions and implemented tests to validate Automated Test Environment behaviors.",
-    "Developed a message emitter in Python using ZMQ sockets for TCP/IP, enabling an Automated Test Environment to validate data transmission via PUB/SUB and REQ/REP.",
-    "Restored legacy software on a Linux test rack, configuring network IPs and creating virtual machines to test software."
+    "Owned the deployment of a tool exporting test suites from DOORS into Excel files with Python via REST API, slashing export times by over 50% and migrating 1200+ test cases.",
+    "Implemented end-to-end test suites in Python and Robot Framework, covering 35+ functions to validate Automated Test Environment behaviors and edge cases.",
+    "Engineered a message emitter with Python and ZeroMQ supporting PUB/SUB and REQ/REP patterns, enabling automated validation of 70+ test cases within the Automated Test Environment.",
+    "Created technical project documentation on 3 company programs accelerating onboarding for over 6 new hires."
   ]
 }

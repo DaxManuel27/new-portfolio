@@ -1,0 +1,17 @@
+{
+  "evaluatedTriangles": 168236,
+  "objects": 396,
+  "triangleBudget": 250000,
+  "triangleBudgetPass": true,
+  "notebookOpenDegrees": 180,
+  "sourceFilesPreserved": true,
+  "reservedPivotMetadataRemoved": true,
+  "exportedTriangles": 162206,
+  "staticPhone": true,
+  "staticResumeOnTray": true,
+  "plantAndMugRemoved": true,
+  "hackAtlanticOriginalLandingPage": true,
+  "animationClips": [
+    "Notebook_Open"
+  ]
+}

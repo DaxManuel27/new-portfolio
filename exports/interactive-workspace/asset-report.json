@@ -1,0 +1,101 @@
+[
+  {
+    "name": "workspace",
+    "bytes": 4472068,
+    "triangles": 162206,
+    "primitives": 87,
+    "clips": [
+      {
+        "name": "Notebook_Open",
+        "channels": 1,
+        "duration": 1.2000000476837158
+      }
+    ],
+    "roots": [
+      "Root_car",
+      "Root_macbook",
+      "Root_monitor",
+      "Root_notebook",
+      "Root_pen",
+      "Root_phone",
+      "Root_pi",
+      "Root_printer"
+    ]
+  },
+  {
+    "name": "notebook",
+    "bytes": 152068,
+    "triangles": 682,
+    "primitives": 9,
+    "clips": [
+      {
+        "name": "Notebook_Open",
+        "channels": 1,
+        "duration": 1.2000000476837158
+      }
+    ],
+    "roots": [
+      "Root_notebook"
+    ]
+  },
+  {
+    "name": "phone",
+    "bytes": 397620,
+    "triangles": 26954,
+    "primitives": 12,
+    "clips": [],
+    "roots": [
+      "Root_phone"
+    ]
+  },
+  {
+    "name": "printer",
+    "bytes": 522260,
+    "triangles": 15556,
+    "primitives": 15,
+    "clips": [],
+    "roots": [
+      "Root_printer"
+    ]
+  },
+  {
+    "name": "macbook",
+    "bytes": 2767040,
+    "triangles": 80852,
+    "primitives": 25,
+    "clips": [],
+    "roots": [
+      "Root_macbook"
+    ]
+  },
+  {
+    "name": "monitor",
+    "bytes": 250956,
+    "triangles": 2272,
+    "primitives": 5,
+    "clips": [],
+    "roots": [
+      "Root_monitor"
+    ]
+  },
+  {
+    "name": "car",
+    "bytes": 206764,
+    "triangles": 14816,
+    "primitives": 7,
+    "clips": [],
+    "roots": [
+      "Root_car"
+    ]
+  },
+  {
+    "name": "pi",
+    "bytes": 361056,
+    "triangles": 19382,
+    "primitives": 7,
+    "clips": [],
+    "roots": [
+      "Root_pi"
+    ]
+  }
+]
