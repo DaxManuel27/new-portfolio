@@ -131,3 +131,10 @@ Browser checkpoint at 1440×1000: `reference/compare/geometry-provisional.jpg`; 
 Current provisional export: 6,598,568 bytes, 195,845 triangles, 96 material primitives, no animation. Compressed lightmaps add 595,356 bytes; HDR and final Figma textures still need final budget accounting. These are WebP + Meshopt, not yet KTX2.
 
 Remaining differences: monitor still has old personal-projects artwork pending Figma; blank sketchbook and incomplete resume artwork; missing editorial headline/nav/projected pills/CTA; car silhouette/livery still less detailed than target; foreground chair and prop spacing need final alignment; browser wall/light contrast differs from Cycles. Do not mark the rebuild complete or claim 2% alignment, 60fps, KTX2 delivery, or Lighthouse score. Production integration not started; current route behavior remains intact.
+
+### Phase 3 — Figma texture checkpoint
+- Created **Dax Portfolio – Scene Textures** in the user-selected dax.manuel’s team: https://www.figma.com/design/KGA8JvG2RZ333CXIHkh1OS.
+- Eight editable frames, 13 color variables + four spacing/radius variables; reusable callout component with five instances. Overlay contains 13 text nodes and no raster UI. Original ship/globe/car vectors; coast is the existing generated source.
+- Exported seven 2× PNG textures and applied them to the Blender scene. Overlay design context and variable definitions saved for the upcoming integration.
+- Screenshot: `reference/compare/phase-3-textures.jpg`; comparison: `reference/compare/phase-3-side-by-side.png`.
+- **Diff log:** monitor content now matches the required subject, but line art is simpler than the target. Laptop text and coast are present. Paper art is too faint in the current render. Overall light remains too flat/dark on props, contact shadows too weak, wall too black. Car detail/decals, phone dial, plant realism, chair curvature and framing remain materially different. Runtime overlay, KTX2, responsive interactions and performance verification are still pending. This is not a 1:1 completion claim.

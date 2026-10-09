@@ -1,0 +1,100 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/b706754b-c005-4867-b00f-5386e321f5ad";
+const imgExperienceLeader = `${assetPathPrefix}/7a74d.svg`;
+const imgFormulaSaeLeader = `${assetPathPrefix}/3add5.svg`;
+const imgHackAtlanticLeader = `${assetPathPrefix}/3d046.svg`;
+const imgResumeLeader = `${assetPathPrefix}/25be3.svg`;
+const imgContactLeader = `${assetPathPrefix}/ee64c.svg`;
+
+type ObjectCalloutProps = {
+  className?: string;
+  label?: string;
+};
+
+function ObjectCallout({ className, label = "Experience" }: ObjectCalloutProps) {
+  return (
+    <div className={className || "bg-[var(----pill-bg,#efe8dc)] content-stretch flex items-start px-[var(----spacing-pill-x,16px)] py-[var(----spacing-pill-y,6px)] relative rounded-[var(----radius-pill,99px)]"} data-node-id="4:14" data-name="Object callout">
+      <p className="[word-break:break-word] font-['IBM_Plex_Mono:Regular'] leading-none not-italic relative shrink-0 text-[12px] text-[color:var(----pill-text,#2a2622)] whitespace-nowrap" data-node-id="4:16">
+        {label}
+      </p>
+    </div>
+  );
+}
+
+export default function OverlayDesktop1440() {
+  return (
+    <div className="bg-[var(----bg-wall,#1d1c1b)] relative size-full" data-node-id="2:23" data-name="Overlay — desktop 1440">
+      <div className="[word-break:break-word] absolute content-stretch flex h-[28px] items-center justify-between leading-none left-[50px] overflow-clip text-[color:var(----text-cream,#ece6da)] top-[24px] w-[1340px] whitespace-nowrap" data-node-id="4:6" data-name="Header">
+        <p className="font-['IBM_Plex_Mono:Regular'] not-italic relative shrink-0 text-[14px] tracking-[5.6px]" data-node-id="4:7">
+          DAX MANUEL
+        </p>
+        <div className="content-stretch flex font-['Cormorant_Garamond:Regular'] font-normal gap-[var(----spacing-nav,30px)] items-start overflow-clip relative shrink-0 text-[17px]" data-node-id="4:8" data-name="Primary navigation">
+          <p className="relative shrink-0" data-node-id="4:9">
+            Projects
+          </p>
+          <p className="relative shrink-0" data-node-id="4:10">
+            About
+          </p>
+          <p className="relative shrink-0" data-node-id="4:11">
+            Résumé
+          </p>
+          <p className="relative shrink-0" data-node-id="4:12">
+            Contact
+          </p>
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute font-['Cormorant_Garamond:Light'] font-light leading-[0] left-[50px] text-[56px] text-[color:var(----text-cream,#ece6da)] top-[105px] whitespace-nowrap" data-node-id="4:13">
+        <p className="leading-none mb-0">Pick something.</p>
+        <p className="leading-none">Explore my work.</p>
+      </div>
+      <ObjectCallout className="absolute bg-[var(----pill-bg,#efe8dc)] content-stretch flex items-start left-[938px] px-[var(----spacing-pill-x,16px)] py-[var(----spacing-pill-y,6px)] rounded-[var(----radius-pill,99px)] top-[86px]" />
+      <div className="absolute left-[907px] size-[36px] top-[94px]" data-node-id="4:19" data-name="Experience leader">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgExperienceLeader} />
+      </div>
+      <ObjectCallout className="absolute bg-[var(----pill-bg,#efe8dc)] content-stretch flex items-start left-[234px] px-[var(----spacing-pill-x,16px)] py-[var(----spacing-pill-y,6px)] rounded-[var(----radius-pill,99px)] top-[404px]" label="Formula SAE" />
+      <div className="absolute h-[41px] left-[204px] top-[412px] w-[35px]" data-node-id="4:24" data-name="Formula SAE leader">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFormulaSaeLeader} />
+      </div>
+      <ObjectCallout className="absolute bg-[var(----pill-bg,#efe8dc)] content-stretch flex items-start left-[676px] px-[var(----spacing-pill-x,16px)] py-[var(----spacing-pill-y,6px)] rounded-[var(----radius-pill,99px)] top-[657px]" label="Hack Atlantic" />
+      <div className="absolute h-[36px] left-[650px] top-[638px] w-[31px]" data-node-id="4:29" data-name="Hack Atlantic leader">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHackAtlanticLeader} />
+      </div>
+      <ObjectCallout className="absolute bg-[var(----pill-bg,#efe8dc)] content-stretch flex items-start left-[1181px] px-[var(----spacing-pill-x,16px)] py-[var(----spacing-pill-y,6px)] rounded-[var(----radius-pill,99px)] top-[429px]" label="Résumé" />
+      <div className="absolute h-[42px] left-[1150px] top-[437px] w-[36px]" data-node-id="4:34" data-name="Résumé leader">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgResumeLeader} />
+      </div>
+      <ObjectCallout className="absolute bg-[var(----pill-bg,#efe8dc)] content-stretch flex items-start left-[1327px] px-[var(----spacing-pill-x,16px)] py-[var(----spacing-pill-y,6px)] rounded-[var(----radius-pill,99px)] top-[706px]" label="Contact" />
+      <div className="absolute h-[42px] left-[1297px] top-[681px] w-[35px]" data-node-id="4:39" data-name="Contact leader">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgContactLeader} />
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[16px] items-center left-[615px] overflow-clip top-[884px]" data-node-id="4:42" data-name="Choose an object">
+        <p className="[word-break:break-word] font-['IBM_Plex_Mono:Regular'] leading-none not-italic relative shrink-0 text-[10px] text-[color:var(----text-cream,#ece6da)] tracking-[2.5px] whitespace-nowrap" data-node-id="4:43">
+          CHOOSE AN OBJECT TO BEGIN
+        </p>
+        <div className="border border-[var(----text-cream,#ece6da)] border-solid content-stretch flex items-start overflow-clip px-[22px] py-[9px] relative rounded-[99px] shrink-0" data-node-id="4:44" data-name="Take the tour">
+          <p className="[word-break:break-word] font-['Cormorant_Garamond:Regular'] font-normal leading-none relative shrink-0 text-[16px] text-[color:var(----text-cream,#ece6da)] whitespace-pre" data-node-id="4:45">{`Take the tour  →`}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Object label / mono: Font(family: "IBM Plex Mono", style: Regular, size: 12, weight: 400, lineHeight: 1, letterSpacing: 0).
+
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Object callout
+**Node ID:** 4:14
+
+Projected object label. One live 3D anchor, accessible button, warm cream surface.
+
+Images and SVGs will be stored as constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

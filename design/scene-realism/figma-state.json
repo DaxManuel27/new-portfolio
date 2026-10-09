@@ -1,0 +1,27 @@
+{
+  "fileKey": "KGA8JvG2RZ333CXIHkh1OS",
+  "url": "https://www.figma.com/design/KGA8JvG2RZ333CXIHkh1OS",
+  "team": "dax.manuel\u2019s team",
+  "pageId": "0:1",
+  "discovery": {
+    "codeConnect": "none",
+    "existingScreens": "empty file",
+    "libraries": "no subscribed libraries or matching portfolio assets",
+    "fonts": [
+      "Cormorant Garamond Light",
+      "Cormorant Garamond Regular",
+      "IBM Plex Mono Regular"
+    ]
+  },
+  "frames": {
+    "monitor": "2:16",
+    "laptop": "2:17",
+    "mug": "2:18",
+    "dial": "2:19",
+    "sketch-left": "2:20",
+    "sketch-right": "2:21",
+    "resume": "2:22",
+    "overlay": "2:23"
+  },
+  "calloutComponent": "4:14"
+}

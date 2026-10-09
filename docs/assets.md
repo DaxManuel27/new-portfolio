@@ -28,3 +28,8 @@ Sunset artwork is the existing self-generated coastal source; no external photog
 ## Outstanding delivery requirements
 
 Figma editable overlay and all requested textures; final car refinement; accurate projected labels/hover/keyboard/touch UI; production integration; dev reference overlay; KTX2; finalized lightmap/HDR budget; 1280×800/mobile comparisons; landmark measurements; Lighthouse and frame-time validation. No claim is made that these are complete.
+
+## Figma source created
+The new source is https://www.figma.com/design/KGA8JvG2RZ333CXIHkh1OS in dax.manuel’s team. Frame IDs and font discovery are in `design/scene-realism/figma-state.json`. Texture exports live under `design/scene-realism/textures/`; all texture frame exports are 2×, maximum 2048 px. `overlay.png` is a design review image only and must not be used as the UI.
+
+Apply downloaded textures in live Blender via `blender/scene-realism/apply-textures.py`, then run `node web/scripts/prepare-reference-desk.mjs` from the repository root. This is still the provisional WebP export pipeline; KTX2 delivery remains pending.

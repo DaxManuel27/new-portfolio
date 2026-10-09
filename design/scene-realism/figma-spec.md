@@ -1,6 +1,6 @@
 # Figma production specification
 
-Awaiting required team selection from user. Requested file name: Dax Portfolio – Scene Textures. Requested editor: Design.
+Team selected: dax.manuel’s team. New file: https://www.figma.com/design/KGA8JvG2RZ333CXIHkh1OS. Requested file name: Dax Portfolio – Scene Textures. Requested editor: Design.
 
 No Code Connect files exist in the source UI. This is a new editorial overlay; discover new file contents and available fonts before construction. Build editable typography, vector ship/globe/car drawings and real auto-layout header/navigation/CTA groups. Reference screenshot is visual guidance only, never the flattened overlay deliverable.
 
