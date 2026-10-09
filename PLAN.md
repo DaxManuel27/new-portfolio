@@ -120,3 +120,14 @@ Follow the pasted prompt exactly (user confirmation). Restore plant/mug, UM moni
 
 ### Phase 1 — fixed-size baseline
 Captured running desk preview at 1440×1000 in `reference/current.png`; target/current side-by-side: `reference/compare/phase-1-audit.png`. Full source graph, materials, maps, camera and lights recorded in `reference/audit.json`. Target uses much larger laptop/car relative to desk, lower desk front edge around 73%, flatter and lower monitor, smaller background printer, foreground chair, warm directional reflections and soft contact shadows. Baseline has hard shadows, too much empty top area, no headline/callouts, and different prop materials. Phase 1 audit complete.
+
+### Provisional geometry/bake checkpoint — Figma dependency pending
+User confirmed literal pasted brief. Figma whoami returned two teams; file-creation skill explicitly requires choosing a plan when multiple are present. Async choice requested: dax.manuel's team (Full/admin) or yousef.khirallah's team (View). No answer received yet, so no new Figma file created.
+
+Independent geometry work staged in `blender/scene-realism.blend`: flat monitor, enlarged laptop, black car with layered aero/generic race text, cabinet, leather/chrome chair, pale printer, open untextured sketchbook, separate resume, restored foliage/mug. Cycles lighting pass completed and 30 static diffuse-irradiance maps baked onto separate UV channels. Original .blend preserved under assets/_legacy.
+
+Browser checkpoint at 1440×1000: `reference/compare/geometry-provisional.jpg`; target comparison `reference/compare/geometry-side-by-side.png`. Export's UV1 was initially pruned, then retained using keepAttributes. Browser leaf sheen initially exported white; corrected source tint. No browser errors in checkpoint.
+
+Current provisional export: 6,598,568 bytes, 195,845 triangles, 96 material primitives, no animation. Compressed lightmaps add 595,356 bytes; HDR and final Figma textures still need final budget accounting. These are WebP + Meshopt, not yet KTX2.
+
+Remaining differences: monitor still has old personal-projects artwork pending Figma; blank sketchbook and incomplete resume artwork; missing editorial headline/nav/projected pills/CTA; car silhouette/livery still less detailed than target; foreground chair and prop spacing need final alignment; browser wall/light contrast differs from Cycles. Do not mark the rebuild complete or claim 2% alignment, 60fps, KTX2 delivery, or Lighthouse score. Production integration not started; current route behavior remains intact.
