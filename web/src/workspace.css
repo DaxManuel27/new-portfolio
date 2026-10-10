@@ -104,6 +104,10 @@
 .mobile-tagline{display:none}
 .in-destination .mobile-tagline{display:none}
 .desk-loader p{font:13px 'IBM Plex Mono',monospace}
+.desk-loader{justify-items:center;padding:24px;background:radial-gradient(ellipse at center,#263128 0%,#1d1c1b 65%)}
+.desk-loader-percent{font:300 clamp(56px,10vw,80px)/1 'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums;letter-spacing:-.06em;margin-bottom:6px}
+.desk-loader-track{position:relative;width:min(220px,70vw);height:3px;overflow:hidden;border-radius:3px;background:#ece6da1c}
+.desk-loader-fill{position:absolute;inset:0;background:var(--text-cream);transform:scaleX(var(--load-progress,0));transform-origin:left;transition:transform .2s ease}
 .desk-dialog .fabric-controls[hidden]{display:none}
 .fabric-controls .fabric-hit{position:fixed;display:block;background:transparent;border:0;padding:0;margin:0;touch-action:none;cursor:grab}
 .fabric-hit:active{cursor:grabbing}.fabric-hit:focus-visible{outline:2px solid #e9bc8e;outline-offset:7px}

@@ -46,7 +46,8 @@ export class WorkspaceScene{
  }
  async load(progress:(n:number)=>void){
   const loader=new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).setKTX2Loader(this.ktx);
-  const [gltf,manifest,hdr]=await Promise.all([loader.loadAsync(base+'desk.glb',e=>progress(e.total?e.loaded/e.total:0)),fetch(base+'manifest.json').then(r=>{if(!r.ok)throw Error('Scene manifest unavailable');return r.json();}),new HDRLoader().loadAsync(import.meta.env.BASE_URL+'assets/studio-small-09.hdr')]);
+  const [gltf,manifest,hdr]=await Promise.all([loader.loadAsync(base+'desk.glb',e=>progress(e.total?Math.min(1,e.loaded/e.total)*.5:0)),fetch(base+'manifest.json').then(r=>{if(!r.ok)throw Error('Scene manifest unavailable');return r.json();}),new HDRLoader().loadAsync(import.meta.env.BASE_URL+'assets/studio-small-09.hdr')]);
+  progress(.55);
   const pmrem=new T.PMREMGenerator(this.renderer);this.scene.environment=pmrem.fromEquirectangular(hdr).texture;this.scene.environmentIntensity=.35;hdr.dispose();pmrem.dispose();
   this.model=gltf.scene;
   this.model.getObjectByName('Root_mug')?.removeFromParent();
@@ -64,18 +65,18 @@ export class WorkspaceScene{
     if(o.name.startsWith('Desk_Top'))m.color.set('#c8bba4');
     if(m.map)m.map.anisotropy=Math.min(8,this.renderer.capabilities.getMaxAnisotropy());
    }
-  });await Promise.all(loads);
-  await this.syncProjectsDisplay();
+  });let loadedMaps=0;await Promise.all(loads.map(load=>load.then(()=>progress(.55+.15*(++loadedMaps/loads.length)))));progress(.7);
+  await this.syncProjectsDisplay();progress(.74);
   // Bring the notebook forward beside the laptop, retaining clearance for its open cover.
   this.model.getObjectByName('Root_pen')?.removeFromParent();
   for(const name of ['Root_notebook']){const prop=this.model.getObjectByName(name);if(prop){prop.position.x-=.035;prop.position.z+=.16;}}
-  await createRoom(this.model,this.scene);
-  this.scrollFrame=await createScrollFrame(this.renderer.capabilities.getMaxAnisotropy());this.model.add(this.scrollFrame.root);this.surfaces.set('hack-atlantic',this.scrollFrame.fabric);const laptop=this.surfaces.get('about');if(laptop){this.laptopScreen=await createLaptopScreen();(laptop.material as T.MeshBasicMaterial).map=this.laptopScreen.texture;}this.title=await createWallName();this.scene.add(this.title);
+  await createRoom(this.model,this.scene);progress(.82);
+  this.scrollFrame=await createScrollFrame(this.renderer.capabilities.getMaxAnisotropy());this.model.add(this.scrollFrame.root);this.surfaces.set('hack-atlantic',this.scrollFrame.fabric);progress(.86);const laptop=this.surfaces.get('about');if(laptop){this.laptopScreen=await createLaptopScreen();(laptop.material as T.MeshBasicMaterial).map=this.laptopScreen.texture;}progress(.9);this.title=await createWallName();this.scene.add(this.title);progress(.94);
   this.notebookHinge=this.model.getObjectByName('UM_Notebook_CoverHinge');
   try{await loadNotebookFont();this.syncNotebookDisplay();this.notebookReady=true;}catch(error){console.warn('Using readable notebook fallback',error);}
   for(const[id,name]of Object.entries(rootNames)){const root=this.model.getObjectByName(name);if(root)this.roots.set(id,root);}
-  const c=manifest.cameras.Camera_Overview;this.home.fromArray(c.position);this.homeTarget.fromArray(c.target);this.homeFov=33;this.home.set(.22,2,3.6);this.homeTarget.set(0,1.02,-.15);this.resize();await document.fonts.load('300 100px "Cormorant Garamond"');this.syncTitle();this.highlight('');this.ready=true;
-  await this.renderer.compileAsync(this.scene,this.camera);this.renderer.setAnimationLoop(t=>{if(!this.visible)return;if(this.prev&&this.frames.length<360)this.frames.push(t-this.prev);this.prev=t;this.update(t);this.renderer.info.reset();this.composer.render();this.onFrame();});progress(1);
+  const c=manifest.cameras.Camera_Overview;this.home.fromArray(c.position);this.homeTarget.fromArray(c.target);this.homeFov=33;this.home.set(.22,2,3.6);this.homeTarget.set(0,1.02,-.15);this.resize();await document.fonts.load('300 100px "Cormorant Garamond"');this.syncTitle();this.highlight('');progress(.98);
+  await this.renderer.compileAsync(this.scene,this.camera);this.renderer.setAnimationLoop(t=>{if(!this.visible)return;if(this.prev&&this.frames.length<360)this.frames.push(t-this.prev);this.prev=t;this.update(t);this.renderer.info.reset();this.composer.render();this.onFrame();});this.ready=true;progress(1);
  }
  private overviewPose(){
   const width=this.canvas.clientWidth||innerWidth,aspect=width/(this.canvas.clientHeight||innerHeight);
@@ -111,14 +112,28 @@ export class WorkspaceScene{
   if(this.title){
    // The name is permanent wall geometry; camera framing and depth handle visibility.
    this.title.visible=true;
-   if(!this.active){
-    // Place the ink on the wall from a responsive screen-space brief, preserving real occlusion.
-    this.camera.updateMatrixWorld();const wall=new T.Plane(new T.Vector3(0,0,1),1.506);
-    const w=this.canvas.clientWidth,h=this.canvas.clientHeight,width=w*(w<760?.86:.46),height=width*1200/2048;
-    const left=w*(w<760?.07:.045),top=w<760?72:Math.max(32,h*.085-40);
-    const point=(x:number,y:number)=>{const ray=new T.Raycaster();ray.setFromCamera(new T.Vector2(x/w*2-1,1-y/h*2),this.camera);return ray.ray.intersectPlane(wall,new T.Vector3())!;};
-    const a=point(left,top),b=point(left+width,top+height);
-    this.title.position.copy(a.clone().add(b).multiplyScalar(.5));this.title.scale.set(b.x-a.x,a.y-b.y,1);
+   // Always solve against the overview, including resizes while a detail is open.
+   const camera=this.camera.clone(),pose=this.overviewPose();camera.position.copy(pose.position);camera.up.set(0,1,0);camera.lookAt(pose.target);camera.updateMatrixWorld();
+   const w=this.canvas.clientWidth,h=this.canvas.clientHeight,margin=Math.max(16,Math.min(32,w*.045)),gap=w<760?16:24;
+   const wall=new T.Plane(new T.Vector3(0,0,1),-this.title.position.z);
+   const point=(x:number,y:number)=>{const ray=new T.Raycaster();ray.setFromCamera(new T.Vector2(x/w*2-1,1-y/h*2),camera);return ray.ray.intersectPlane(wall,new T.Vector3())!;};
+   const project=(points:T.Vector3[])=>{const p=points.map(v=>v.project(camera));return {left:Math.min(...p.map(v=>(v.x+1)*w/2)),right:Math.max(...p.map(v=>(v.x+1)*w/2)),top:Math.min(...p.map(v=>(1-v.y)*h/2)),bottom:Math.max(...p.map(v=>(1-v.y)*h/2))};};
+   const poster=this.scrollFrame?.root;let obstacle:ReturnType<typeof project>|undefined;
+   if(poster){poster.updateWorldMatrix(true,true);const b=new T.Box3().setFromObject(poster);const corners:T.Vector3[]=[];for(const x of [b.min.x,b.max.x])for(const y of [b.min.y,b.max.y])for(const z of [b.min.z,b.max.z])corners.push(new T.Vector3(x,y,z));obstacle=project(corners);}
+   const ink=this.title.userData.inkBounds as number[];
+   const left=Math.max(margin,w*.045),preferredWidth=w*T.MathUtils.lerp(.86,.46,T.MathUtils.smoothstep(w/h,.85,1.45));
+   const place=(width:number,top:number)=>{
+    const a=point(left,top),b=point(left+width,top),worldWidth=b.x-a.x,worldHeight=worldWidth*1200/2048;
+    this.title!.position.set(a.x+worldWidth/2,a.y-worldHeight/2,this.title!.position.z);this.title!.scale.set(worldWidth,worldHeight,1);this.title!.updateMatrixWorld();
+    const bounds=()=>{const corners:T.Vector3[]=[];for(const x of [ink[0],ink[1]])for(const y of [ink[2],ink[3]])corners.push(new T.Vector3(x-.5,y-.5,0).applyMatrix4(this.title!.matrixWorld));return project(corners);};
+    // Correct perspective skew using the projected ink, not the plane's corners.
+    for(let i=0;i<4;i++){const r=bounds();this.title!.position.add(point(left+2,top+2).sub(point(r.left,r.top)));this.title!.updateMatrixWorld();}return bounds();
+   };
+   const fits=(r:ReturnType<typeof project>)=>r.left>=margin&&r.right<=w-margin&&r.top>=margin&&r.bottom<=h-margin&&(!obstacle||r.right+gap<=obstacle.left||r.left-gap>=obstacle.right||r.bottom+gap<=obstacle.top||r.top-gap>=obstacle.bottom);
+   // Preserve the preferred size when clear; otherwise raise it, then fit it down.
+   const top=Math.max(margin,h*.085-40);
+   if(!fits(place(preferredWidth,top))&&!fits(place(preferredWidth,margin))){
+    let low=0,high=preferredWidth;for(let i=0;i<24;i++){const mid=(low+high)/2;if(fits(place(mid,margin)))low=mid;else high=mid;}place(low,margin);
    }
   }
   heading?.classList.add('scene-title-ready');
